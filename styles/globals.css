@@ -676,6 +676,10 @@ Ensure the default browser behavior of the `hidden` attribute.
   width: 100vw;
 }
 
+.w-\[50vw\] {
+  width: 50vw;
+}
+
 .cursor-pointer {
   cursor: pointer;
 }

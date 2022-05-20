@@ -111,7 +111,7 @@ const Index = () => {
       </div>
   
   
-          <div className="flex flex-row w-[70vw] mx-auto md:w-[40vw] md:mx-auto space-x-10 lg:w-[30vw] lg:mx-auto">
+          <div className="flex flex-row w-[50vw] mx-auto md:w-[40vw] md:mx-auto space-x-10 lg:w-[30vw] lg:mx-auto">
         <img src="/whale-exploder.png" alt="logo" className='h-[6rem] md:w-[10rem] md:h-[10rem] w-[6rem] lg:h-[12rem] lg:w-[12rem]'/>
         <img src="/whexy.png" alt="logo" className='h-[6rem] w-[6rem] lg:h-[12rem] md:w-[10rem] md:h-[10rem] lg:w-[12rem]'/>
         <img src="/smart-defi.png" alt="logo" className='h-[6rem] w-[6rem] lg:h-[12rem] md:w-[10rem] md:h-[10rem] lg:w-[12rem]'/>
