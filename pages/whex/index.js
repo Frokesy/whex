@@ -101,7 +101,7 @@ const Index = () => {
         <div className="flex flex-row xl:mt-10">
 
             <div className=" rounded-lg xl:w-1/4 xl:h-auto xl:mx-4 mt-4 text-white mb-10 mr-3 w-[80vw] p-10 h-auto">
-                <center className="font-bold text-sky-200 mb-8 mt-[10px] xl:text-2xl text-md">TOKENOMICS</center>
+                <center className="font-bold text-sky-200 mb-8 xl:text-2xl text-md">TOKENOMICS</center>
                 <u><center className="xl:text-lg text-[10px]">5% sent to a whale charity wallet</center></u>
                 <center className="xl:text-sm text-[10px] px-2">(42% burned, 58% sold, donated biweekly (capped at 4.2% LP))</center>
                 <center className="xl:my-10 xl:text-lg text-[10px]"><u>5% distribution to holders</u></center>
