@@ -15,7 +15,7 @@ const Index = () => {
     const btnRef = React.useRef()
   
     return (
-      <div className="bg-black h-full w-full">
+      <div className="bg-black h-full w-screen">
         <div className="justify-between flex">
           <div className="flex justify-start">
          <Button ref={btnRef} colorScheme='black' onClick={onOpen}>
