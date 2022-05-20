@@ -10,7 +10,7 @@ import {
 } from '@chakra-ui/react'
 import Link from 'next/Link'
 
-const index = () => {
+const Index = () => {
     const { isOpen, onOpen, onClose } = useDisclosure()
     const btnRef = React.useRef()
   
@@ -73,15 +73,15 @@ const index = () => {
           <span className="font-bold text-[14px] lg:text-[18px] font-mono">Hello WHEXcosystem Community, </span>
              <p className="font-light mx-4 mt-4 font-sans lg:text-[14px] leading-loose"> The closing out of the 5 other WHEXcosystem tokens is almost complete. Thank you for your patience and understanding during this transition period. Overall everyone has been great, and it didn’t trigger a sell off of WHEX tokens, which is wonderful as I am committed to growing the WHEXcosystem for the long term.</p>
              <div>
-        <p className="extra-content px-4 leading-loose text-[14px]">
-        On May 9, these WHEXcosystem tokens were shutdown:
-         <ul className="mx-4 my-4 font-light text-sky-200">
-           <li>Seal Exploder (SLEX)</li>
-           <li>Cod Exploder (CDEX)</li>
-           <li>Anchovy Exploder (ANEX)</li>
-           <li>Krill Exploder (KREX)</li>
-           <li>Cryptophyte (CRYPTO)</li>
-         </ul>
+        <div className="extra-content px-4 leading-loose text-[14px]">
+        <span>On May 9, these WHEXcosystem tokens were shutdown:</span>
+         <span className="mx-4 my-4 font-light text-sky-200 flex flex-col">
+           <span>Seal Exploder (SLEX)</span>
+           <span>Cod Exploder (CDEX)</span>
+           <span>Anchovy Exploder (ANEX)</span>
+           <span>Krill Exploder (KREX)</span>
+           <span>Cryptophyte (CRYPTO)</span>
+         </span>
         This was done by turning the tax up to 100% on each of them, and turning on tokenomics for the tide pools. <br />
   
        <span className="text-sky-200 font-bold">As of May 11,</span>  all 1271 unique holders have been airdropped Smart DeFi WHEX in proportion to how much of the discontinued tokens they held. 
@@ -106,7 +106,7 @@ const index = () => {
   
         Thanks again for your patience and cooperation,
         <h2 className="float-right font-[11px] my-3 font-bold text-sky-200">~ Peter Wake</h2>
-        </p>
+        </div>
     </div>
       </div>
   
@@ -345,5 +345,5 @@ const index = () => {
     )
   }
   
-  export default index
+  export default Index
    

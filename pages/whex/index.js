@@ -13,7 +13,7 @@ import {
   } from '@chakra-ui/react'
   import Link from 'next/Link'
 
-const index = () => {
+const Index = () => {
     const { isOpen, onOpen, onClose } = useDisclosure()
     const btnRef = React.useRef()
   return (
@@ -241,4 +241,4 @@ const index = () => {
   )
 }
 
-export default index
+export default Index
