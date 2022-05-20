@@ -8,7 +8,7 @@ import {
   useDisclosure,
   Button,
 } from '@chakra-ui/react'
-import Link from 'next/Link'
+import Link from 'next/link'
 
 const Index = () => {
     const { isOpen, onOpen, onClose } = useDisclosure()
@@ -34,7 +34,7 @@ const Index = () => {
           >
             <DrawerCloseButton />
             <DrawerBody>
-              <Link href="/whex">
+            <Link href="/whex">
                 <div className="mt-[10vh] text-sky-200 cursor-pointer">
                   WHEX
                 </div>

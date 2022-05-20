@@ -11,7 +11,7 @@ import {
     Button,
     ModalFooter
   } from '@chakra-ui/react'
-  import Link from 'next/Link'
+  import Link from 'next/link'
 
 const Index = () => {
     const { isOpen, onOpen, onClose } = useDisclosure()
