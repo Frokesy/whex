@@ -12,12 +12,14 @@ import {
     ModalFooter
   } from '@chakra-ui/react'
   import Link from 'next/link'
+import Meta from '../defaults/Meta'
 
 const Index = () => {
     const { isOpen, onOpen, onClose } = useDisclosure()
     const btnRef = React.useRef()
   return (
       <div className="bg-black h-full">
+          <Meta title="WHEXcosystem || Home Page" />
                  <div className="justify-between flex">
         <div className="flex justify-start">
        <Button ref={btnRef} colorScheme='black' onClick={onOpen}>
