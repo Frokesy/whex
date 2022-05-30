@@ -16,27 +16,27 @@ const Meta = ({ title, keywords, desc }) => {
       <meta property="og:url" content="" />
       <meta property="og:title" content={title} />
       <meta property="og:description" content={desc} />
-      <meta property="og:image" content="/assets/preview.jpeg" />
+      <meta property="og:image" content="/logo.jpg" />
 
       <meta property="twitter:card" content="summary_large_image" />
       <meta property="twitter:url" content="" />
       <meta property="twitter:title" content={title} />
       <meta property="twitter:description" content={desc} />
-      <meta property="twitter:image" content="/assets/preview.jpeg" />
+      <meta property="twitter:image" content="/logo.jpg" />
 
-      <meta property="og:site_name" content="Love At Last" />
+      <meta property="og:site_name" content="WHEXcosystem" />
       <meta property="og:site" content="" />
       <meta property="og:title" content={title} />
       <meta property="og:description" content={desc} />
       <meta property="og:image" content="" />
-      <meta property="og:url" content="/assets/preview.jpeg" />
+      <meta property="og:url" content="/logo.jpg" />
       <title>{title}</title>
     </Head>
   );
 };
 
 Meta.defaultProps = {
-  title: "Love At Last",
+  title: "WHEXcosystem",
   keywords: "WHEX, whexcosystem, token",
   desc: "The official WHEXcosystem website || 5% sent to a whale charity wallet, 42% burned, 58% sold, donated biweekly(capped at 4.2% LP)",
 };

@@ -149,10 +149,10 @@ const Index = () => {
         <div className="w-[90vw] mb-3">
                 <div className="items-center justify-center">
                     <center className="text-white text-2xl items-center justify-center mt-4 mb-6">TOKENOMICS</center>
-                    <u className="text-white"><center className="text-white my-6">5% sent to a whale charity wallet</center></u>
+                    <u className="text-white"><center className="text-white my-6">3% sent to a whale charity wallet</center></u>
                     <center className="text-white my-6">(42% burned, 58% sold, donated biweekly (capped at 4.2% LP))</center>
-                    <center className="text-white my-6"><u>5% distribution to holders</u></center>
-                    <center className="text-white mb-6"><u>5% Automatic liquidity pool on Pancakeswap</u></center>
+                    <center className="text-white my-6"><u>3% reflections</u></center>
+                    <center className="text-white mb-6"><u>3% Automatic liquidity pool on Pancakeswap</u></center>
                 </div>
             </div>
 
