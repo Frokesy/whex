@@ -102,10 +102,10 @@ const Index = () => {
 
             <div className=" rounded-lg xl:w-1/4 xl:h-auto xl:mx-4 mt-4 text-white mb-10 mr-3 w-[80vw] p-10 h-auto">
                 <center className="font-bold text-sky-200 mb-8 xl:text-2xl text-md">TOKENOMICS</center>
-                <u><center className="xl:text-lg text-[10px]">5% sent to a whale charity wallet</center></u>
+                <u><center className="xl:text-lg text-[10px]">3% sent to a whale charity wallet</center></u>
                 <center className="xl:text-sm text-[10px] px-2">(42% burned, 58% sold, donated biweekly (capped at 4.2% LP))</center>
-                <center className="xl:my-10 xl:text-lg text-[10px]"><u>5% distribution to holders</u></center>
-                <center className="xl:mb-8 xl:text-lg text-[10px]"><u>5% Automatic liquidity pool on Pancakeswap</u></center>
+                <center className="xl:my-10 xl:text-lg text-[10px]"><u>3% reflections</u></center>
+                <center className="xl:mb-8 xl:text-lg text-[10px]"><u>3% Automatic liquidity pool on Pancakeswap</u></center>
             </div>
 
             <div className="rounded-lg xl:w-1/4 w-[80vw] xl:mx-4 mx-0 mt-4 mb-10 xl:h-auto font-mono">
