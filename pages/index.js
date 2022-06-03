@@ -7,9 +7,18 @@ import {
   DrawerCloseButton,
   useDisclosure,
   Button,
+  Box,
 } from '@chakra-ui/react'
 import Link from 'next/link'
 import Meta from './defaults/Meta'
+import {
+  Accordion,
+  AccordionItem,
+  AccordionButton,
+  AccordionPanel,
+  AccordionIcon,
+} from '@chakra-ui/react'
+import Legacy from './Legacy'
 
 const Index = () => {
     const { isOpen, onOpen, onClose } = useDisclosure()
@@ -52,7 +61,7 @@ const Index = () => {
         
         </div>
         <div className="flex justify-center mx-10">
-          <a href="https://twitter.com/whaleexploder">
+          <a href="https://twitter.com/whexcosystem">
           <img src="/twitter.svg" alt="" className="w-[1.25rem] h-[1.25rem] my-4 mx-5" />
           </a>
           <a href="https://t.me/WhaleExploderChat">
@@ -71,49 +80,74 @@ const Index = () => {
         <h2 className="text-[20px] mt-4 font-bold font-mono text-white">WHEXcosystem</h2>
         </div>
   
-        <div className="px-4 py-6 text-sm mx-auto lg:w-[80vw] lg:mx-auto flex flex-col text-white ">
-          <span className="font-bold text-[14px] lg:text-[18px] font-mono">Hello WHEXcosystem Community, </span>
-             <p className="font-light mx-4 mt-4 font-sans lg:text-[14px] leading-loose"> The closing out of the 5 other WHEXcosystem tokens is almost complete. Thank you for your patience and understanding during this transition period. Overall everyone has been great, and it didn’t trigger a sell off of WHEX tokens, which is wonderful as I am committed to growing the WHEXcosystem for the long term.</p>
-             <div>
-        <div className="extra-content px-4 leading-loose text-[14px]">
-        <span>On May 9, these WHEXcosystem tokens were shutdown:</span>
-         <span className="mx-4 my-4 font-light text-sky-200 flex flex-col">
-           <span>Seal Exploder (SLEX)</span>
-           <span>Cod Exploder (CDEX)</span>
-           <span>Anchovy Exploder (ANEX)</span>
-           <span>Krill Exploder (KREX)</span>
-           <span>Cryptophyte (CRYPTO)</span>
-         </span>
-        This was done by turning the tax up to 100% on each of them, and turning on tokenomics for the tide pools. <br />
-  
-       <span className="text-sky-200 font-bold">As of May 11,</span>  all 1271 unique holders have been airdropped Smart DeFi WHEX in proportion to how much of the discontinued tokens they held. 
-  
-      <p className="my-2 font-mono font-semibold"> Contract address:
-        0x0D140f495Ffb306bc817fD874C62a1B20284AfbB</p>
-  
-        <p className="my-2">
-        In total over 4,500,000,000,000,000,000 Smart DeFi WHEX was airdropped. This is approximately 17% of the circulating supply of that token.
-          </p> 
-  
-        In addition the top holders of these tokens will be sent WHEXy Whales.
-  
-        Any holders of monthly payout NFTs for these 5 discontinued tokens have been airdropped WHEXy Whales or WHEX as well. 
-        <a href="https://opensea.io/collection/whexy-whales" className='text-sky-200'>https://opensea.io/collection/whexy-whales</a>
-  
-        <br />
-  
-        Holders in rocketbot will be able to swap in for WHEX until the 5 tokens aren’t supported anymore which will be after June 30, 2022.
-  
-        When the liquidity unlocks on FEGex in September 2022 it will be put into the liquidity for WHEX. In the fall of 2026 when the liquidity for the tide pools and pancake swap liquidity unlocks, the remaining tokens will be burned and the BNB used to add liquidity to WHEX on pancake swap. The remaining WHEX in that WHEX/SLEX or KREX/WHEX pool by then will be distributed to WHEXy Whale holders. 
-  
-        Thanks again for your patience and cooperation,
-        <h2 className="float-right font-[11px] my-3 font-bold text-sky-200">~ Peter Wake</h2>
+        <div className="w-[80vw] mx-auto text-white flex font-light text-[10px] flex-col lg:w-[70vw] lg:mx-auto pt-[5vh]">
+        <h2 className="text-[20px] mt-4 text-center font-bold font-mono lg:text-[24px] text-white">WHEXcosystem DAO </h2>
+        <div className="flex flex-col my-6 mx-auto lg:text-[13px] w-{80vw}">
+        <span className=""> <span className="text-sky-400 font-bold lg:text-[13px] text-[10px]">Token Contract Address:</span> 0x1fFD93F8c3d99bDAA4A012A0Fc26868F00Cfa5c2</span>
+        <span className="mt-6"> <span className="text-sky-400 lg:text-[13px] font-mono font-bold text-[10px]">Network:</span> Smart Chain</span>
+        <span className="mt-6"> <span className="text-sky-400 font-mono lg:text-[13px] font-bold text-[10px]">Decimals:</span> 9</span>
+        <span className="mt-6"> <span className="text-sky-400 font-mono lg:text-[13px] font-bold text-[10px]">Symbol:</span> WHEXDAO</span>
+        <span className="mt-6"> <span className="text-sky-400 font-mono lg:text-[13px] font-bold text-[10px]">Initial Supply:</span> 1,000,000,000 WHEXDAO</span>
+        <span className="mt-6"> <span className="text-sky-400 font-mono font-bold lg:text-[13px] text-[10px]">Stockpile Address:</span> 0x0D7079098C8feb4F4AEF40703CE83eCc704f371d</span>
         </div>
-    </div>
-      </div>
+
+        <h2 className="text-[16px] mb-3 text-center lg:text-[20px] font-bold font-mono text-white"> Voting Mechanism </h2>
+        
+        
+        <div className="flex flex-col mb-6 mx-auto space-y-6 lg:w-[70vw] lg:mb-10 lg:text-[14px] font-light text-[12px] w-{80vw}">
+
+        <span className=""> <span className="text-sky-400 font-bold text-[13px]">1.</span> A voting cycle is initiated by Peter Wake, or by a WHEXDAO holder sending 1 BNB to the Stockpile address. This gives holders the power to create their own votes for the dao, and covers time and expenses of sending out the new tokens, as well as discouraging frivolous votes to get more WHEXDAO in circulation.</span>
+
+        <span className=""> <span className="text-sky-400 font-bold text-[13px]">2.</span>  WHEXDAO tokens are sent out from the Stockpile to holders of WHEXy Whales at a rate of 1 WHEXDAO per 1 WHEXy Whale.</span>
+
+        <span className=""> <span className="text-sky-400 font-bold text-[13px]">3.</span> Peter Wake will then publish a question in discord, Twitter and telegram and provide directions on what address to send WHEXDAO tokens to for each option.</span>
+
+        <span className=""> <span className="text-sky-400 font-bold text-[13px]">4.</span> The voting period will end 42 hours after the vote goes live. All WHEXDAO tokens held by the vote option. addresses will be sent back to the stockpile.</span>
+
+        <span className=""> <span className="text-sky-400 font-bold text-[13px]">5.</span> The decision will be carried out by the WHEXcosystem team. (Must have at least 51% of the total WHEXDAO used to vote).</span>
+
+        <span className=""> <span className="text-sky-400 font-bold text-[13px] italic font-mono">Note:</span> As CEO, Peter Wake retains the right to veto any decision, or decide not to run a vote on a question presented by the community. I.E. you cannot use the DAO to perform a hostile takeover of the WHEX contract, decide to perform illegal acts, etc.</span>
+
+
+        </div>
+
+        </div>
+
+        <div className="w-[80vw] mb-6 lg:items-center lg:flex lg:items-center lg:justify-center mx-auto">
+          <img src="/whex.jpg" alt="" className="lg:h-[80vh] lg:w-[40vw] rounded-lg" />
+        </div>
+        
+        <Accordion w={{ base: '90vw', md: '80vw', lg: '80vw' }} mx="auto" colorScheme="black" defaultIndex={[0]} allowMultiple>
+            <AccordionItem>
+              <h2>
+                <AccordionButton color="white" bg="black">
+                  <Box 
+                  flex='1' 
+                  textAlign='left'
+                  color="white"
+                  w={{ base: '90vw', md: '80vw', lg: '70vw' }}
+                  bg="black"
+                  fontSize="xl"
+                  p={3}
+                  >
+                    Legacy Tokens
+                  </Box>
+                  <AccordionIcon />
+                </AccordionButton>
+              </h2>
+              <AccordionPanel 
+              h={{ base: '120vh', md: '80vh', lg: '65vh' }}
+              color="white"
+              w={{ base: '90vw', md: '80vw', lg: '70vw' }}
+              bg="black"
+              >
+                <Legacy />
+              </AccordionPanel>
+            </AccordionItem>
+          </Accordion>
+
   
-  
-          <div className="flex flex-row w-[80vw] mx-auto md:w-[40vw] md:mx-auto space-x-4 lg:w-[30vw] lg:mx-auto">
+          <div className="flex flex-row mt-8 items-center justify-center mx-auto md:mx-auto space-x-4 lg:mx-auto">
         <img src="/whale-exploder.png" alt="logo" className='h-[6rem] md:w-[10rem] md:h-[10rem] w-[6rem] lg:h-[12rem] lg:w-[12rem]'/>
         <img src="/whexy.png" alt="logo" className='h-[6rem] w-[6rem] lg:h-[12rem] md:w-[10rem] md:h-[10rem] lg:w-[12rem]'/>
         <img src="/smart-defi.png" alt="logo" className='h-[6rem] w-[6rem] lg:h-[12rem] md:w-[10rem] md:h-[10rem] lg:w-[12rem]'/>
@@ -184,7 +218,7 @@ const Index = () => {
   
       <div className="footer pt-10 bg-black w-full">
           <div className="flex flex-row justify-center">
-          <a href="https://twitter.com/whaleexploder">
+          <a href="https://twitter.com/whexcosystem">
           <img src="/twitter.svg" alt="" className="w-[1.25rem] h-[1.25rem] my-4 mx-5" />
           </a>
           <a href="https://t.me/WhaleExploderChat">
