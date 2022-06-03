@@ -592,6 +592,10 @@ Ensure the default browser behavior of the `hidden` attribute.
   margin-top: 3.5rem;
 }
 
+.mb-2 {
+  margin-bottom: 0.5rem;
+}
+
 .flex {
   display: flex;
 }
@@ -947,6 +951,10 @@ Ensure the default browser behavior of the `hidden` attribute.
 
   .lg\:mb-10 {
     margin-bottom: 2.5rem;
+  }
+
+  .lg\:block {
+    display: block;
   }
 
   .lg\:flex {

@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState, useEffect, useRef } from 'react'
 import {
     Drawer,
     DrawerBody,
@@ -15,8 +15,44 @@ import {
 import Meta from '../defaults/Meta'
 
 const Index = () => {
+    const [timerDays, settimerDays] = useState('00')
+    const [timerHours, settimerHours] = useState('00')
+    const [timerMinutes, settimerMinutes] = useState('00')
+    const [timerSeconds, settimerSeconds] = useState('00')
     const { isOpen, onOpen, onClose } = useDisclosure()
     const btnRef = React.useRef()
+
+    let interval = useRef()
+
+    const startTimer = () => {
+        const countdownDate = new Date("June 5, 2022 16:20:00").getTime();
+
+        interval = setInterval(() => {
+            const now = new Date().getTime();
+            const distance = countdownDate - now;
+
+            const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+            const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+            const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+            if (distance < 0) {
+                clearInterval(interval)
+                return;
+            } else {
+                settimerDays(days)
+                settimerHours(hours)
+                settimerMinutes(minutes)
+                settimerSeconds(seconds)
+            }
+        }, 1000);
+    }
+
+    useEffect(() => {
+        startTimer()
+        return () => clearInterval(interval)
+    })
+
   return (
       <div className="bg-black h-full">
           <Meta title="WHEXcosystem || Home Page" />
@@ -83,15 +119,19 @@ const Index = () => {
             <center className=" xl:text-5xl xl:-mt-4 font-semibold mt-10 text-3xl  text-sky-200 font-mono">BURN / CHARITY SALE COUNTDOWN</center>
             <div className="flex flex-row justify-center">
                 <div className="flex flex-col mt-10 xl:mx-14 mx-6">
-                    <center className="text-white xl:text-2xl text-lg">00</center>
+                    <center className="text-white xl:text-2xl text-lg">{timerDays}</center>
                     <center className="xl:text-2xl text-lg  text-sky-200 mt-4">Days</center>
                 </div>
                 <div className="flex flex-col mt-10 xl:mx-14 mx-6">
-                    <center className="text-white xl:text-2xl text-lg">00</center>
+                    <center className="text-white xl:text-2xl text-lg">{timerHours}</center>
                     <center className="xl:text-2xl text-lg  text-sky-200 mt-4">Hours</center>
                 </div>
                 <div className="flex flex-col mt-10 xl:mx-14 mx-6">
-                    <center className="text-white xl:text-2xl text-lg">00</center>
+                    <center className="text-white xl:text-2xl text-lg">{timerMinutes}</center>
+                    <center className="xl:text-2xl text-lg  text-sky-200 mt-4">Minutes</center>
+                </div>
+                <div className="flex flex-col mt-10 xl:mx-14 mx-6">
+                    <center className="text-white xl:text-2xl text-lg">{timerSeconds}</center>
                     <center className="xl:text-2xl text-lg  text-sky-200 mt-4">Minutes</center>
                 </div>
             </div>
@@ -163,17 +203,22 @@ const Index = () => {
                         <center className=" text-sky-200 mt-8">BURN / CHARITY SALE COUNTDOWN</center>
                         <div className="flex flex-row justify-center">
                             <div className="flex flex-col mt-6 mx-4">
-                                <center className="text-white">00</center>
+                                <center className="text-white">{timerDays}</center>
                                 <center className="  text-sky-200 mt-2">Days</center>
                             </div>
                             <div className="flex flex-col mt-6 mx-4">
-                                <center className="text-white">00</center>
+                                <center className="text-white">{timerHours}</center>
                                 <center className="  text-sky-200 mt-2">Hours</center>
                             </div>
                             <div className="flex flex-col mt-6 mx-4">
-                                <center className="text-white">00</center>
+                                <center className="text-white">{timerMinutes}</center>
                                 <center className="  text-sky-200 mt-2">Minutes</center>
                             </div>
+                            <div className="flex flex-col mt-6 mx-4">
+                                <center className="text-white">{timerSeconds}</center>
+                                <center className="  text-sky-200 mt-2">Minutes</center>
+                            </div>
+                            
                         </div>
                         <center className="text-white mt-14 mb-6">86% Circulating / 13.2% Burned</center>
                     </div>

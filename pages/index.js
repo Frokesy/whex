@@ -79,7 +79,9 @@ const Index = () => {
         <img src="/logo.jpg" alt="logo" className='h-[5rem] w-[5rem]'/>
         <h2 className="text-[20px] mt-4 font-bold font-mono text-white">WHEXcosystem</h2>
         </div>
-  
+        <div className="w-[80vw] mb-2 mt-6 lg:hidden lg:items-center lg:flex lg:items-center lg:justify-center mx-auto">
+          <img src="/whex.jpg" alt="" className="lg:h-[80vh] lg:w-[40vw] rounded-lg" />
+        </div>
         <div className="w-[80vw] mx-auto text-white flex font-light text-[10px] flex-col lg:w-[70vw] lg:mx-auto pt-[5vh]">
         <h2 className="text-[20px] mt-4 text-center font-bold font-mono lg:text-[24px] text-white">WHEXcosystem DAO </h2>
         <div className="flex flex-col my-6 mx-auto lg:text-[13px] w-{80vw}">
@@ -113,7 +115,7 @@ const Index = () => {
 
         </div>
 
-        <div className="w-[80vw] mb-6 lg:items-center lg:flex lg:items-center lg:justify-center mx-auto">
+        <div className="w-[80vw] mb-6 hidden lg:block lg:items-center lg:flex lg:items-center lg:justify-center mx-auto">
           <img src="/whex.jpg" alt="" className="lg:h-[80vh] lg:w-[40vw] rounded-lg" />
         </div>
         
