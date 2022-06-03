@@ -138,7 +138,7 @@ const Index = () => {
                 </AccordionButton>
               </h2>
               <AccordionPanel 
-              h={{ base: '135vh', md: '80vh', lg: '65vh' }}
+              h={{ base: '150vh', md: '80vh', lg: '65vh' }}
               color="white"
               w={{ base: '90vw', md: '80vw', lg: '70vw' }}
               bg="black"
