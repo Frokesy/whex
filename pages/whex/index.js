@@ -132,7 +132,7 @@ const Index = () => {
                 </div>
                 <div className="flex flex-col mt-10 xl:mx-14 mx-6">
                     <center className="text-white xl:text-2xl text-lg">{timerSeconds}</center>
-                    <center className="xl:text-2xl text-lg  text-sky-200 mt-4">Minutes</center>
+                    <center className="xl:text-2xl text-lg  text-sky-200 mt-4">Seconds</center>
                 </div>
             </div>
             <center className="text-white xl:text-4xl text-2xl mt-10">86% Circulating / 13.2% Burned</center>
@@ -216,7 +216,7 @@ const Index = () => {
                             </div>
                             <div className="flex flex-col mt-6 mx-4">
                                 <center className="text-white">{timerSeconds}</center>
-                                <center className="  text-sky-200 mt-2">Minutes</center>
+                                <center className="  text-sky-200 mt-2">Seconds</center>
                             </div>
                             
                         </div>
