@@ -25,7 +25,7 @@ const Index = () => {
     let interval = useRef()
 
     const startTimer = () => {
-        const countdownDate = new Date("June 4, 2022 16:20:00").getTime();
+        const countdownDate = new Date("June 18, 2022 16:20:00").getTime();
 
         interval = setInterval(() => {
             const now = new Date().getTime();
