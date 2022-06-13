@@ -64,7 +64,7 @@ const Index = () => {
           <a href="https://twitter.com/whexcosystem">
           <img src="/twitter.svg" alt="" className="w-[1.25rem] h-[1.25rem] my-4 mx-5" />
           </a>
-          <a href="https://t.me/WhaleExploderChat">
+          <a href="https://t.me/WHEXcosystem">
           <img src="/telegram.svg" alt="" className="w-[1.25rem] h-[1.25rem] my-4 mx-5" />
           </a>
           <a 
@@ -85,12 +85,12 @@ const Index = () => {
         <div className="w-[80vw] mx-auto text-white flex font-light text-[10px] flex-col lg:w-[70vw] lg:mx-auto pt-[5vh]">
         <h2 className="text-[20px] mt-4 text-center font-bold font-mono lg:text-[24px] text-white">WHEXcosystem DAO </h2>
         <div className="flex flex-col my-6 mx-auto lg:text-[13px] w-{80vw}">
-        <span className=""> <span className="text-sky-400 font-bold lg:text-[13px] text-[10px]">Token Contract Address:</span> 0x1fFD93F8c3d99bDAA4A012A0Fc26868F00Cfa5c2</span>
-        <span className="mt-6"> <span className="text-sky-400 lg:text-[13px] font-mono font-bold text-[10px]">Network:</span> Smart Chain</span>
-        <span className="mt-6"> <span className="text-sky-400 font-mono lg:text-[13px] font-bold text-[10px]">Decimals:</span> 9</span>
-        <span className="mt-6"> <span className="text-sky-400 font-mono lg:text-[13px] font-bold text-[10px]">Symbol:</span> WHEXDAO</span>
-        <span className="mt-6"> <span className="text-sky-400 font-mono lg:text-[13px] font-bold text-[10px]">Initial Supply:</span> 1,000,000,000 WHEXDAO</span>
-        <span className="mt-6"> <span className="text-sky-400 font-mono font-bold lg:text-[13px] text-[10px]">Stockpile Address:</span> 0x0D7079098C8feb4F4AEF40703CE83eCc704f371d</span>
+        <span className=""> <span className="text-sky-400 font-bold lg:text-[13px] text-[12px]">Token Contract Address:</span> 0x1fFD93F8c3d99bDAA4A012A0Fc26868F00Cfa5c2</span>
+        <span className="mt-6"> <span className="text-sky-400 lg:text-[13px] font-mono font-bold text-[12px]">Network:</span> Smart Chain</span>
+        <span className="mt-6"> <span className="text-sky-400 font-mono lg:text-[13px] font-bold text-[12px]">Decimals:</span> 9</span>
+        <span className="mt-6"> <span className="text-sky-400 font-mono lg:text-[13px] font-bold text-[12px]">Symbol:</span> WHEXDAO</span>
+        <span className="mt-6"> <span className="text-sky-400 font-mono lg:text-[13px] font-bold text-[12px]">Initial Supply:</span> 1,000,000,000 WHEXDAO</span>
+        <span className="mt-6"> <span className="text-sky-400 font-mono font-bold lg:text-[13px] text-[12px]">Stockpile Address:</span> 0x0D7079098C8feb4F4AEF40703CE83eCc704f371d</span>
         </div>
 
         <h2 className="text-[16px] mb-3 text-center lg:text-[20px] font-bold font-mono text-white"> Voting Mechanism </h2>
@@ -119,6 +119,8 @@ const Index = () => {
           <img src="/whex.jpg" alt="" className="lg:h-[80vh] lg:w-[40vw] rounded-lg" />
         </div>
         
+        <h2 className="text-[12px] text-white w-[80vw] mx-auto lg:w-[60vw] lg:text-[14px] lg:mx-auto mb-6">Join us live on our podcast at <a href="https://socialchats.co/event/nftsforacause-eps-21-chat-w-peterdwake-of-the-whale-exploder-ecosystem-whexcosystem/" className="text-sky-200 underline underline-offset-1"> https://socialchats.co/event/nftsforacause-eps-21-chat-w-peterdwake-of-the-whale-exploder-ecosystem-whexcosystem/ </a></h2>
+
         <Accordion w={{ base: '90vw', md: '80vw', lg: '80vw' }} mx="auto" colorScheme="black" defaultIndex={[0]} allowMultiple>
             <AccordionItem>
               <h2>
@@ -223,7 +225,7 @@ const Index = () => {
           <a href="https://twitter.com/whexcosystem">
           <img src="/twitter.svg" alt="" className="w-[1.25rem] h-[1.25rem] my-4 mx-5" />
           </a>
-          <a href="https://t.me/WhaleExploderChat">
+          <a href="https://t.me/WHEXcosystem">
           <img src="/telegram.svg" alt="" className="w-[1.25rem] h-[1.25rem] my-4 mx-5" />
           </a>
           <a 

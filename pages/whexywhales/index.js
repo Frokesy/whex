@@ -59,7 +59,7 @@ const Index = () => {
         <a href="https://twitter.com/whaleexploder">
         <img src="/twitter.svg" alt="" className="w-[1.25rem] h-[1.25rem] my-4 mx-5" />
         </a>
-        <a href="https://t.me/WhaleExploderChat">
+        <a href="https://t.me/WHEXcosystem">
         <img src="/telegram.svg" alt="" className="w-[1.25rem] h-[1.25rem] my-4 mx-5" />
         </a>
         <a 
@@ -92,7 +92,8 @@ const Index = () => {
                     <a href="https://opensea.io/collection/whexy-whales" className="text-sky-200 underline underline-offset-1">https://opensea.io/collection/whexy-whales</a>    
                 </span>
                 <span>Mint Link:
-                    <a href="https://app.niftykit.com/drops/WHEXy_Whales" className="text-sky-200 underline underline-offset-1">https://app.niftykit.com/drops/WHEXy_Whales</a>    
+                    <a href="https://app.niftykit.com/drops/WHEXy_Whales" className="text-sky-200 underline underline-offset-1">https://app.niftykit.com/drops/WHEXy_Whales</a> 
+                    <h2 className="text-[12px] mt-4 lg:hidden text-white w-[80vw] mx-auto lg:w-[60vw] lg:text-[14px] lg:mx-auto mb-6">Join us live on our podcast at <a href="https://socialchats.co/event/nftsforacause-eps-21-chat-w-peterdwake-of-the-whale-exploder-ecosystem-whexcosystem/" className="text-sky-200 underline underline-offset-1"> https://socialchats.co/event/nftsforacause-eps-21-chat-w-peterdwake-of-the-whale-exploder-ecosystem-whexcosystem/ </a></h2>   
                 </span>
             </div>
         </div>
@@ -108,7 +109,7 @@ const Index = () => {
         <a href="https://twitter.com/whaleexploder">
         <img src="/twitter.svg" alt="" className="w-[1.25rem] h-[1.25rem] my-4 mx-5" />
         </a>
-        <a href="https://t.me/WhaleExploderChat">
+        <a href="https://t.me/WHEXcosystem">
         <img src="/telegram.svg" alt="" className="w-[1.25rem] h-[1.25rem] my-4 mx-5" />
         </a>
         <a 
