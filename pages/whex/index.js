@@ -25,7 +25,7 @@ const Index = () => {
     let interval = useRef()
 
     const startTimer = () => {
-        const countdownDate = new Date("July 2, 2022 16:20:00").getTime();
+        const countdownDate = new Date("July 16, 2022 16:20:00").getTime();
 
         interval = setInterval(() => {
             const now = new Date().getTime();
@@ -135,7 +135,7 @@ const Index = () => {
                     <center className="xl:text-2xl text-lg  text-sky-200 mt-4">Seconds</center>
                 </div>
             </div>
-            <center className="text-white xl:text-4xl text-2xl mt-10">69.93% Circulating / 30.07% Burned / 20.08 BNB locked</center>
+            <center className="text-white xl:text-4xl text-2xl mt-10">67.1% Circulating / 32.9% Burned / 20.08 BNB locked</center>
         </div>
 
         <div className="flex flex-row xl:mt-10">
@@ -221,7 +221,7 @@ const Index = () => {
                             </div>
                             
                         </div>
-                        <center className="text-white mt-14 mb-6"> 69.93% Circulating / 30.07% Burned / 20.08 BNB locked</center>
+                        <center className="text-white mt-14 mb-6"> 67.1% Circulating / 32.9% Burned / 20.08 BNB locked</center>
                     </div>
                 </div>
             </div>
