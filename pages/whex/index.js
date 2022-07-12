@@ -1,26 +1,14 @@
 import React, { useState, useEffect, useRef } from 'react'
-import {
-    Drawer,
-    DrawerBody,
-    DrawerFooter,
-    DrawerHeader,
-    DrawerOverlay,
-    DrawerContent,
-    DrawerCloseButton,
-    useDisclosure,
-    Button,
-    ModalFooter
-  } from '@chakra-ui/react'
-  import Link from 'next/link'
+
 import Meta from '../defaults/Meta'
+import Footer from '../../components/Footer'
+import Header from '../../components/Header'
 
 const Index = () => {
     const [timerDays, settimerDays] = useState('00')
     const [timerHours, settimerHours] = useState('00')
     const [timerMinutes, settimerMinutes] = useState('00')
     const [timerSeconds, settimerSeconds] = useState('00')
-    const { isOpen, onOpen, onClose } = useDisclosure()
-    const btnRef = React.useRef()
 
     let interval = useRef()
 
@@ -55,62 +43,9 @@ const Index = () => {
 
   return (
       <div className="bg-black h-full">
-          <Meta title="WHEXcosystem || Home Page" />
-                 <div className="justify-between flex">
-        <div className="flex justify-start">
-       <Button ref={btnRef} colorScheme='black' onClick={onOpen}>
-          <span className="text-5xl text-sky-200 mx-6">=</span>
-      </Button>
-      <Drawer
-        isOpen={isOpen}
-        placement='right'
-        onClose={onClose}
-        finalFocusRef={btnRef}
-      >
-        <DrawerOverlay />
-        <DrawerContent
-        bg='gray.800'
-        color='white'
-        >
-          <DrawerCloseButton />
-          <DrawerBody>
-            <Link href="/">
-              <div className="mt-[10vh] text-sky-200 cursor-pointer">
-                Home
-              </div>
-            </Link>
-            <Link href="/whexywhales">
-              <div className="pt-[2vh] text-sky-200 cursor-pointer">
-                WHEXywhales
-              </div>
-            </Link>
-          </DrawerBody>
-        </DrawerContent>
-      </Drawer>
-      
-      </div>
-      <div className="flex justify-center mx-10">
-        <a href="https://twitter.com/whaleexploder">
-        <img src="/twitter.svg" alt="" className="w-[1.25rem] h-[1.25rem] my-4 mx-5" />
-        </a>
-        <a href="https://t.me/WHEXcosystem">
-        <img src="/telegram.svg" alt="" className="w-[1.25rem] h-[1.25rem] my-4 mx-5" />
-        </a>
-        <a 
-        href="https://www.reddit.com/r/WHEX/">
-          <img src="/reddit.svg" alt="" className="w-[1.25rem] h-[1.25rem] my-4 mx-5" />
-        </a>
-        <a href="https://bscscan.com/token/0x31e79A378fb85D8c4d51489E5c90ecAF9c17935A"><img src="/bscscan.png" alt="" className="bg-white w-[1.25rem] h-[1.25rem] rounded-full my-4 mx-5" /></a>
-        <a href="https://exchange.pancakeswap.finance/#/swap?inputCurrency=0x31e79A378fb85D8c4d51489E5c90ecAF9c17935A"><img src="/pcs.png" alt="" className="w-[1.25rem] h-[1.25rem] my-4 mx-5" /></a>
-        </div>
-    </div>
-      <div className="w-90 mx-auto text-center flex flex-row content-center justify-center pt-[5vh]">
-      <img src="/whale-exploder.png" alt="logo" className='h-[5rem] w-[5rem]'/>
-      <h2 className="text-[20px] mt-4 font-bold font-mono text-white">WHEX</h2>
-      </div>
-
-
-
+          <Meta title="WHEXcosystem || WHEX" />
+          <Header link1="Home" link2="WHEXy Whales" link3="WHEXDAO" header="WHEX" headerurl="/whale-exploder.png" href1="/" href2="/whexywhales" href3="/whexdao" />
+            
       <div className="hidden xl:block bg-black h-auto mt-10 xl:mb-0">
         <div className="flex flex-row overflow-x-auto">
         </div>
@@ -267,23 +202,7 @@ const Index = () => {
             </div>
         </div>
     </div>
-    <div className="footer pt-10 bg-black w-full">
-        <div className="flex flex-row justify-center">
-        <a href="https://twitter.com/whaleexploder">
-        <img src="/twitter.svg" alt="" className="w-[1.25rem] h-[1.25rem] my-4 mx-5" />
-        </a>
-        <a href="https://t.me/WHEXcosystem">
-        <img src="/telegram.svg" alt="" className="w-[1.25rem] h-[1.25rem] my-4 mx-5" />
-        </a>
-        <a 
-        href="https://www.reddit.com/r/WHEX/">
-          <img src="/reddit.svg" alt="" className="w-[1.25rem] h-[1.25rem] my-4 mx-5" />
-        </a>
-        <a href="https://bscscan.com/token/0x31e79A378fb85D8c4d51489E5c90ecAF9c17935A"><img src="/bscscan.png" alt="" className="bg-white w-[1.25rem] h-[1.25rem] rounded-full my-4 mx-5" /></a>
-        <a href="https://exchange.pancakeswap.finance/#/swap?inputCurrency=0x31e79A378fb85D8c4d51489E5c90ecAF9c17935A"><img src="/pcs.png" alt="" className="w-[1.25rem] h-[1.25rem] my-4 mx-5" /></a>
-        </div>
-        <center className="text-sky-200 mt-4 text-center">&copy; Whexcosystem 2022</center>
-    </div> 
+    <Footer />
        </div>
       
   )

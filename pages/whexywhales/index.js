@@ -13,6 +13,9 @@ import {
   } from '@chakra-ui/react'
   import Link from 'next/link'
 import Meta from '../defaults/Meta'
+import VotingDrawer from '../../components/VotingDrawer'
+import Footer from '../../components/Footer'
+import Header from '../../components/Header'
 
 
 const Index = () => {
@@ -22,56 +25,9 @@ const Index = () => {
   return (
     <div className="bg-black h-full">
       <Meta title="WHEXcosystem || WHEXy Whales" />
-             <div className="justify-between flex">
-        <div className="flex justify-start">
-       <Button ref={btnRef} colorScheme='black' onClick={onOpen}>
-          <span className="text-5xl text-sky-200 mx-6">=</span>
-      </Button>
-      <Drawer
-        isOpen={isOpen}
-        placement='right'
-        onClose={onClose}
-        finalFocusRef={btnRef}
-      >
-        <DrawerOverlay />
-        <DrawerContent
-        bg='gray.800'
-        color='white'
-        >
-          <DrawerCloseButton />
-          <DrawerBody>
-            <Link href="/">
-              <div className="mt-[10vh] text-sky-200 cursor-pointer">
-                Home
-              </div>
-            </Link>
-            <Link href="/whex">
-              <div className="pt-[2vh] text-sky-200 cursor-pointer">
-                WHEX
-              </div>
-            </Link>
-          </DrawerBody>
-        </DrawerContent>
-      </Drawer>
-      
-      </div>
-      <div className="flex justify-center mx-10">
-        <a href="https://twitter.com/whaleexploder">
-        <img src="/twitter.svg" alt="" className="w-[1.25rem] h-[1.25rem] my-4 mx-5" />
-        </a>
-        <a href="https://t.me/WHEXcosystem">
-        <img src="/telegram.svg" alt="" className="w-[1.25rem] h-[1.25rem] my-4 mx-5" />
-        </a>
-        <a 
-        href="https://www.reddit.com/r/WHEX/">
-          <img src="/reddit.svg" alt="" className="w-[1.25rem] h-[1.25rem] my-4 mx-5" />
-        </a>
-        <a href="https://bscscan.com/token/0x31e79A378fb85D8c4d51489E5c90ecAF9c17935A"><img src="/bscscan.png" alt="" className="bg-white w-[1.25rem] h-[1.25rem] rounded-full my-4 mx-5" /></a>
-        <a href="https://exchange.pancakeswap.finance/#/swap?inputCurrency=0x31e79A378fb85D8c4d51489E5c90ecAF9c17935A"><img src="/pcs.png" alt="" className="w-[1.25rem] h-[1.25rem] my-4 mx-5" /></a>
-        </div>
-    </div>
-    <div className="pt-[8rem] w-[90vw] mx-auto">
-        <h2 className="text-sky-200 text-center items-center font-medium text-2xl">WHEXy whales (Mint Live Now)</h2>
+      <Header link1="Home" link2="WHEX" link3="WHEXDAO" header="WHEXy Whales" headerurl="/logo.jpg" href1="/whex" href2="/whexywhales" href3="/whexdao" />
+
+    <div className="pt-[3rem] w-[90vw] mx-auto">
         <div className="text-neutral-400 w-[80vw] space-y-3 items-center text-center mx-auto text-sm mt-4 flex flex-col">
             <span>WHEXy Whales is an NFT project consisting of 4800 unique Whales with different traits like hats, glasses, shirts, backgrounds, etc.</span>
             <span>Minting & Royalties (How they will be used*):
@@ -104,23 +60,8 @@ const Index = () => {
             <img src="/whales.jpg" alt="gif" className="my-10 rounded-lg w-[80vw] mx-auto lg:w-[30vw] md:w-[40vw]" />
         </div>
 
-        <div className="footer pt-10 bg-black w-full">
-        <div className="flex flex-row justify-center">
-        <a href="https://twitter.com/whaleexploder">
-        <img src="/twitter.svg" alt="" className="w-[1.25rem] h-[1.25rem] my-4 mx-5" />
-        </a>
-        <a href="https://t.me/WHEXcosystem">
-        <img src="/telegram.svg" alt="" className="w-[1.25rem] h-[1.25rem] my-4 mx-5" />
-        </a>
-        <a 
-        href="https://www.reddit.com/r/WHEX/">
-          <img src="/reddit.svg" alt="" className="w-[1.25rem] h-[1.25rem] my-4 mx-5" />
-        </a>
-        <a href="https://bscscan.com/token/0x31e79A378fb85D8c4d51489E5c90ecAF9c17935A"><img src="/bscscan.png" alt="" className="bg-white w-[1.25rem] h-[1.25rem] rounded-full my-4 mx-5" /></a>
-        <a href="https://exchange.pancakeswap.finance/#/swap?inputCurrency=0x31e79A378fb85D8c4d51489E5c90ecAF9c17935A"><img src="/pcs.png" alt="" className="w-[1.25rem] h-[1.25rem] my-4 mx-5" /></a>
-        </div>
-        <center className="text-sky-200 mt-4 text-center">&copy; Whexcosystem 2022</center>
-    </div>    </div>
+        <Footer />
+            </div>
     </div>  
   )
 }
