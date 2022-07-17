@@ -12,34 +12,34 @@ const Index = () => {
 
     let interval = useRef()
 
-    const startTimer = () => {
-        const countdownDate = new Date("July 30, 2022 16:20:00").getTime();
+    // const startTimer = () => {
+    //     const countdownDate = new Date("July 30, 2022 16:20:00").getTime();
 
-        interval = setInterval(() => {
-            const now = new Date().getTime();
-            const distance = countdownDate - now;
+    //     interval = setInterval(() => {
+    //         const now = new Date().getTime();
+    //         const distance = countdownDate - now;
 
-            const days = Math.floor(distance / (1000 * 60 * 60 * 24));
-            const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-            const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-            const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+    //         const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+    //         const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+    //         const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+    //         const seconds = Math.floor((distance % (1000 * 60)) / 1000);
 
-            if (distance < 0) {
-                clearInterval(interval)
-                return;
-            } else {
-                settimerDays(days)
-                settimerHours(hours)
-                settimerMinutes(minutes)
-                settimerSeconds(seconds)
-            }
-        }, 1000);
-    }
+    //         if (distance < 0) {
+    //             clearInterval(interval)
+    //             return;
+    //         } else {
+    //             settimerDays(days)
+    //             settimerHours(hours)
+    //             settimerMinutes(minutes)
+    //             settimerSeconds(seconds)
+    //         }
+    //     }, 1000);
+    // }
 
-    useEffect(() => {
-        startTimer()
-        return () => clearInterval(interval)
-    })
+    // useEffect(() => {
+    //     startTimer()
+    //     return () => clearInterval(interval)
+    // })
 
   return (
       <div className="bg-black h-full">
@@ -51,7 +51,7 @@ const Index = () => {
         </div>
 
         <div className="items-center">
-            <center className=" xl:text-5xl xl:-mt-4 font-semibold mt-10 text-3xl  text-sky-200 font-mono">BURN / CHARITY SALE COUNTDOWN</center>
+            {/* <center className=" xl:text-5xl xl:-mt-4 font-semibold mt-10 text-3xl  text-sky-200 font-mono">BURN / CHARITY SALE COUNTDOWN</center>
             <div className="flex flex-row justify-center">
                 <div className="flex flex-col mt-10 xl:mx-14 mx-6">
                     <center className="text-white xl:text-2xl text-lg">{timerDays}</center>
@@ -69,7 +69,7 @@ const Index = () => {
                     <center className="text-white xl:text-2xl text-lg">{timerSeconds}</center>
                     <center className="xl:text-2xl text-lg  text-sky-200 mt-4">Seconds</center>
                 </div>
-            </div>
+            </div> */}
             <center className="text-white xl:text-4xl text-2xl mt-10">67.1% Circulating / 32.9% Burned / 20.08 BNB locked</center>
         </div>
 
