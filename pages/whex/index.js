@@ -136,7 +136,7 @@ const Index = () => {
             <div className="bg-black w-[90vw] rounded-lg mb-3" id="swhex">
                 <div className="flex flex-col justify-center items-center mt-4">
                     <div className="items-center">
-                        <center className=" text-sky-200 mt-8">BURN / CHARITY SALE COUNTDOWN</center>
+                        {/* <center className=" text-sky-200 mt-8">BURN / CHARITY SALE COUNTDOWN</center>
                         <div className="flex flex-row justify-center">
                             <div className="flex flex-col mt-6 mx-4">
                                 <center className="text-white">{timerDays}</center>
@@ -155,7 +155,7 @@ const Index = () => {
                                 <center className="  text-sky-200 mt-2">Seconds</center>
                             </div>
                             
-                        </div>
+                        </div> */}
                         <center className="text-white mt-14 mb-6"> 67.1% Circulating / 32.9% Burned / 20.08 BNB locked</center>
                     </div>
                 </div>
