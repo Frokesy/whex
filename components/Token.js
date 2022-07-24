@@ -3,9 +3,9 @@ import React from 'react'
 const Token = () => {
   return (
     <>
-     <span className="text-white text-[40px] font-mono text-center flex justify-center items-center font-semibold">Tokens</span>
-     <span className="text-gray-400 text-[20px] font-[serif] flex items-center text-center justify-center mb-[5vh]">Find out about the tokens in the whexcosystem</span>
-    <div className="grid grid-cols-3 w-[95vw] space-x-10 mx-auto justify-between">
+     <span className="text-white text-[30px] lg:text-[40px] font-mono text-center flex justify-center items-center font-semibold">Tokens</span>
+     <span className="text-gray-400 text-[15px] lg:text-[20px] font-[serif] flex items-center text-center justify-center mb-[5vh]">Find out about the tokens in the whexcosystem</span>
+    <div className="grid lg:grid-cols-3 grid-cols-1 w-[95vw] space-y-10 lg:space-y-0 lg:space-x-10 mx-auto justify-between">
         <div className="border border-gray-800 px-4 py-6 text-white">
             <div className="flex flex-row space-x-2 justify-center items-center">
                 <img src="/whale-exploder.png" alt="whex-logo" className="rounded-full lg:w-[4rem] md:w-[3rem] w-[3rem]" />
@@ -14,7 +14,7 @@ const Token = () => {
             <span className="flex justify-center text-gray-500 mt-4 text-[13px] font-normal">67.1% in circulation, 32.9% burned, 20.08 BNB locked</span>
                 <div>
                     <h2 className="flex justify-center text-gray-100 mt-6 text-[16px] font-bold">How to add {" "} <span className="text-teal-600 italic mx-2"> $whex </span> to your wallet?</h2>
-                    <span className="flex justify-center text-gray-500 text-[13px] font-normal items-center text-center w-[20vw] mx-auto mt-2">You need to add the token manually on MetaMask or Trust Wallet in order to view token.</span>
+                    <span className="flex justify-center text-gray-500 text-[13px] font-normal items-center text-center lg:w-[20vw] mx-auto mt-2">You need to add the token manually on MetaMask or Trust Wallet in order to view token.</span>
                     <div className="flex flex-col mx-4 space-y-3 mt-3">
                         <span className="text-[14px] font-mono font-semibold text-gray-400">
                             {">>"} Network: Binance Smart Chain
@@ -59,7 +59,7 @@ const Token = () => {
         <div className="border border-gray-800 px-4 py-6 text-white">
             <div className="flex flex-row space-x-2 justify-center items-center">
                 <img src="/logo.jpg" alt="whexdao-logo" className="rounded-full lg:w-[4rem] md:w-[3rem] w-[3rem]" />
-                <span className="text-[25px] font-mono font-bold text-white">whexcosystem DAO (whexdao)</span>
+                <span className="lg:text-[25px] text-[22px] font-mono font-bold text-white">whexcosystem DAO (whexdao)</span>
             </div>
             <div className="flex flex-col mx-4 space-y-3 mt-12">
                         <span className="text-[14px] font-mono font-semibold text-gray-400">

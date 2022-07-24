@@ -8,8 +8,8 @@ const Update = () => {
     <>
     <div className="bg-black h-full">
         <UpdateHeader />
-        <div className="bg-[url('/whale__three.gif')] bg-center bg-auto lg:bg-cover bg-no-repeat h-screen items-center justify-center">
-        <div className="pt-[40vh] w-[95vw] text-white text-[60px] justify-center font-mono items-center flex flex-col text-center">
+        <div className="bg-[url('/whale__three.gif')] bg-center bg-cover bg-no-repeat h-[50vh] lg:h-screen items-center justify-center">
+        <div className="lg:pt-[40vh] pt-[20vh] lg:w-[95vw] text-white text-[30px] w-[80vw] mx-auto lg:text-[60px] justify-center font-mono items-center flex flex-col text-center">
             <h2>Saving the <span className="text-teal-600">whales</span>,</h2>
             <span>one <span className="text-teal-600">transaction</span> at a time</span>
         </div>
@@ -20,10 +20,10 @@ const Update = () => {
         </div>
 
 
-    <div className="roadmap flex items-center justify-center w-[95vw] pt-[15vh]">
-           <span className="text-white text-[40px] font-mono font-semibold">Whexcosystem Roadmap - 2022</span>      
+    <div className="roadmap flex items-center justify-center lg:w-[95vw] pt-[10vh]">
+           <span className="text-white text-[25px] lg:text-[40px] font-mono font-semibold">Whexcosystem Roadmap - 2022</span>      
         </div>
-        <div className="roadmap-cards grid grid-cols-4 space-x-4 pt-[5vh] w-[95vw] mx-auto">
+        <div className="roadmap-cards grid grid-cols-1 lg:grid-cols-4 lg:space-y-0 space-y-10 lg:space-x-4 pt-[5vh] w-[90vw] lg:w-[95vw] mx-auto">
             <div className="border border-gray-800 px-4 py-6 text-white">
               <span className="text-[30px] font-mono font-bold text-gray-100">Q1</span>
               <div className="flex flex-col space-y-3 mt-10">
@@ -107,8 +107,8 @@ const Update = () => {
         </div>
 
         <div className="community mt-[15vh] mb-[5vh]">
-        <span className="text-white text-[40px] font-mono text-center flex justify-center items-center font-semibold">Community</span>
-        <span className="text-gray-400 text-[20px] font-[serif] flex items-center text-center justify-center mb-[5vh]">Connect with the fast growing whexcosystem, Join the community in saving the whales</span>
+        <span className="text-white text-[30px] lg:text-[40px] font-mono text-center flex justify-center items-center font-semibold">Community</span>
+        <span className="text-gray-400 text-[15px] px-6 lg:px-0 lg:text-[20px] font-[serif] flex items-center text-center justify-center mb-[5vh]">Connect with the fast growing whexcosystem, Join the community in saving the whales</span>
           <div className="flex items-center justify-center space-x-10">
           <div className="flex flex-row justify-center">
         <a href="https://twitter.com/whaleexploder">
