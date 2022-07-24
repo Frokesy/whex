@@ -26,9 +26,9 @@ const headerVariant = {
         <UpdateHeader />
         <div id="home" className="bg-[url('/whale__three.gif')] bg-center bg-cover bg-no-repeat h-[70vh] lg:h-screen items-center justify-center">
         <motion.div
-        variants={headerVariant}
-        initial="hidden"
-        animate="visible"
+        // variants={headerVariant}
+        // initial="hidden"
+        // animate="visible"
         className="lg:pt-[40vh] pt-[30vh] lg:w-[95vw] text-white text-[25px] w-[80vw] mx-auto lg:text-[60px] justify-center font-mono items-center flex flex-col text-center">
             <h2>Saving the <span className="text-teal-600">whales</span>,</h2>
             <span>one <span className="text-teal-600">transaction</span> at a time</span>
