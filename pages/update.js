@@ -8,17 +8,15 @@ const Update = () => {
 const headerVariant = {
   hidden: {
     y: 1000,
-    opacity: 0,
   },
   visible: {
     y: 0,
-    opacity: 1,
     transition: {
       duration: 0.5,
       mass: 0.5,
       stiffness: 200,
       type: 'spring',
-      damping: 8,
+      damping: 20,
     },
   }
 }
