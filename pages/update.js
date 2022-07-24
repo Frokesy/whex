@@ -2,26 +2,48 @@ import React from 'react'
 import Token from '../components/Token'
 import UpdateFooter from '../components/UpdateFooter'
 import UpdateHeader from '../components/UpdateHeader'
-
+import { motion } from 'framer-motion'
 const Update = () => {
+  
+const headerVariant = {
+  hidden: {
+    y: 1000,
+    opacity: 0,
+  },
+  visible: {
+    y: 0,
+    opacity: 1,
+    transition: {
+      duration: 0.5,
+      mass: 0.5,
+      stiffness: 200,
+      type: 'spring',
+      damping: 8,
+    },
+  }
+}
   return (
     <>
     <div className="bg-black h-full">
         <UpdateHeader />
-        <div className="bg-[url('/whale__three.gif')] bg-center bg-cover bg-no-repeat h-[70vh] lg:h-screen items-center justify-center">
-        <div className="lg:pt-[40vh] pt-[30vh] lg:w-[95vw] text-white text-[25px] w-[80vw] mx-auto lg:text-[60px] justify-center font-mono items-center flex flex-col text-center">
+        <div id="home" className="bg-[url('/whale__three.gif')] bg-center bg-cover bg-no-repeat h-[70vh] lg:h-screen items-center justify-center">
+        <motion.div
+        variants={headerVariant}
+        initial="hidden"
+        animate="visible"
+        className="lg:pt-[40vh] pt-[30vh] lg:w-[95vw] text-white text-[25px] w-[80vw] mx-auto lg:text-[60px] justify-center font-mono items-center flex flex-col text-center">
             <h2>Saving the <span className="text-teal-600">whales</span>,</h2>
             <span>one <span className="text-teal-600">transaction</span> at a time</span>
-        </div>
+        </motion.div>
     </div>
 
-    <div className="tokens pt-[10vh]">
+    <div className="tokens pt-[10vh]" id="tokens">
             <Token />
         </div>
 
 
     <div className="roadmap flex items-center justify-center lg:w-[95vw] pt-[10vh]">
-           <span className="text-white text-[25px] lg:text-[40px] font-mono font-semibold">Whexcosystem Roadmap - 2022</span>      
+           <span className="text-white text-[20px] lg:text-[40px] font-mono font-semibold">Whexcosystem Roadmap - 2022</span>      
         </div>
         <div className="roadmap-cards grid grid-cols-1 lg:grid-cols-4 lg:space-y-0 space-y-10 lg:space-x-4 pt-[5vh] w-[90vw] lg:w-[95vw] mx-auto">
             <div className="border border-gray-800 px-4 py-6 text-white">

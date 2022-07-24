@@ -4,11 +4,11 @@ const UpdateFooter = () => {
   return (
     <div>
       <div className="footer w-full flex flex-col lg:flex-row justify-between">
-        <div className="flex flex-col lg:flex-row w-[90vw] mx-auto lg:px-16 space-x-4 lg:space-x-8">
-            <img src="/peter_wake.jpg" alt="founder-pic" className="rounded-[50%] h-[10rem] w-[10rem] lg:h-[20rem] lg:w-[20rem]" />
+        <div className="flex flex-col lg:flex-row w-[90vw] mx-auto lg:px-4 space-x-4 lg:space-x-8">
+            <img src="/peter_wake.jpg" alt="founder-pic" className="rounded-[50%] h-[10rem] w-[10rem] lg:h-[15rem] lg:w-[15rem]" />
             <div className="flex flex-col lg:w-[25vw] text-gray-500">
             <h2 className="text-[30px] font-mono text-gray-400 font-mono font-bold">Peter Wake</h2>
-            <span className="text-[15px] font-mono text-teal-600 mb-6">Founder & CEO</span>
+            <span className="text-[15px] font-mono text-teal-600 mb-4">Founder & CEO</span>
             <span className="text-[13px] mb-4 font-mono font-semibold">
                 Peter Wake is a Mining Engineering graduate (2020) working full time in IT/Business Development at a construction company in Ottawa, Canada.
             </span>
@@ -21,10 +21,20 @@ const UpdateFooter = () => {
             </div>
         </div>
 
-        <div className="flex flex-col lg:flex-row justify-between w-[85vw] mx-auto lg:w-[75vw] lg:items-center lg:mx-10 lg:space-x-10 space-y-10 lg:space-y-0">
+        <div className="flex flex-col lg:flex-row w-[85vw] mx-auto lg:w-[100%] lg:items-center lg:space-x-10 lg:mx-10 space-y-10 lg:space-y-0">
+        <div className="flex flex-col text-white">
+        <span className="text-white text-[20px] font-mono font-bold">Docs</span>
+        <div className="w-[20vw] lg:w-[5vw] border border-teal-600"></div>
+          <div className="text-gray-400 font-mono mt-3 text-[13px] flex flex-col space-y-2">
+          <span>Whale Exploder White Paper</span>
+          <span>Whale Exploder Roadmap</span>
+          <span>Whale Exploder Audit</span>
+          </div>
+        </div>
+
         <div className="flex flex-col text-white ">
         <span className="text-white text-[18px] font-mono font-bold">Vote for us on the following platforms</span>
-        <div className="w-[20vw] border border-teal-600"></div>
+        <div className="w-[20vw] lg:w-[10vw] border border-teal-600"></div>
           <div className="text-gray-400 font-mono mt-3 text-[13px] flex flex-col space-y-2">
           <span>Coinsniper</span>
           <span>CoinGecko</span>
@@ -33,20 +43,9 @@ const UpdateFooter = () => {
           </div>
         </div>
 
-        <div className="flex flex-col text-white ">
-        <span className="text-white text-[20px] font-mono font-bold">Docs</span>
-        <div className="w-[20vw] border border-teal-600"></div>
-          <div className="text-gray-400 font-mono mt-3 text-[13px] flex flex-col space-y-2">
-          <span>Whitepaper</span>
-          <span>Roadmap</span>
-          <span>Whale Exploder Audit</span>
-          </div>
-        </div>
-
-
         <div className="">
         <span className="text-white text-[20px] font-mono font-bold">Tokens</span>
-        <div className="w-[20vw] border border-teal-600"></div>
+        <div className="w-[20vw] lg:w-[10vw] border border-teal-600"></div>
           <div className="text-gray-400 font-mono mt-3 text-[13px] flex flex-col space-y-2">
           <span>Whale Exploder ($whex)</span>
           <span>Whexy Whales (NFT)</span>

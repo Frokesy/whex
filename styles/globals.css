@@ -468,6 +468,10 @@ Ensure the default browser behavior of the `hidden` attribute.
   --tw-backdrop-sepia:  ;
 }
 
+.visible {
+  visibility: visible;
+}
+
 .fixed {
   position: fixed;
 }
@@ -658,8 +662,8 @@ Ensure the default browser behavior of the `hidden` attribute.
   height: 50%;
 }
 
-.h-\[50vh\] {
-  height: 50vh;
+.h-\[70vh\] {
+  height: 70vh;
 }
 
 .h-auto {
@@ -680,14 +684,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .h-\[10rem\] {
   height: 10rem;
-}
-
-.h-\[70vh\] {
-  height: 70vh;
-}
-
-.h-\[80vh\] {
-  height: 80vh;
 }
 
 .w-screen {
@@ -949,11 +945,6 @@ Ensure the default browser behavior of the `hidden` attribute.
   padding-bottom: 1vh;
 }
 
-.px-10 {
-  padding-left: 2.5rem;
-  padding-right: 2.5rem;
-}
-
 .px-3 {
   padding-left: 0.75rem;
   padding-right: 0.75rem;
@@ -964,8 +955,8 @@ Ensure the default browser behavior of the `hidden` attribute.
   padding-bottom: 0.5rem;
 }
 
-.pt-\[20vh\] {
-  padding-top: 20vh;
+.pt-\[30vh\] {
+  padding-top: 30vh;
 }
 
 .pt-\[10vh\] {
@@ -986,10 +977,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .pt-10 {
   padding-top: 2.5rem;
-}
-
-.pt-\[30vh\] {
-  padding-top: 30vh;
 }
 
 .text-center {
@@ -1027,12 +1014,16 @@ Ensure the default browser behavior of the `hidden` attribute.
   line-height: 2rem;
 }
 
-.text-\[30px\] {
-  font-size: 30px;
-}
-
 .text-\[25px\] {
   font-size: 25px;
+}
+
+.text-\[20px\] {
+  font-size: 20px;
+}
+
+.text-\[30px\] {
+  font-size: 30px;
 }
 
 .text-\[15px\] {
@@ -1061,10 +1052,6 @@ Ensure the default browser behavior of the `hidden` attribute.
   line-height: 1;
 }
 
-.text-\[20px\] {
-  font-size: 20px;
-}
-
 .text-\[14px\] {
   font-size: 14px;
 }
@@ -1079,6 +1066,11 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .text-\[18px\] {
   font-size: 18px;
+}
+
+.text-4xl {
+  font-size: 2.25rem;
+  line-height: 2.5rem;
 }
 
 .text-\[8px\] {
@@ -1165,6 +1157,12 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .opacity-75 {
   opacity: 0.75;
+}
+
+.shadow {
+  --tw-shadow: 0 1px 3px 0 rgb(0 0 0 / 0.1), 0 1px 2px -1px rgb(0 0 0 / 0.1);
+  --tw-shadow-colored: 0 1px 3px 0 var(--tw-shadow-color), 0 1px 2px -1px var(--tw-shadow-color);
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
 }
 
 .transition {
@@ -1257,10 +1255,6 @@ Ensure the default browser behavior of the `hidden` attribute.
     height: 100vh;
   }
 
-  .lg\:h-\[20rem\] {
-    height: 20rem;
-  }
-
   .lg\:w-\[40vw\] {
     width: 40vw;
   }
@@ -1301,16 +1295,20 @@ Ensure the default browser behavior of the `hidden` attribute.
     width: 20vw;
   }
 
-  .lg\:w-\[20rem\] {
-    width: 20rem;
-  }
-
   .lg\:w-\[25vw\] {
     width: 25vw;
   }
 
-  .lg\:w-\[75vw\] {
-    width: 75vw;
+  .lg\:w-\[100\%\] {
+    width: 100%;
+  }
+
+  .lg\:w-\[5vw\] {
+    width: 5vw;
+  }
+
+  .lg\:w-\[10vw\] {
+    width: 10vw;
   }
 
   .lg\:w-\[4\.5rem\] {
@@ -1374,6 +1372,11 @@ Ensure the default browser behavior of the `hidden` attribute.
   .lg\:px-0 {
     padding-left: 0px;
     padding-right: 0px;
+  }
+
+  .lg\:px-4 {
+    padding-left: 1rem;
+    padding-right: 1rem;
   }
 
   .lg\:px-16 {
