@@ -18,7 +18,7 @@ const UpdateHeader = () => {
   const btnRef = React.useRef()
   return (
     <>
-      <div className="flex flex-row mx-auto py-[1vh] bg-black justify-between opacity-75 px-10 lg:px-16 fixed w-screen">
+      <div className="flex flex-row mx-auto py-[1vh] bg-black justify-between opacity-75 px-6 lg:px-16 fixed w-screen">
         <div className="logo lg:text-[20px] md:text-[16px] text-[16px] flex justify-start lg:space-x-3 text-center text-white items-center font-mono font-bold">
             <img src="/logo.jpg" alt="logo" className='rounded-full lg:w-[4.5rem] md:w-[3rem] w-[3.5rem]'/>
             <h2>whexcosystem</h2>

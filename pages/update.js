@@ -8,7 +8,7 @@ const Update = () => {
     <>
     <div className="bg-black h-full">
         <UpdateHeader />
-        <div className="bg-[url('/whale__three.gif')] bg-center bg-cover bg-no-repeat h-[50vh] lg:h-screen items-center justify-center">
+        <div className="bg-[url('/whale__three.gif')] bg-center bg-cover bg-no-repeat h-[80vh] lg:h-screen items-center justify-center">
         <div className="lg:pt-[40vh] pt-[20vh] lg:w-[95vw] text-white text-[30px] w-[80vw] mx-auto lg:text-[60px] justify-center font-mono items-center flex flex-col text-center">
             <h2>Saving the <span className="text-teal-600">whales</span>,</h2>
             <span>one <span className="text-teal-600">transaction</span> at a time</span>
