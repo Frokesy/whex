@@ -21,7 +21,7 @@ const UpdateFooter = () => {
             </div>
         </div>
 
-        <div className="flex flex-col lg:flex-row w-[85vw] mx-auto lg:w-[100%] lg:items-center lg:space-x-10 lg:mx-10 space-y-10 lg:space-y-0">
+        <div className="flex flex-col lg:flex-row w-[85vw] justify-between mx-auto lg:w-[50vw] lg:items-center lg:space-x-10 lg:mx-10 space-y-10 lg:space-y-0">
         <div className="flex flex-col text-white">
         <span className="text-white text-[20px] font-mono font-bold">Docs</span>
         <div className="w-[20vw] lg:w-[5vw] border border-teal-600"></div>
@@ -29,17 +29,6 @@ const UpdateFooter = () => {
           <span>Whale Exploder White Paper</span>
           <span>Whale Exploder Roadmap</span>
           <span>Whale Exploder Audit</span>
-          </div>
-        </div>
-
-        <div className="flex flex-col text-white ">
-        <span className="text-white text-[18px] font-mono font-bold">Vote for us on the following platforms</span>
-        <div className="w-[20vw] lg:w-[10vw] border border-teal-600"></div>
-          <div className="text-gray-400 font-mono mt-3 text-[13px] flex flex-col space-y-2">
-          <span>Coinsniper</span>
-          <span>CoinGecko</span>
-          <span>CoinMarketCap</span>
-          <span>Coinbase</span>
           </div>
         </div>
 
@@ -58,6 +47,7 @@ const UpdateFooter = () => {
         </div>
         <div className="footer bg-black w-full flex justify-between mt-[5vh]">
         <span className="text-gray-400 font-mono font-bold mt-4 flex justify-center lg:justify-end mb-6 lg:mb-0 text-[18px] mx-[13vw]">&copy; Whexcosystem 2022</span>
+        
         <div className="lg:flex hidden flex-row justify-end mx-[10vw]">
         <a href="https://twitter.com/whaleexploder">
         <img src="/twitter.svg" alt="" className="w-[2rem] h-[2rem] my-4 mx-5" />

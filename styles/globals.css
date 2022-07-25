@@ -891,6 +891,11 @@ Ensure the default browser behavior of the `hidden` attribute.
   background-color: rgb(17 94 89 / var(--tw-bg-opacity));
 }
 
+.bg-teal-600 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(13 148 136 / var(--tw-bg-opacity));
+}
+
 .bg-\[url\(\'\/whale__three\.gif\'\)\] {
   background-image: url('/whale__three.gif');
 }
@@ -1299,8 +1304,8 @@ Ensure the default browser behavior of the `hidden` attribute.
     width: 25vw;
   }
 
-  .lg\:w-\[100\%\] {
-    width: 100%;
+  .lg\:w-\[50vw\] {
+    width: 50vw;
   }
 
   .lg\:w-\[5vw\] {

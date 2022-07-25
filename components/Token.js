@@ -1,6 +1,10 @@
-import React from 'react'
+import React,{ useState} from 'react'
+import { motion } from 'framer-motion'
+
 
 const Token = () => {
+    const [isVisible, setIsVisible] = useState(false)
+
   return (
     <>
      <span className="text-white text-[30px] lg:text-[40px] font-mono text-center flex justify-center items-center font-semibold">Tokens</span>
@@ -12,7 +16,9 @@ const Token = () => {
                 <span className="text-[25px] font-mono font-bold text-white">whale exploder ($whex)</span>
             </div>
             <span className="flex justify-center text-gray-500 mt-4 text-[13px] font-normal">67.1% in circulation, 32.9% burned, 20.08 BNB locked</span>
-                <div>
+                <motion.div 
+                 layout
+                 transition={{ layout: { duration: 0.5 } }}>
                     <h2 className="flex justify-center text-gray-100 mt-6 text-[16px] font-bold">How to add {" "} <span className="text-teal-600 italic mx-2"> $whex </span> to your wallet?</h2>
                     <span className="flex justify-center text-gray-500 text-[13px] font-normal items-center text-center lg:w-[20vw] mx-auto mt-2">You need to add the token manually on MetaMask or Trust Wallet in order to view token.</span>
                     <div className="flex flex-col mx-4 space-y-3 mt-3">
@@ -32,10 +38,35 @@ const Token = () => {
                             {">>"} Decimals: 9
                         </span>
                     </div>
-                        <div className="flex justify-end">
-                        <button className="bg-teal-800 mt-8 font-light text-white rounded-lg font-mono text-[11px] px-6 py-4">Click to expand</button>
+                    {isVisible && (
+                        <motion.div
+                        initial={{ 
+                            y: 0,
+                            opacity: 0,
+                         }}
+                        animate={{ 
+                            y: 15,
+                            opacity: 1, 
+                        }}
+                        transition={{ 
+                            duration: 0.5
+                         }}
+                        >
+                            <h2>Hello World, we are here now</h2>
+                            <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum velit, quidem autem tempore non rem ea cupiditate repellat rerum nulla?</span>
+                        </motion.div>
+                    )}
+                        <div 
+                        className="flex justify-end"
+                        onClick={() => setIsVisible(!isVisible)}
+                        >
+                            {isVisible ? (
+                              <button className="bg-teal-800 mt-8 font-light text-white rounded-lg font-mono text-[11px] px-6 py-4">Click to hide</button>
+                            ) : (
+                                <button className="bg-teal-800 mt-8 font-light text-white rounded-lg font-mono text-[11px] px-6 py-4">Click to expand</button>
+                            )}
                         </div>
-                </div>
+                </motion.div>
         </div>
 
         <div className="border border-gray-800 px-4 py-6 text-white">

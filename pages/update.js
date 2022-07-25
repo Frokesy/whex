@@ -1,10 +1,11 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import Token from '../components/Token'
 import UpdateFooter from '../components/UpdateFooter'
 import UpdateHeader from '../components/UpdateHeader'
 import { motion } from 'framer-motion'
-const Update = () => {
-  
+import { useInView } from 'react-intersection-observer'
+import { useAnimation } from 'framer-motion'
+
 const headerVariant = {
   hidden: {
     y: 1000,
@@ -20,6 +21,28 @@ const headerVariant = {
     },
   }
 }
+
+const Update = () => {
+ 
+  const [ref, inView] = useInView({
+    threshold: 0.5,
+    triggerOnce: true,
+  })
+
+
+  const animation = useAnimation()
+  useEffect(() => {
+    console.log("inView status:", inView);
+    if (inView) {
+      animation.start('visible');
+      console.log("inView status:", inView);
+    } else if (!inView) {
+      animation.start('hidden');
+      console.log("inView status:", inView);
+
+    }
+  }, [animation, inView]);
+
   return (
     <>
     <div className="bg-black h-full">
@@ -35,12 +58,11 @@ const headerVariant = {
         </motion.div>
     </div>
 
-    <div className="tokens pt-[10vh]" id="tokens">
+    <div className="tokens pt-[10vh]" id="tokens" ref={ref}>
             <Token />
         </div>
 
-
-    <div className="roadmap flex items-center justify-center lg:w-[95vw] pt-[10vh]">
+    {/* <div className="roadmap flex items-center justify-center lg:w-[95vw] pt-[10vh]">
            <span className="text-white text-[20px] lg:text-[40px] font-mono font-semibold">Whexcosystem Roadmap - 2022</span>      
         </div>
         <div className="roadmap-cards grid grid-cols-1 lg:grid-cols-4 lg:space-y-0 space-y-10 lg:space-x-4 pt-[5vh] w-[90vw] lg:w-[95vw] mx-auto">
@@ -124,7 +146,7 @@ const headerVariant = {
                   </span>
               </div>
             </div>
-        </div>
+        </div> */}
 
         <div className="community mt-[15vh] mb-[5vh]">
         <span className="text-white text-[30px] lg:text-[40px] font-mono text-center flex justify-center items-center font-semibold">Community</span>
