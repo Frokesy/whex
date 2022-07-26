@@ -23,9 +23,9 @@ const UpdateHeader = () => {
       opacity: 0,
     },
     visible: {
-      opacity: 1,
+      opacity: 0.75,
       transition: {
-        delay: 1,
+        delay: 0.2,
         ease: 'easeInOut',
       },
     },
@@ -87,7 +87,7 @@ const UpdateHeader = () => {
             </motion.span>
             </Link>
 
-            <Link href="#roadmap">
+            <Link href="/roadmap">
             <motion.span
                 variants={linkVariants}
                 whileHover="hover"
@@ -150,24 +150,29 @@ const UpdateHeader = () => {
             <DrawerBody
             py="3vh"
             >
-              <div className="grid grid-cols-3 gap-y-6 mt-[2vh] text-gray-400 font-mono">
+              <div className="grid grid-cols-3 gap-y-10 mt-[3vh] text-gray-400 font-mono">
               <Link href="/">
                   Home
               </Link>
-              <Link href="/">
+              <Link href="#tokens">
                   Tokens
               </Link>
-              <Link href="/">
+              <Link href="/roadmap">
                   Roadmap
               </Link>
-              <Link href="/">
+              <Link href="#community">
                   Community
               </Link>
-              <Link href="/">
-                  Whitepaper
-              </Link>
+              <a href="/pdf/whitepaper.pdf" target="_blank" rel="noopener noreferrer">
+                Whitepaper
+              </a>
               <div className="items-center flex">
-                <button className="bg-teal-800 font-light text-white rounded-lg font-mono text-[8px] px-2 py-2">Join our podcast</button>
+              <motion.button
+                variants={buttonVariants}
+                whileHover="hover" 
+                className="bg-teal-800 font-light text-white rounded-lg font-mono text-[10px] px-2 py-3">
+                  <a href="https://socialchats.co/event/nftsforacause-eps-21-chat-w-peterdwake-of-the-whale-exploder-ecosystem-whexcosystem/" target="blank" >Join our podcast</a>
+              </motion.button>
               </div>
               </div>
             </DrawerBody>

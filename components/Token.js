@@ -7,7 +7,7 @@ const Token = () => {
 
   return (
     <>
-     <span className="text-white text-[30px] lg:text-[40px] font-mono text-center flex justify-center items-center font-semibold">Tokens</span>
+     <span className="text-white text-[30px] lg:text-[40px] font-mono text-center flex justify-center items-center font-semibold" >Tokens</span>
      <span className="text-gray-400 text-[15px] lg:text-[20px] font-[serif] flex items-center text-center justify-center mb-[5vh]">Find out about the tokens in the whexcosystem</span>
     <div className="grid lg:grid-cols-3 grid-cols-1 w-[95vw] space-y-10 lg:space-y-0 lg:space-x-10 mx-auto justify-between">
         <div className="border border-gray-800 px-4 py-6 text-white">

@@ -634,6 +634,14 @@ Ensure the default browser behavior of the `hidden` attribute.
   margin-top: 2vh;
 }
 
+.mt-20 {
+  margin-top: 5rem;
+}
+
+.mt-\[3vh\] {
+  margin-top: 3vh;
+}
+
 .flex {
   display: flex;
 }
@@ -684,6 +692,10 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .h-\[10rem\] {
   height: 10rem;
+}
+
+.h-\[80vh\] {
+  height: 80vh;
 }
 
 .w-screen {
@@ -794,6 +806,14 @@ Ensure the default browser behavior of the `hidden` attribute.
   row-gap: 1.5rem;
 }
 
+.gap-y-14 {
+  row-gap: 3.5rem;
+}
+
+.gap-y-10 {
+  row-gap: 2.5rem;
+}
+
 .space-y-6 > :not([hidden]) ~ :not([hidden]) {
   --tw-space-y-reverse: 0;
   margin-top: calc(1.5rem * calc(1 - var(--tw-space-y-reverse)));
@@ -891,11 +911,6 @@ Ensure the default browser behavior of the `hidden` attribute.
   background-color: rgb(17 94 89 / var(--tw-bg-opacity));
 }
 
-.bg-teal-600 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(13 148 136 / var(--tw-bg-opacity));
-}
-
 .bg-\[url\(\'\/whale__three\.gif\'\)\] {
   background-image: url('/whale__three.gif');
 }
@@ -958,6 +973,11 @@ Ensure the default browser behavior of the `hidden` attribute.
 .py-2 {
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
+}
+
+.py-3 {
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
 }
 
 .pt-\[30vh\] {
@@ -1080,6 +1100,10 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .text-\[8px\] {
   font-size: 8px;
+}
+
+.text-\[9px\] {
+  font-size: 9px;
 }
 
 .font-light {
