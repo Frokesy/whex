@@ -39,7 +39,6 @@ const UpdateFooter = () => {
           <span>Whale Exploder ($whex)</span>
           <span>Whexy Whales (NFT)</span>
           <span>Whexcosystem DAO (whexdao)</span>
-          <span>Coinbase</span>
           </div>
         </div>
         </div>
