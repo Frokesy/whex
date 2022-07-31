@@ -205,7 +205,8 @@ const Update = () => {
                             duration: 0.5
                          }}
                         >
-                                                  <span className="text-[14px] font-mono font-semibold text-gray-400">
+                         <div className="flex flex-col mx-4 space-y-3 mt-4">
+                        <span className="text-[14px] font-mono font-semibold text-gray-400">
                             {">>"} Holders of the polygon WHEXy Whales will be airdropped the Ethereum equivalent upon mint out of the Ethereum collection. The snapshot of the polygon holders will be taken upon mint out. This means if you buy the polygon WHEXy whale on OpenSea before then, you will get that WHEXy whale on Ethereum.
                         </span>
                      <span className="text-[14px] font-mono font-semibold text-gray-400">
@@ -230,6 +231,7 @@ const Update = () => {
                             )}
                         </div>
                     </div>
+                   </div>
         </motion.div>
 
         <motion.div 
