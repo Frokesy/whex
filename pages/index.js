@@ -218,7 +218,8 @@ const Update = () => {
                         <span className="text-[14px] font-mono font-semibold text-gray-400">
                             {">>"} Polygon collection <a href="https://opensea.io/collection/whexy-whales" className="text-teal-600 underline underline-offset-1">https://opensea.io/collection/whexy-whales</a>
                         </span>
-                        </motion.div>
+                       </div>
+                      </motion.div>
                     )}
                         <div 
                         className="flex justify-end"
@@ -231,7 +232,6 @@ const Update = () => {
                             )}
                         </div>
                     </div>
-                   </div>
         </motion.div>
 
         <motion.div 
