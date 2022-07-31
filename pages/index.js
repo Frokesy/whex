@@ -176,12 +176,20 @@ const Update = () => {
                 <img src="/whexy.png" alt="whexy-logo" className="rounded-full lg:w-[4rem] md:w-[3rem] w-[3rem]" />
                 <span className="text-[25px] font-mono font-bold text-white">whexy whales (NFT)</span>
             </div>
-            <div className="flex flex-col mx-4 space-y-3 mt-20">
+            <span className="flex justify-center text-gray-500 mt-4 text-[13px] font-normal">WHEXy Whale Mint Update!</span>
+
+            <div className="flex flex-col mx-4 space-y-3 mt-4">
                         <span className="text-[14px] font-mono font-semibold text-gray-400">
-                            {">>"} WHEXy Whales is an NFT project consisting of 4800 unique Whales with different traits like hats, glasses, shirts, backgrounds, etc.
+                            {">>"} We have decided to relaunch the collection on Ethereum and stopped the polygon mint
                         </span>
                         <span className="text-[14px] font-mono font-semibold text-gray-400">
-                            {">>"} Minting & Royalties (How they will be used?): 25% will buy WHEX and after every 100 mints there will be a draw for <span className="text-teal-600">1500 MATIC</span>($863 USD) of WHEX split between 10 lucky WHEXy Whale holders! 
+                            {">>"} WHEXy Whales is an NFT project consisting of 4800 unique Whales with different traits like hats, glasses, shirts, backgrounds, etc 
+                        </span>
+                        <span className="text-[14px] font-mono font-semibold text-gray-400">
+                            {">>"} Minting now for 0.03 ETH <a href="https://app.niftykit.com/drops/WHEXY" className="text-teal-600 underline underline-offset-1">https://app.niftykit.com/drops/WHEXY</a>
+                        </span>
+                        <span className="text-[14px] font-mono font-semibold text-gray-400">
+                            {">>"} The first 1943 of the Ethereum WHEXy whales will be minted onto: 0xc42d122C8EF2562873804Ab0dC6CE3Cba5283523 
                         </span>
                         {isWhexyVisible && (
                         <motion.div
@@ -197,11 +205,17 @@ const Update = () => {
                             duration: 0.5
                          }}
                         >
+                                                  <span className="text-[14px] font-mono font-semibold text-gray-400">
+                            {">>"} Holders of the polygon WHEXy Whales will be airdropped the Ethereum equivalent upon mint out of the Ethereum collection. The snapshot of the polygon holders will be taken upon mint out. This means if you buy the polygon WHEXy whale on OpenSea before then, you will get that WHEXy whale on Ethereum.
+                        </span>
                      <span className="text-[14px] font-mono font-semibold text-gray-400">
-                            {">>"} 25% to marketing and administrative costs (website, paid promotion, hiring mods/community managers, etc) 25% will be donated to Save The Whales! Learn more about the work they do here:<a href="https://savethewhales.org" className="text-teal-600 underline underline-offset-1">https://savethewhales.org</a> 25% founder pay
+                            {">>"} 25% to marketing and administrative costs (website, paid promotion, hiring mods/community managers, etc) 25% will buy WHEX for random giveaways to holders! Learn more about the work they do here:<a href="https://savethewhales.org" className="text-teal-600 underline underline-offset-1">https://savethewhales.org</a> 25% founder pay, 25% to whale conservation charities
                         </span>
                         <span className="text-[14px] font-mono font-semibold text-gray-400">
                             {">>"} Transacted after each 100 mints, or for royalties, each $1000 accumulated
+                        </span>
+                        <span className="text-[14px] font-mono font-semibold text-gray-400">
+                            {">>"} Polygon collection <a href="https://opensea.io/collection/whexy-whales" className="text-teal-600 underline underline-offset-1">https://opensea.io/collection/whexy-whales</a>
                         </span>
                         </motion.div>
                     )}
