@@ -82,7 +82,9 @@ const Update = () => {
 
     <motion.div
        animate={animation} ref={ref} 
-       className="grid lg:grid-cols-3 grid-cols-1 w-[95vw] space-y-10 lg:space-y-0 lg:space-x-10 mx-auto justify-between">
+       className="grid lg:grid-cols-3 grid-cols-1 w-[95vw] space-y-10 lg:space-y-0 lg:space-x-10 mx-auto justify-between"
+       id="whex"
+       >
         <div className="border border-gray-800 px-4 py-6 text-white">
             <div className="flex flex-row space-x-2 justify-center items-center">
                 <img src="/whale-exploder.png" alt="whex-logo" className="rounded-full lg:w-[4rem] md:w-[3rem] w-[3rem]" />
@@ -171,7 +173,9 @@ const Update = () => {
         <motion.div 
         layout
         transition={{ layout: { duration: 0.5 } }}
-        className="border border-gray-800 px-4 py-6 text-white">
+        className="border border-gray-800 px-4 py-6 text-white"
+        id="whexy"
+        >
             <div className="flex flex-row space-x-2 justify-center items-center">
                 <img src="/whexy.png" alt="whexy-logo" className="rounded-full lg:w-[4rem] md:w-[3rem] w-[3rem]" />
                 <span className="text-[25px] font-mono font-bold text-white">whexy whales (NFT)</span>
@@ -186,7 +190,7 @@ const Update = () => {
                             {">>"} WHEXy Whales is an NFT project consisting of 4800 unique Whales with different traits like hats, glasses, shirts, backgrounds, etc 
                         </span>
                         <span className="text-[14px] font-mono font-semibold text-gray-400">
-                            {">>"} Minting now for 0.03 ETH <a href="https://app.niftykit.com/drops/WHEXY" className="text-teal-600 underline underline-offset-1">https://app.niftykit.com/drops/WHEXY</a>
+                            {">>"} Minting now for 0.01 ETH <a href="https://app.niftykit.com/drops/WHEXY" className="text-teal-600 underline underline-offset-1">https://app.niftykit.com/drops/WHEXY</a>
                         </span>
                         <span className="text-[14px] font-mono font-semibold text-gray-400">
                             {">>"} The first 1943 of the Ethereum WHEXy whales will be minted onto: 0xc42d122C8EF2562873804Ab0dC6CE3Cba5283523 
@@ -237,7 +241,9 @@ const Update = () => {
         <motion.div 
             layout
             transition={{ layout: { duration: 0.5 } }}
-            className="border border-gray-800 px-4 py-6 text-white">
+            className="border border-gray-800 px-4 py-6 text-white"
+            id="whexdao"
+            >
             <div className="flex flex-row space-x-2 justify-center items-center">
                 <img src="/logo.jpg" alt="whexdao-logo" className="rounded-full lg:w-[4rem] md:w-[3rem] w-[3rem]" />
                 <span className="lg:text-[25px] text-[22px] font-mono font-bold text-white">whexcosystem DAO (whexdao)</span>

@@ -1,4 +1,19 @@
+import Link from 'next/link'
 import React from 'react'
+import { motion } from 'framer-motion'
+
+const linkVariants = {
+  hover: {
+    scale: 1.1,
+    color: 'white',
+    originX: 0,
+    transition: {
+      duration: 0.1,
+      type: 'tween',
+      stiffness: 200,
+    },
+  }
+}
 
 const UpdateFooter = () => {
   return (
@@ -25,20 +40,73 @@ const UpdateFooter = () => {
         <div className="flex flex-col text-white">
         <span className="text-white text-[20px] font-mono font-bold">Docs</span>
         <div className="w-[20vw] lg:w-[5vw] border border-teal-600"></div>
-          <div className="text-gray-400 font-mono mt-3 text-[13px] flex flex-col space-y-2">
-          <span>Whale Exploder White Paper</span>
-          <span>Whale Exploder Roadmap</span>
-          <span>Whale Exploder Audit</span>
+          <div className="text-gray-400 font-mono cursor-pointer mt-3 text-[13px] flex flex-col space-y-2">
+          <Link 
+          href="/pdf/whitepaper.pdf" 
+          passHref
+          >
+            <motion.span           
+            variants={linkVariants}
+            whileHover="hover"
+            >Whale Exploder White Paper</motion.span>
+          </Link>
+          
+          <Link 
+          href="/roadmap" 
+          passHref
+          >
+            <motion.span
+            variants={linkVariants}
+            whileHover="hover"
+            >Whale Exploder Roadmap</motion.span>
+          </Link>
+          
+          <Link 
+          href="/pdf/Whex_audit_Aleksandr_Pletnev_July-29-2021.pdf" 
+          passHref
+          >
+            <motion.span
+            variants={linkVariants}
+            whileHover="hover"
+            >Whale Exploder Audit</motion.span>
+          </Link>
           </div>
         </div>
 
         <div className="">
         <span className="text-white text-[20px] font-mono font-bold">Tokens</span>
         <div className="w-[20vw] lg:w-[10vw] border border-teal-600"></div>
-          <div className="text-gray-400 font-mono mt-3 text-[13px] flex flex-col space-y-2">
-          <span>Whale Exploder ($whex)</span>
-          <span>Whexy Whales (NFT)</span>
-          <span>Whexcosystem DAO (whexdao)</span>
+          <div className="text-gray-400 font-mono mt-3 cursor-pointer text-[13px] flex flex-col space-y-2">
+          <Link 
+          href="#whex" passHref
+          >
+            <motion.span
+            variants={linkVariants}
+            whileHover="hover"
+            >
+              Whale Exploder ($whex)</motion.span>
+          </Link>
+          
+          <Link
+          href="#whexy" 
+          passHref
+          >
+            <motion.span     
+            variants={linkVariants}
+            whileHover="hover"
+            >
+              Whexy Whales (NFT)</motion.span>
+          </Link>
+          
+          <Link 
+          href="#whexdao" 
+          passHref
+          >
+            <motion.span
+            variants={linkVariants}
+            whileHover="hover"
+            >Whexcosystem DAO (whexdao)</motion.span>
+          </Link>
           </div>
         </div>
         </div>
