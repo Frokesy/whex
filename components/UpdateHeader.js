@@ -118,14 +118,6 @@ const UpdateHeader = () => {
             </motion.span>
               
           </div>
-        <div className="items-center lg:flex hidden">
-            <motion.button
-             variants={buttonVariants}
-             whileHover="hover"
-             className="bg-teal-800 font-light text-white rounded-lg font-mono text-[11px] px-3 py-4">
-              <a href="https://socialchats.co/event/nftsforacause-eps-21-chat-w-peterdwake-of-the-whale-exploder-ecosystem-whexcosystem/" target="blank" >Join our podcast</a>
-            </motion.button>
-        </div>
         
          {/**Mobile Navbar */}   
           <div className="lg:hidden md:hidden">
@@ -166,14 +158,6 @@ const UpdateHeader = () => {
               <a href="/pdf/whitepaper.pdf" target="_blank" rel="noopener noreferrer">
                 Whitepaper
               </a>
-              <div className="items-center flex">
-              <motion.button
-                variants={buttonVariants}
-                whileHover="hover" 
-                className="bg-teal-800 font-light text-white rounded-lg font-mono text-[10px] px-2 py-3">
-                  <a href="https://socialchats.co/event/nftsforacause-eps-21-chat-w-peterdwake-of-the-whale-exploder-ecosystem-whexcosystem/" target="blank" >Join our podcast</a>
-              </motion.button>
-              </div>
               </div>
             </DrawerBody>
           </DrawerContent>

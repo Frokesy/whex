@@ -6,6 +6,7 @@ import { motion } from 'framer-motion'
 import { useInView } from 'react-intersection-observer'
 import { useAnimation, AnimatePresence } from 'framer-motion'
 import Meta from './defaults/Meta'
+import EmberScript from './EmberScript'
 
 const headerVariant = {
   hidden: {
@@ -238,6 +239,7 @@ const Update = () => {
                     </div>
         </motion.div>
 
+          <EmberScript />
         <motion.div 
             layout
             transition={{ layout: { duration: 0.5 } }}
