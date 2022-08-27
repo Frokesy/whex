@@ -191,7 +191,7 @@ const Update = () => {
                             {">>"} WHEXy Whales is an NFT project consisting of 4800 unique Whales with different traits like hats, glasses, shirts, backgrounds, etc 
                         </span>
                         <span className="text-[14px] font-mono font-semibold text-gray-400">
-                            {">>"} Minting now for 0.01 ETH <a href="https://app.niftykit.com/drops/WHEXY" className="text-teal-600 underline underline-offset-1">https://app.niftykit.com/drops/WHEXY</a>
+                            {">>"} Minting now for 0.03 ETH <a href="https://app.niftykit.com/drops/WHEXY" className="text-teal-600 underline underline-offset-1">https://app.niftykit.com/drops/WHEXY</a>
                         </span>
                         <span className="text-[14px] font-mono font-semibold text-gray-400">
                             {">>"} The first 1943 of the Ethereum WHEXy whales will be minted onto: 0xc42d122C8EF2562873804Ab0dC6CE3Cba5283523 
