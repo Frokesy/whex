@@ -250,7 +250,7 @@ const Update = () => {
                 <img src="/logo.jpg" alt="whexdao-logo" className="rounded-full lg:w-[4rem] md:w-[3rem] w-[3rem]" />
                 <span className="lg:text-[25px] text-[22px] font-mono font-bold text-white">whexcosystem DAO (whexdao)</span>
             </div>
-            <div className="flex flex-col mx-4 space-y-3 mt-12">
+            <div className="flex flex-col mx-4 space-y-3 mt-6">
                         <span className="text-[14px] font-mono font-semibold text-gray-400">
                             {">>"} Network: Binance Smart Chain
                         </span>
@@ -269,6 +269,12 @@ const Update = () => {
                         <span className="text-[14px] font-mono font-semibold text-gray-400">
                             {">>"} Stockpile Address: 0x0D7079098C8feb4F4AEF40703CE83eCc704f371d
                         </span>
+                        <span className="text-[14px] font-mono font-semibold text-gray-400">
+                            {">>"} Private Sales: 200,000,000
+                        </span>
+                        <span className="text-[14px] font-mono font-semibold text-gray-400">
+                            {">>"} Presale(dxscale): 250,000,000
+                        </span>
                     </div>
                     {isDaoVisible && (
                         <motion.div
@@ -284,10 +290,19 @@ const Update = () => {
                             duration: 0.5
                          }}
                         >
-                    <div className="flex flex-col mx-4 space-y-3 mt-3">
-                    <h2 className="flex text-gray-100 mt-6 text-[20px] font-mono font-bold">Voting Mechanism</h2>
+                    <div className="flex flex-col mx-4 space-y-3">
+                    <span className="text-[14px] font-mono font-semibold text-gray-400">
+                            {">>"} Airdrop to WHEX holders (on completion of presale): 100,000,000
+                        </span>
+                        <span className="text-[14px] font-mono font-semibold text-gray-400">
+                            {">>"} Liquidity Pool: 250,000,000
+                        </span>
+                        <span className="text-[14px] font-mono font-semibold text-gray-400">
+                            {">>"} Airdrop to WHEXy Whales (on mint out): 199,995,591
+                        </span>
+                    <h2 className="flex text-gray-100 pt-8 text-[20px] font-mono font-bold">Voting Mechanism</h2>
                         <span className="text-[12px] font-mono font-semibold text-gray-400">
-                            {">>"} A voting cycle is initiated by Peter Wake, or by a WHEXDAO holder sending 1 BNB to the Stockpile address. This gives holders the power to create their own votes for the dao, and covers time and expenses of sending out the new tokens, as well as discouraging frivolous votes to get more WHEXDAO in circulation.
+                            {">>"}A voting cycle is initiated by Peter Wake, or by someone sending 4800 WHEXDAO tokens to the stockpile address and proposing a question to Peter Wake, who will then set up the voting addresses.
                         </span>
                         <span className="text-[12px] font-mono font-semibold text-gray-400">
                             {">>"}  WHEXDAO tokens are sent out from the Stockpile to holders of WHEXy Whales at a rate of 1 WHEXDAO per 1 WHEXy Whale.
