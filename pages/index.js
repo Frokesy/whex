@@ -1,7 +1,7 @@
 import React, { useEffect, useState, useRef } from 'react'
 import Token from '../components/Token'
-import UpdateFooter from '../components/UpdateFooter'
-import UpdateHeader from '../components/UpdateHeader'
+import Footer from '../components/Footer'
+import Header from '../components/Header'
 import { motion } from 'framer-motion'
 import { useInView } from 'react-intersection-observer'
 import { useAnimation, AnimatePresence } from 'framer-motion'
@@ -60,7 +60,7 @@ const Update = () => {
     <>
       <Meta title="WHEXcosystem || Home Page" />
     <div className="bg-black h-full">
-        <UpdateHeader />
+        <Header />
         <div id="home" className="bg-[url('/whale__three.gif')] bg-center bg-cover bg-no-repeat h-[80vh] lg:h-screen items-center justify-center">
         <motion.div
         // variants={headerVariant}
@@ -452,7 +452,7 @@ const Update = () => {
           </div>
         </motion.div>
 
-        <UpdateFooter />
+        <Footer />
     </div>
     </>
   )
