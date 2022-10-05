@@ -24,7 +24,7 @@ const headerVariant = {
   }
 }
 
-const Update = () => {
+const Home = () => {
   const [isVisible, setIsVisible] = useState(false)
   const [isWhexyVisible, setIsWhexyVisible] = useState(false)
   const [isDaoVisible, setIsDaoVisible] = useState(false)
@@ -177,20 +177,26 @@ const Update = () => {
                 <img src="/whexy.png" alt="whexy-logo" className="rounded-full lg:w-[4rem] md:w-[3rem] w-[3rem]" />
                 <span className="text-[25px] font-mono font-bold text-white">whexy whales (NFT)</span>
             </div>
-            <span className="flex justify-center text-gray-500 mt-4 text-[13px] font-normal">WHEXy Whale Mint Update!</span>
+            <span className="flex justify-center text-center text-gray-500 mt-4 text-[13px] font-normal">WHEXy Whales is an NFT project consisting of 4800 unique Whales with different traits like hats, glasses, shirts, backgrounds, etc</span>
 
             <div className="flex flex-col mx-4 space-y-3 mt-4">
-                        <span className="text-[14px] font-mono font-semibold text-gray-400">
-                            {">>"} We have decided to relaunch the collection on Ethereum and stopped the polygon mint
+                        <span className="text-[18px] font-mono font-bold text-gray-400">
+                            Minting &amp; Royalties (How they will be used):
                         </span>
                         <span className="text-[14px] font-mono font-semibold text-gray-400">
-                            {">>"} WHEXy Whales is an NFT project consisting of 4800 unique Whales with different traits like hats, glasses, shirts, backgrounds, etc 
+                            {">>"} 25% to whale conservation charities 
                         </span>
                         <span className="text-[14px] font-mono font-semibold text-gray-400">
-                            {">>"} Minting now for 0.03 ETH <a href="https://app.niftykit.com/drops/WHEXY" className="text-teal-600 underline underline-offset-1">https://app.niftykit.com/drops/WHEXY</a>
+                            {">>"} 25% buys WHEX for WHEXDAO staking pools.
                         </span>
                         <span className="text-[14px] font-mono font-semibold text-gray-400">
-                            {">>"} The first 1943 of the Ethereum WHEXy whales will be minted onto: 0xc42d122C8EF2562873804Ab0dC6CE3Cba5283523 
+                            {">>"} 25% to marketing and administrative costs 
+                        </span>
+                        <span className="text-[14px] font-mono font-semibold text-gray-400">
+                            {">>"} 25% founder pay 
+                        </span>
+                        <span className="text-[14px] font-mono font-semibold text-gray-400">
+                            {">>"} Transacted after each 100 mints, or for royalties, each $1000 accumulated 
                         </span>
                         {isWhexyVisible && (
                         <motion.div
@@ -207,17 +213,47 @@ const Update = () => {
                          }}
                         >
                          <div className="flex flex-col mx-4 space-y-3 mt-4">
-                        <span className="text-[14px] font-mono font-semibold text-gray-400">
-                            {">>"} Holders of the polygon WHEXy Whales will be airdropped the Ethereum equivalent upon mint out of the Ethereum collection. The snapshot of the polygon holders will be taken upon mint out. This means if you buy the polygon WHEXy whale on OpenSea before then, you will get that WHEXy whale on Ethereum.
+                         <span className="text-[18px] font-mono font-bold text-gray-400">
+                            Why mint a WHEXy whale today?
                         </span>
                      <span className="text-[14px] font-mono font-semibold text-gray-400">
-                            {">>"} 25% to marketing and administrative costs (website, paid promotion, hiring mods/community managers, etc) 25% will buy WHEX for random giveaways to holders! Learn more about the work they do here:<a href="https://savethewhales.org" className="text-teal-600 underline underline-offset-1">https://savethewhales.org</a> 25% founder pay, 25% to whale conservation charities
+                            {"1"} Help real life whales
                         </span>
                         <span className="text-[14px] font-mono font-semibold text-gray-400">
-                            {">>"} Transacted after each 100 mints, or for royalties, each $1000 accumulated
+                            {"2"} get airdropped WHEXcosystem DAO tokens and participate in determining the future of the project
                         </span>
                         <span className="text-[14px] font-mono font-semibold text-gray-400">
-                            {">>"} Polygon collection <a href="https://opensea.io/collection/whexy-whales" className="text-teal-600 underline underline-offset-1">https://opensea.io/collection/whexy-whales</a>
+                            {"3"} Participate in mint out rewards:
+                        </span>
+                        <div className="flex flex-col py-2 text-[12px] font-mono font-normal text-gray-400">
+                            <span>
+                              {">>"} 1916-2099: 0.275 ETH 
+                            </span>
+                            <span>
+                              {">>"} 2100-2399: Typical Tiger NFT
+                            </span>
+                            <span>
+                              {">>"} 2400-2999: 0.55 ETH
+                            </span>
+                            <span>
+                              {">>"} 3000-3599: Apocalyptic Ape NFT
+                            </span>
+                            <span>
+                              {">>"} 3600-4199: 0.825 ETH
+                            </span>
+                            <span>
+                              {">>"} 4200-4799: Lazy Lion NFT
+                            </span>
+                        </div>
+                        <span className="text-[14px] font-mono font-semibold text-gray-400">
+                            {"4"} Access to getting a custom ENS subdomain of WHEXy.eth
+                        </span>
+                        <span className="text-[14px] font-mono font-semibold text-gray-400">
+                            {"5"} Access to an exclusive discord chat
+                        </span>
+                        <span className="text-[14px] font-mono font-semibold text-gray-400">
+                            Mint Link: 
+                            <a href="https://app.niftykit.com/drops/WHEXY" target="_blank" rel="noreferrer" className="text-teal-800 font-semibold">https://app.niftykit.com/drops/WHEXY</a>
                         </span>
                        </div>
                       </motion.div>
@@ -368,6 +404,6 @@ const Update = () => {
   )
 }
 
-export default Update
+export default Home
 
    
