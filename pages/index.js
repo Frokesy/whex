@@ -252,8 +252,11 @@ const Home = () => {
                             {"5"} Access to an exclusive discord chat
                         </span>
                         <span className="text-[14px] font-mono font-semibold text-gray-400">
-                            Mint Link: 
-                            <a href="https://app.niftykit.com/drops/WHEXY" target="_blank" rel="noreferrer" className="text-teal-800 font-semibold">https://app.niftykit.com/drops/WHEXY</a>
+                            Mint Link: {" "}
+                              <a href="https://app.niftykit.com/drops/WHEXY" 
+                              target="_blank" rel="noreferrer" className="text-teal-400 font-light">
+                                 https://app.niftykit.com/drops/WHEXY
+                              </a>    
                         </span>
                        </div>
                       </motion.div>
