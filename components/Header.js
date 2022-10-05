@@ -112,7 +112,7 @@ const Header = () => {
                 whileHover="hover"
                 className="cursor-pointer"
             >         
-              <a href="/pdf/whitepaper.pdf" target="_blank" rel="noopener noreferrer">
+              <a href="/pdf/White-PaperV3.pdf" target="_blank" rel="noopener noreferrer">
                 Whitepaper
               </a>
             </motion.span>
@@ -155,7 +155,7 @@ const Header = () => {
               <Link href="#community">
                   Community
               </Link>
-              <a href="/pdf/whitepaper.pdf" target="_blank" rel="noopener noreferrer">
+              <a href="/pdf/White-PaperV3.pdf" target="_blank" rel="noopener noreferrer">
                 Whitepaper
               </a>
               </div>
