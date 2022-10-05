@@ -40,7 +40,6 @@ const Update = () => {
 
   const animation = useAnimation()
   useEffect(() => {
-    console.log("inView status:", inView);
     if (inView) {
       animation.start({
         opacity: 1,
