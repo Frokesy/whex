@@ -253,9 +253,9 @@ const Home = () => {
                         </span>
                         <span className="text-[14px] font-mono font-semibold text-gray-400">
                             Mint Link: {" "}
-                              <a href="https://app.niftykit.com/drops/WHEXY" 
+                              <a href="https://app.niftykit.com/drops/whexy" 
                               target="_blank" rel="noreferrer" className="text-teal-400 font-light">
-                                 https://app.niftykit.com/drops/WHEXY
+                                 https://app.niftykit.com/drops/whexy
                               </a>    
                         </span>
                        </div>
