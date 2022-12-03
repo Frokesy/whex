@@ -22,15 +22,15 @@ const Footer = () => {
         <div className="flex flex-col lg:flex-row w-[90vw] mx-auto lg:px-4 space-x-4 lg:space-x-8">
             <img src="/peter_wake.jpg" alt="founder-pic" className="rounded-[50%] h-[10rem] w-[10rem] lg:h-[15rem] lg:w-[15rem]" />
             <div className="flex flex-col lg:w-[25vw] text-gray-500">
-            <h2 className="text-[30px] font-mono text-gray-400 font-mono font-bold">Peter Wake</h2>
+            <h2 className="text-[30px] text-neutral-300 font-mono font-bold">Peter Wake</h2>
             <span className="text-[15px] font-mono text-blue-400 mb-4">Founder & CEO</span>
-            <span className="text-[13px] mb-4 font-mono font-semibold">
+            <span className="text-[13px] mb-4 text-neutral-400 font-mono font-semibold">
                 Peter Wake is a Mining Engineering graduate (2020) working full time in IT/Business Development at a construction company in Ottawa, Canada.
             </span>
-            <span className="mb-4 text-[13px] font-mono font-semibold">
+            <span className="mb-4 text-[13px] font-mono text-neutral-400 font-semibold">
                 In early 2021, Peter got into putting real money into cryptocurrency, starting with Dogecoin and some DeFi projects. He had been casually watching the market after having getting some free Doge in 2016 from a faucet
             </span>
-            <span className="mb-4 text-[13px] font-mono font-semibold">
+            <span className="mb-4 text-[13px] font-mono text-neutral-400 font-semibold">
                  In March 2021, Peter made his first NFT on OpenSea and in June 2021 launched the Whale Exploder token on the Binance Smart Chain.
             </span>
             </div>
@@ -76,7 +76,7 @@ const Footer = () => {
         <div className="">
         <span className="text-white text-[20px] font-mono font-bold">Tokens</span>
         <div className="w-[20vw] lg:w-[10vw] border border-blue-400"></div>
-          <div className="text-gray-400 font-mono mt-3 cursor-pointer text-[13px] flex flex-col space-y-2">
+          <div className="text-neutral-400 font-mono mt-3 cursor-pointer text-[13px] flex flex-col space-y-2">
           <Link 
           href="#whex" passHref
           >
@@ -112,7 +112,7 @@ const Footer = () => {
         </div>
 
         </div>
-        <div className="footer bg-black w-full flex justify-between mt-[5vh]">
+        <div className="footer bg-neutral-800 w-full flex justify-between mt-[5vh]">
         <span className="text-gray-400 font-mono font-bold mt-4 flex justify-center lg:justify-end mb-6 lg:mb-0 text-[18px] mx-[13vw]">&copy; Whexcosystem 2022</span>
         
         <div className="lg:flex hidden flex-row justify-end mx-[10vw]">

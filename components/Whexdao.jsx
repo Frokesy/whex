@@ -7,12 +7,12 @@ const Whexdao = () => {
     <motion.div 
     layout
     transition={{ layout: { duration: 0.5 } }}
-    className="border border-gray-800 px-4 py-6 text-white"
+    className="border border-zinc-600 shadow-2xl px-4 py-6 text-white"
     id="whexdao"
     >
     <div className="flex flex-row space-x-2 justify-center items-center">
-        <img src="/logo.jpg" alt="whexdao-logo" className="rounded-full lg:w-[4.5rem] md:w-[3.5rem] w-[3.5rem]" />
-        <span className="lg:text-[25px] text-[22px] font-mono font-bold text-white">whexcosystem DAO (whexdao)</span>
+        <img src="/logo.jpg" alt="whexdao-logo" className="rounded-full lg:w-[4rem] md:w-[3rem] w-[3rem]" />
+        <span className="lg:text-[25px] text-[18px] font-mono font-bold text-white">WHEXcosystem DAO (WHEXDAO)</span>
     </div>
     <div className="flex flex-col mx-4 space-y-3 mt-6 text-neutral-400">
                 <span className="text-[14px] font-semibold">

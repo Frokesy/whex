@@ -511,11 +511,6 @@ Ensure the default browser behavior of the `hidden` attribute.
   margin-right: 1rem;
 }
 
-.mx-3 {
-  margin-left: 0.75rem;
-  margin-right: 0.75rem;
-}
-
 .mb-\[5vh\] {
   margin-bottom: 5vh;
 }
@@ -738,9 +733,9 @@ Ensure the default browser behavior of the `hidden` attribute.
   border-width: 1px;
 }
 
-.border-teal-600 {
+.border-blue-400 {
   --tw-border-opacity: 1;
-  border-color: rgb(13 148 136 / var(--tw-border-opacity));
+  border-color: rgb(96 165 250 / var(--tw-border-opacity));
 }
 
 .border-gray-800 {
@@ -748,14 +743,29 @@ Ensure the default browser behavior of the `hidden` attribute.
   border-color: rgb(31 41 55 / var(--tw-border-opacity));
 }
 
-.border-blue-400 {
+.border-gray-600 {
   --tw-border-opacity: 1;
-  border-color: rgb(96 165 250 / var(--tw-border-opacity));
+  border-color: rgb(75 85 99 / var(--tw-border-opacity));
 }
 
-.bg-black {
+.border-blue-900 {
+  --tw-border-opacity: 1;
+  border-color: rgb(30 58 138 / var(--tw-border-opacity));
+}
+
+.border-zinc-900 {
+  --tw-border-opacity: 1;
+  border-color: rgb(24 24 27 / var(--tw-border-opacity));
+}
+
+.border-zinc-600 {
+  --tw-border-opacity: 1;
+  border-color: rgb(82 82 91 / var(--tw-border-opacity));
+}
+
+.bg-zinc-700 {
   --tw-bg-opacity: 1;
-  background-color: rgb(0 0 0 / var(--tw-bg-opacity));
+  background-color: rgb(63 63 70 / var(--tw-bg-opacity));
 }
 
 .bg-white {
@@ -763,34 +773,9 @@ Ensure the default browser behavior of the `hidden` attribute.
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
 }
 
-.bg-teal-800 {
+.bg-black {
   --tw-bg-opacity: 1;
-  background-color: rgb(17 94 89 / var(--tw-bg-opacity));
-}
-
-.bg-sky-900 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(12 74 110 / var(--tw-bg-opacity));
-}
-
-.bg-\[\#2B65EC\] {
-  --tw-bg-opacity: 1;
-  background-color: rgb(43 101 236 / var(--tw-bg-opacity));
-}
-
-.bg-blue-500 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(59 130 246 / var(--tw-bg-opacity));
-}
-
-.bg-blue-600 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(37 99 235 / var(--tw-bg-opacity));
-}
-
-.bg-blue-300 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(147 197 253 / var(--tw-bg-opacity));
+  background-color: rgb(0 0 0 / var(--tw-bg-opacity));
 }
 
 .bg-blue-400 {
@@ -798,9 +783,44 @@ Ensure the default browser behavior of the `hidden` attribute.
   background-color: rgb(96 165 250 / var(--tw-bg-opacity));
 }
 
-.bg-blue-800 {
+.bg-zinc-800 {
   --tw-bg-opacity: 1;
-  background-color: rgb(30 64 175 / var(--tw-bg-opacity));
+  background-color: rgb(39 39 42 / var(--tw-bg-opacity));
+}
+
+.bg-zinc-600 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(82 82 91 / var(--tw-bg-opacity));
+}
+
+.bg-zinc-400 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(161 161 170 / var(--tw-bg-opacity));
+}
+
+.bg-zinc-500 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(113 113 122 / var(--tw-bg-opacity));
+}
+
+.bg-zinc-900 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(24 24 27 / var(--tw-bg-opacity));
+}
+
+.bg-neutral-900 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(23 23 23 / var(--tw-bg-opacity));
+}
+
+.bg-neutral-800 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(38 38 38 / var(--tw-bg-opacity));
+}
+
+.bg-neutral-700 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(64 64 64 / var(--tw-bg-opacity));
 }
 
 .bg-\[url\(\'\/whale\.gif\'\)\] {
@@ -877,12 +897,16 @@ Ensure the default browser behavior of the `hidden` attribute.
   font-size: 25px;
 }
 
-.text-\[30px\] {
-  font-size: 30px;
+.text-\[34px\] {
+  font-size: 34px;
 }
 
 .text-\[15px\] {
   font-size: 15px;
+}
+
+.text-\[30px\] {
+  font-size: 30px;
 }
 
 .text-\[20px\] {
@@ -910,24 +934,16 @@ Ensure the default browser behavior of the `hidden` attribute.
   font-size: 14px;
 }
 
-.text-\[11px\] {
-  font-size: 11px;
-}
-
 .text-\[22px\] {
   font-size: 22px;
 }
 
+.text-\[11px\] {
+  font-size: 11px;
+}
+
 .text-\[12px\] {
   font-size: 12px;
-}
-
-.text-\[34px\] {
-  font-size: 34px;
-}
-
-.text-\[26px\] {
-  font-size: 26px;
 }
 
 .font-semibold {
@@ -959,9 +975,9 @@ Ensure the default browser behavior of the `hidden` attribute.
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
-.text-teal-600 {
+.text-blue-400 {
   --tw-text-opacity: 1;
-  color: rgb(13 148 136 / var(--tw-text-opacity));
+  color: rgb(96 165 250 / var(--tw-text-opacity));
 }
 
 .text-gray-400 {
@@ -974,24 +990,19 @@ Ensure the default browser behavior of the `hidden` attribute.
   color: rgb(107 114 128 / var(--tw-text-opacity));
 }
 
-.text-gray-100 {
-  --tw-text-opacity: 1;
-  color: rgb(243 244 246 / var(--tw-text-opacity));
-}
-
 .text-neutral-400 {
   --tw-text-opacity: 1;
   color: rgb(163 163 163 / var(--tw-text-opacity));
 }
 
-.text-blue-400 {
+.text-gray-100 {
   --tw-text-opacity: 1;
-  color: rgb(96 165 250 / var(--tw-text-opacity));
+  color: rgb(243 244 246 / var(--tw-text-opacity));
 }
 
-.text-blue-500 {
+.text-neutral-300 {
   --tw-text-opacity: 1;
-  color: rgb(59 130 246 / var(--tw-text-opacity));
+  color: rgb(212 212 212 / var(--tw-text-opacity));
 }
 
 .underline {
@@ -1006,6 +1017,12 @@ Ensure the default browser behavior of the `hidden` attribute.
 .shadow {
   --tw-shadow: 0 1px 3px 0 rgb(0 0 0 / 0.1), 0 1px 2px -1px rgb(0 0 0 / 0.1);
   --tw-shadow-colored: 0 1px 3px 0 var(--tw-shadow-color), 0 1px 2px -1px var(--tw-shadow-color);
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+}
+
+.shadow-2xl {
+  --tw-shadow: 0 25px 50px -12px rgb(0 0 0 / 0.25);
+  --tw-shadow-colored: 0 25px 50px -12px var(--tw-shadow-color);
   box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
 }
 
@@ -1089,12 +1106,12 @@ Ensure the default browser behavior of the `hidden` attribute.
     width: 4.5rem;
   }
 
-  .lg\:w-\[4rem\] {
-    width: 4rem;
-  }
-
   .lg\:w-\[20vw\] {
     width: 20vw;
+  }
+
+  .lg\:w-\[4rem\] {
+    width: 4rem;
   }
 
   .lg\:grid-cols-3 {
@@ -1170,9 +1187,5 @@ Ensure the default browser behavior of the `hidden` attribute.
 
   .lg\:text-\[25px\] {
     font-size: 25px;
-  }
-
-  .lg\:text-\[30px\] {
-    font-size: 30px;
   }
 }

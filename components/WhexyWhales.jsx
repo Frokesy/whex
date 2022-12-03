@@ -8,12 +8,12 @@ const WhexyWhales = () => {
        <motion.div 
         layout
         transition={{ layout: { duration: 0.5 } }}
-        className="border border-gray-800 px-4 py-6 text-white"
+        className="border border-zinc-600 shadow-2xl px-4 py-6 text-white"
         id="whexy"
         >
             <div className="flex flex-row space-x-2 justify-center items-center">
-                <img src="/whexy.png" alt="whexy-logo" className="rounded-full lg:w-[4.5rem] md:w-[3.5rem] w-[3.5rem]" />
-                <span className="text-[30px] font-extrabold text-white">WHEXy whales (NFT)</span>
+                <img src="/whexy.png" alt="whexy-logo" className="rounded-full lg:w-[4rem] md:w-[3rem] w-[3rem]" />
+                <span className="text-[25px] font-extrabold text-white">WHEXy whales (NFT)</span>
             </div>
             <span className="flex justify-center text-center text-neutral-400 mt-4 text-[13px] font-normal">WHEXy Whales is an NFT project consisting of 4800 unique Whales with different traits like hats, glasses, shirts, backgrounds, etc</span>
             <div className="flex flex-col mx-4 space-y-3 mt-4 text-neutral-400">

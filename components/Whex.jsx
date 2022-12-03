@@ -7,10 +7,10 @@ const Whex = () => {
 
     const [isVisible, setIsVisible] = useState(false)
   return (
-    <div className="border border-gray-800 px-4 py-6 text-white">
+    <div className="border border-zinc-600 shadow-2xl px-4 py-6 text-white">
             <div className="flex flex-row space-x-2 justify-center items-center">
-                <img src="/whale-exploder.png" alt="whex-logo" className="rounded-full lg:w-[4.5rem] md:w-[3.5rem] w-[3.5rem]" />
-                <span className="text-[30px] font-mono font-bold text-white">whale exploder ($whex)</span>
+                <img src="/whale-exploder.png" alt="whex-logo" className="rounded-full lg:w-[4rem] md:w-[3rem] w-[3rem]" />
+                <span className="text-[25px] font-mono font-bold text-white">Whale Exploder ($whex)</span>
             </div>
             <span className="flex justify-center text-neutral-400 mt-3 text-[14px] font-normal">67.1% in circulation, 32.9% burned, 20.08 BNB locked</span>
                 <motion.div 

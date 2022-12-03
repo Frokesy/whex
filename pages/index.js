@@ -44,7 +44,7 @@ const Home = () => {
   return (
     <>
       <Meta title="WHEXcosystem || Home Page" />
-    <div className="bg-black h-full">
+    <div className="bg-neutral-800 h-full">
         <Header />
         <div id="home" className="bg-[url('/whale.gif')] bg-center bg-cover bg-no-repeat h-[80vh] lg:h-screen items-center justify-center">
         <motion.div
