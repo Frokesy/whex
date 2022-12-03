@@ -50,7 +50,7 @@ const Whex = () => {
                          }}
                         >
                     <div className="flex flex-col mx-4 space-y-3 mt-3">
-                    <h2 className="flex text-white mt-6 text-[22px] font-mono font-bold">Tokenomics</h2>
+                    <h2 className="flex text-white mt-6 text-[18px] font-mono font-bold">Tokenomics</h2>
                         <span className="text-[14px] text-neutral-400 font-semibold  ">
                             {">>"} 2% sent to a whale charity wallet
                         </span>
@@ -65,7 +65,7 @@ const Whex = () => {
                         </span>
                     </div>
                     <div className="flex flex-col mx-4 space-y-3 mt-3">
-                    <h2 className="flex text-gray-100 mt-6 text-[22px] font-mono font-bold">Locked Liquidity</h2>
+                    <h2 className="flex text-gray-100 mt-6 text-[18px] font-mono font-bold">Locked Liquidity</h2>
                         <span className="text-[14px] text-neutral-400 font-semibold  ">
                             {">>"} 15.1 BNB of LP Locked for 5 years. Pancake LPs for Whale Exploder: 0xac3843ed09a264f26f2668a7c57b3191ad10a6f7
                         </span>

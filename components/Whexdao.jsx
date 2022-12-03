@@ -64,7 +64,7 @@ const Whexdao = () => {
                 <span className="text-[14px] font-semibold">
                     {">>"} Airdrop to WHEXy Whales (on mint out): 199,995,591
                 </span>
-            <h2 className="flex text-white pt-8 text-[22px] font-mono font-bold">Voting Mechanism</h2>
+            <h2 className="flex text-white pt-8 text-[18px] font-mono font-bold">Voting Mechanism</h2>
                 <span className="text-[12px] font-semibold text-neutral-400">
                     {">>"}A voting cycle is initiated by Peter Wake, or by someone sending 4800 WHEXDAO tokens to the stockpile address and proposing a question to Peter Wake, who will then set up the voting addresses.
                 </span>

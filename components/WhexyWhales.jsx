@@ -17,7 +17,7 @@ const WhexyWhales = () => {
             </div>
             <span className="flex justify-center text-center text-neutral-400 mt-4 text-[13px] font-normal">WHEXy Whales is an NFT project consisting of 4800 unique Whales with different traits like hats, glasses, shirts, backgrounds, etc</span>
             <div className="flex flex-col mx-4 space-y-3 mt-4 text-neutral-400">
-                        <span className="text-[22px] text-white font-mono font-bold">
+                        <span className="text-[18px] text-white font-mono font-bold">
                             Minting &amp; Royalties (How they will be used):
                         </span>
                         <span className="text-[14px] font-mono font-semibold">
@@ -57,7 +57,7 @@ const WhexyWhales = () => {
                             {">>"} Transacted after each 100 mints, or for royalties, each $1000 accumulated 
                         </span>
                          <div className="flex flex-col mx-2 space-y-3 mt-4">
-                         <span className="text-[22px] text-white font-mono font-bold  ">
+                         <span className="text-[18px] text-white font-mono font-bold  ">
                             Why mint a WHEXy whale today?
                         </span>
                      <span className="text-[14px] font-semibold  ">
