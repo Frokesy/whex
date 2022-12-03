@@ -39,6 +39,9 @@ const WhexyWhales = () => {
                         <span className="text-[14px] font-semibold">
                             {">>"} 25% founder pay 
                         </span>
+                        <span className="text-[14px] font-semibold">
+                            {">>"} Transacted after each 100 mints, or for royalties, each $1000 accumulated 
+                        </span>
                         {isWhexyVisible && (
                         <motion.div
                         initial={{ 
@@ -53,9 +56,6 @@ const WhexyWhales = () => {
                             duration: 0.5
                          }}
                         >
-                        <span className="text-[14px] font-semibold">
-                            {">>"} Transacted after each 100 mints, or for royalties, each $1000 accumulated 
-                        </span>
                          <div className="flex flex-col mx-2 space-y-3 mt-4">
                          <span className="text-[18px] text-white font-mono font-bold  ">
                             Why mint a WHEXy whale today?
