@@ -46,18 +46,18 @@ const Home = () => {
       <Meta title="WHEXcosystem || Home Page" />
     <div className="bg-black h-full">
         <Header />
-        <div id="home" className="bg-[url('/whale__three.gif')] bg-center bg-cover bg-no-repeat h-[80vh] lg:h-screen items-center justify-center">
+        <div id="home" className="bg-[url('/whale.gif')] bg-center bg-cover bg-no-repeat h-[80vh] lg:h-screen items-center justify-center">
         <motion.div
         className="lg:pt-[40vh] pt-[30vh] lg:w-[95vw] text-white text-[25px] w-[80vw] mx-auto lg:text-[60px] justify-center font-mono items-center flex flex-col text-center">
-            <h2>Saving the <span className="text-teal-600">whales</span>,</h2>
-            <span>one <span className="text-teal-600">transaction</span> at a time</span>
+            <h2>Saving the <span className="text-blue-400">whales</span>,</h2>
+            <span>one <span className="text-blue-400">transaction</span> at a time</span>
         </motion.div>
     </div>
 
     <motion.div className="tokens pt-[5vh]" id="tokens">
 
     <motion.div animate={animation} ref={ref}>
-    <span className="text-white text-[30px] lg:text-[40px] font-mono text-center flex justify-center items-center font-semibold" >Tokens</span>
+    <span className="text-white text-[34px] lg:text-[40px] font-mono text-center flex justify-center items-center font-semibold" >Tokens</span>
      <span className="text-gray-400 text-[15px] lg:text-[20px] font-[serif] flex items-center text-center justify-center mb-[5vh]">Find out about the tokens in the whexcosystem</span>
     </motion.div>
 

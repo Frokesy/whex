@@ -23,7 +23,7 @@ const Footer = () => {
             <img src="/peter_wake.jpg" alt="founder-pic" className="rounded-[50%] h-[10rem] w-[10rem] lg:h-[15rem] lg:w-[15rem]" />
             <div className="flex flex-col lg:w-[25vw] text-gray-500">
             <h2 className="text-[30px] font-mono text-gray-400 font-mono font-bold">Peter Wake</h2>
-            <span className="text-[15px] font-mono text-teal-600 mb-4">Founder & CEO</span>
+            <span className="text-[15px] font-mono text-blue-400 mb-4">Founder & CEO</span>
             <span className="text-[13px] mb-4 font-mono font-semibold">
                 Peter Wake is a Mining Engineering graduate (2020) working full time in IT/Business Development at a construction company in Ottawa, Canada.
             </span>
@@ -39,7 +39,7 @@ const Footer = () => {
         <div className="flex flex-col lg:flex-row w-[85vw] justify-between mx-auto lg:w-[50vw] lg:items-center lg:space-x-10 lg:mx-10 space-y-10 lg:space-y-0">
         <div className="flex flex-col text-white">
         <span className="text-white text-[20px] font-mono font-bold">Docs</span>
-        <div className="w-[20vw] lg:w-[5vw] border border-teal-600"></div>
+        <div className="w-[20vw] lg:w-[5vw] border border-blue-400"></div>
           <div className="text-gray-400 font-mono cursor-pointer mt-3 text-[13px] flex flex-col space-y-2">
           <Link 
           href="/pdf/whitepaper.pdf" 
@@ -75,7 +75,7 @@ const Footer = () => {
 
         <div className="">
         <span className="text-white text-[20px] font-mono font-bold">Tokens</span>
-        <div className="w-[20vw] lg:w-[10vw] border border-teal-600"></div>
+        <div className="w-[20vw] lg:w-[10vw] border border-blue-400"></div>
           <div className="text-gray-400 font-mono mt-3 cursor-pointer text-[13px] flex flex-col space-y-2">
           <Link 
           href="#whex" passHref
