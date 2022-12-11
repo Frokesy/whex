@@ -22,7 +22,7 @@ const Whexdao = () => {
                     {">>"} Address: 0x1fFD93F8c3d99bDAA4A012A0Fc26868F00Cfa5c2
                 </span>
                 <span className="text-[14px] font-semibold">
-                    {">>"} Symbol: $whexdao
+                    {">>"} Symbol: $WHEXDAO
                 </span>
                 <span className="text-[14px] font-semibold">
                     {">>"} Decimals: 9
@@ -34,10 +34,10 @@ const Whexdao = () => {
                     {">>"} Stockpile Address: 0x0D7079098C8feb4F4AEF40703CE83eCc704f371d
                 </span>
                 <span className="text-[14px] font-semibold">
-                    {">>"} Private Sales: 200,000,000
+                    {">>"} Private Sales: 35,000,000
                 </span>
                 <span className="text-[14px] font-semibold">
-                    {">>"} Presale(dxscale): 250,000,000
+                    {">>"} Split Presale: 300,000,000
                 </span>
             </div>
             {isDaoVisible && (
@@ -56,13 +56,28 @@ const Whexdao = () => {
                 >
             <div className="flex flex-col mx-4 space-y-3 text-neutral-400">
             <span className="text-[14px] font-semibold">
-                    {">>"} Airdrop to WHEX holders (on completion of presale): 100,000,000
+                    {">>"} Airdrop to WHEX holders (on completion of split presale): 100,000,000
                 </span>
                 <span className="text-[14px] font-semibold">
-                    {">>"} Liquidity Pool: 250,000,000
+                    {">>"} whexdao/xphx pool: 20,000,000
                 </span>
                 <span className="text-[14px] font-semibold">
-                    {">>"} Airdrop to WHEXy Whales (on mint out): 199,995,591
+                    {">>"} Airdrop to WHEXy Whales 1-1964: 81, 830, 060
+                </span>
+                <span className="text-[14px] font-semibold">
+                    {">>"} Airdrop for minting WHEXy whales 1965-4800 (41,665 each): 118, 169, 940
+                </span>
+                <span className="text-[14px] font-semibold">
+                    {">>"} Babydoge rewards for WHEX/XPHX farm: 65, 000, 000
+                </span>
+                <span className="text-[14px] font-semibold">
+                    {">>"} Pancake Swap (WHEXDAO/BNB): 100, 000, 060
+                </span>
+                <span className="text-[14px] font-semibold">
+                    {">>"} WHEXDAO Reserve: 170, 000, 000 0x188f92ACD1A82b54ce713cAFa8e8217c1089230c
+                </span>
+                <span className="text-[14px] font-semibold">
+                    {">>"} PhoenixCo allocation: 10, 000, 000
                 </span>
             <h2 className="flex text-white pt-8 text-[18px] font-mono font-bold">Voting Mechanism</h2>
                 <span className="text-[12px] font-semibold text-neutral-400">
