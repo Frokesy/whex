@@ -1,10 +1,17 @@
 import React from 'react'
-
+import Header from '../../components/blog/Header'
+import Meta from '../defaults/Meta'
+import EmbrScript from '../EmberScript'
 const Blog = () => {
   return (
-    <div>
-      <h2>Blog initialized</h2>
-    </div>
+    <>
+      <Meta 
+      title="WHEXcosystem || Blog" />
+      <div id="home" className="bg-[url('/blog/cover.png')] bg-center bg-cover bg-no-repeat h-[60vh] items-center justify-center">
+        <Header />
+        <EmbrScript />
+      </div>
+    </>
   )
 }
 
