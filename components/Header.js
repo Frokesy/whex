@@ -87,13 +87,13 @@ const Header = () => {
             </motion.span>
             </Link>
 
-            <Link href="/roadmap">
+            <Link href="/blog">
             <motion.span
                 variants={linkVariants}
                 whileHover="hover"
                 className="cursor-pointer"
             >
-              Roadmap
+              Blog
             </motion.span>
             </Link>
 
@@ -149,8 +149,8 @@ const Header = () => {
               <Link href="#tokens">
                   Tokens
               </Link>
-              <Link href="/roadmap">
-                  Roadmap
+              <Link href="/blog">
+                  Blog
               </Link>
               <Link href="#community">
                   Community
