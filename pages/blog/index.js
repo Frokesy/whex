@@ -2,12 +2,13 @@ import React from 'react'
 import Header from '../../components/blog/Header'
 import Meta from '../defaults/Meta'
 import EmbrScript from '../EmberScript'
+import Categories from './categories'
 const Blog = () => {
   return (
     <>
       <Meta 
       title="WHEXcosystem || Blog" />
-      <div id="home" className="bg-[url('/blog/cover.png')] bg-center bg-cover bg-no-repeat items-center justify-center">
+      <div className="bg-[url('/blog/cover.png')] bg-center bg-cover bg-no-repeat items-center justify-center">
         <Header />
         <EmbrScript />
         <div className="items-center flex justify-center flex-col">
@@ -19,6 +20,10 @@ const Blog = () => {
           className="pt-[2vh] pb-[10vh] text-[30px] text-white w-[55vw] max-w-[60vw] text-center"
           >Great news and Articles about our market and get unbelievable knowledge in the easiest of ways through our blog. Have fun!!!</span>
         </div>
+      </div>
+
+      <div className="bg-neutral-800 py-[3vh] h-full">
+        <Categories />
       </div>
     </>
   )
