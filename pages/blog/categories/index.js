@@ -1,5 +1,6 @@
 import React from 'react'
 import { FaArchive, FaChessKnight, FaHome, FaNewspaper, FaPeopleArrows, FaPeopleCarry } from 'react-icons/fa'
+import Footer from '../../../components/blog/Footer'
 
 const Categories = () => {
   return (
@@ -213,6 +214,8 @@ const Categories = () => {
                 </div>
             </div>
         </div>
+
+        <Footer />
     </div>
   )
 }

@@ -695,6 +695,18 @@ Ensure the default browser behavior of the `hidden` attribute.
   width: 75vw;
 }
 
+.w-\[20\%\] {
+  width: 20%;
+}
+
+.w-\[10\%\] {
+  width: 10%;
+}
+
+.w-\[8\%\] {
+  width: 8%;
+}
+
 .max-w-\[60vw\] {
   max-width: 60vw;
 }
@@ -745,6 +757,10 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .justify-between {
   justify-content: space-between;
+}
+
+.justify-evenly {
+  justify-content: space-evenly;
 }
 
 .gap-6 {
@@ -1060,6 +1076,10 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .pt-8 {
   padding-top: 2rem;
+}
+
+.pt-\[20vh\] {
+  padding-top: 20vh;
 }
 
 .text-center {
