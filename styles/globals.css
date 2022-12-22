@@ -591,6 +591,14 @@ Ensure the default browser behavior of the `hidden` attribute.
   height: 10rem;
 }
 
+.h-\[100\%\] {
+  height: 100%;
+}
+
+.h-\[80\%\] {
+  height: 80%;
+}
+
 .w-\[80vw\] {
   width: 80vw;
 }
@@ -657,6 +665,34 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .w-\[3rem\] {
   width: 3rem;
+}
+
+.w-\[90\%\] {
+  width: 90%;
+}
+
+.w-\[70\%\] {
+  width: 70%;
+}
+
+.w-\[60vw\] {
+  width: 60vw;
+}
+
+.w-\[30vw\] {
+  width: 30vw;
+}
+
+.w-\[50vw\] {
+  width: 50vw;
+}
+
+.w-\[30\%\] {
+  width: 30%;
+}
+
+.w-\[75vw\] {
+  width: 75vw;
 }
 
 .max-w-\[60vw\] {
@@ -727,6 +763,26 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .gap-y-10 {
   row-gap: 2.5rem;
+}
+
+.gap-x-10 {
+  -moz-column-gap: 2.5rem;
+       column-gap: 2.5rem;
+}
+
+.gap-x-20 {
+  -moz-column-gap: 5rem;
+       column-gap: 5rem;
+}
+
+.gap-x-\[5vw\] {
+  -moz-column-gap: 5vw;
+       column-gap: 5vw;
+}
+
+.gap-x-\[10vw\] {
+  -moz-column-gap: 10vw;
+       column-gap: 10vw;
 }
 
 .space-y-10 > :not([hidden]) ~ :not([hidden]) {
@@ -803,6 +859,16 @@ Ensure the default browser behavior of the `hidden` attribute.
 .rounded-r-lg {
   border-top-right-radius: 0.5rem;
   border-bottom-right-radius: 0.5rem;
+}
+
+.rounded-t-lg {
+  border-top-left-radius: 0.5rem;
+  border-top-right-radius: 0.5rem;
+}
+
+.rounded-t-2xl {
+  border-top-left-radius: 1rem;
+  border-top-right-radius: 1rem;
 }
 
 .border {
