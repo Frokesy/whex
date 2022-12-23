@@ -3,7 +3,7 @@ import React from 'react'
 import { FaGoogle, FaGooglePlusG, FaGooglePlusSquare } from 'react-icons/fa'
 import Header from '../../../components/blog/Header'
 
-const Signup = () => {
+const Login = () => {
   return (
     <div className="bg-[url('/blog/cover.png')] bg-center bg-cover bg-no-repeat items-center h-screen opacity-90 justify-center">
       <Header />
@@ -55,4 +55,4 @@ const Signup = () => {
   )
 }
 
-export default Signup
+export default Login
