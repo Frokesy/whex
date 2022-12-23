@@ -663,6 +663,22 @@ Ensure the default browser behavior of the `hidden` attribute.
   width: 35vw;
 }
 
+.w-\[40\%\] {
+  width: 40%;
+}
+
+.w-\[39\%\] {
+  width: 39%;
+}
+
+.w-\[35\%\] {
+  width: 35%;
+}
+
+.w-\[100\%\] {
+  width: 100%;
+}
+
 .max-w-\[60vw\] {
   max-width: 60vw;
 }
