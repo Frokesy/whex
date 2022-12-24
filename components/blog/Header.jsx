@@ -98,13 +98,13 @@ const Header = () => {
             </motion.span>
 
 
-            <Link href="blog/auth/register">
+            <Link href="blog/auth/login">
             <motion.span
                 variants={linkVariants}
                 whileHover="hover"
                 className="cursor-pointer bg-blue-400 text-white font-bold py-2 px-4 rounded-lg"
             >
-              Sign up
+              Sign In
             </motion.span>
             </Link>
               
@@ -143,8 +143,8 @@ const Header = () => {
               <a href="/pdf/White-PaperV3.pdf" target="_blank" rel="noopener noreferrer">
                 Whitepaper
               </a>
-              <Link href="/blog/auth/register">
-                  Sign up
+              <Link href="/blog/auth/login">
+                  Sign In
               </Link>
               </div>
             </DrawerBody>
