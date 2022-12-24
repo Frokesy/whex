@@ -3,8 +3,15 @@ import React from 'react'
 import { FaGoogle } from 'react-icons/fa'
 import Header from '../../../components/blog/Header'
 import Meta from '../../defaults/Meta'
-// Frokes03#2003~
+import { supabase } from '../../../utils/supabaseClient'
 const Login = () => {
+
+  //check if supabase connected successfully
+    if (supabase) {
+      console.log("Connected successfully")
+    } else {
+      console.log("Error in connection")
+    }
   return (
     <div className="bg-[url('/blog/cover.png')] bg-center bg-cover bg-no-repeat items-center h-screen opacity-90 justify-center">
       <Meta />
