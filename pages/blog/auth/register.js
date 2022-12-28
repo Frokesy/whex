@@ -1,6 +1,6 @@
 import Link from 'next/link'
 import React, { useState, useEffect } from 'react'
-import { FaGoogle, FaGooglePlusG, FaGooglePlusSquare } from 'react-icons/fa'
+import { FaGoogle } from 'react-icons/fa'
 import Header from '../../../components/blog/Header'
 import Meta from '../../defaults/Meta'
 import { supabase } from '../../../utils/supabaseClient'
