@@ -65,7 +65,7 @@ const Header = () => {
             <h2>WHEXcosystem</h2>
         </div>
         
-        <div className="flex justify-end space-x-2 items-center text-[#fff] text-[14px] font-bold">
+        <div className="flex justify-end space-x-2 items-center text-[#fff] text-[15px] font-bold">
             <img src="/peter_wake.jpg" alt="admin" className="lg:w-[5%] w-[12%] rounded-full" />
             <span>Peter Wake</span>
         </div>
