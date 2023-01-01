@@ -1,36 +1,6 @@
 import React from 'react'
 import { FaArchive, FaNewspaper, FaPeopleCarry } from 'react-icons/fa'
 import Footer from '../../../components/blog/Footer'
-import { GraphQLClient, gql } from 'graphql-request'
-
-const graphcms = new GraphQLClient('https://api-eu-west-2.hygraph.com/v2/clc849yc40r7s01uhh4cc3f2p/master')
-
-    const QUERY = gql`
-         {
-            articles {
-            content
-            createdAt
-            datePublished
-            id
-            slug
-            title
-            updatedAt
-            author {
-                id
-            }
-            }
-        }
-    `
-
-    export async function getStaticProps() {
-        const { articles } = await graphcms.request(QUERY)
-        return {
-            props: {
-                articles: articles.articles
-            },
-            revalidate: 10
-        }
-    }
 
 const Categories = ({articles}) => {
     console.log(articles)
