@@ -2,8 +2,11 @@ import React from 'react'
 import { FaArchive, FaNewspaper, FaPeopleCarry } from 'react-icons/fa'
 import Footer from '../../../components/blog/Footer'
 
-const Categories = ({articles}) => {
-    console.log(articles)
+const Categories = () => {
+    
+    const response = axios.get(`${URL}/posts`)
+
+    console.log(response)
 
   return (
     <div className="w-[80vw] mx-auto">
@@ -22,7 +25,6 @@ const Categories = ({articles}) => {
             <h3>Recommended for you</h3>
         </div>
       </div>
-
       <div className="pt-[10vh]">
             <h2 className="text-white text-[30px]">Popular Topics</h2>
 
