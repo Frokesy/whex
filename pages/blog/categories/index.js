@@ -3,10 +3,6 @@ import { FaArchive, FaNewspaper, FaPeopleCarry } from 'react-icons/fa'
 import Footer from '../../../components/blog/Footer'
 
 const Categories = () => {
-    
-    const response = axios.get(`${URL}/posts`)
-
-    console.log(response)
 
   return (
     <div className="w-[80vw] mx-auto">
