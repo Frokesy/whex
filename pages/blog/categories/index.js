@@ -1,8 +1,23 @@
 import React from 'react'
 import { FaArchive, FaNewspaper, FaPeopleCarry } from 'react-icons/fa'
 import Footer from '../../../components/blog/Footer'
+// import { getPosts } from '../../../services'
+
+// export async function getStaticProps() {
+//     const posts = (await getPosts())
+  
+//     return {
+//       props: {
+//         posts,
+//       },
+//     }
+  
+//   }
 
 const Categories = () => {
+    // const posts = await getPosts()
+
+    // console.log(posts)
 
   return (
     <div className="w-[80vw] mx-auto">
