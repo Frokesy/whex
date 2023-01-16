@@ -1,10 +1,10 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import { FaArchive, FaNewspaper, FaPeopleCarry } from 'react-icons/fa'
 import Footer from '../../../components/blog/Footer'
-// import { getPosts } from '../../../services'
+import { getPosts } from '../../../services'
 
 // export async function getStaticProps() {
-//     const posts = (await getPosts())
+//     const posts = await getPosts()
   
 //     return {
 //       props: {
@@ -15,10 +15,15 @@ import Footer from '../../../components/blog/Footer'
 //   }
 
 const Categories = () => {
-    // const posts = await getPosts()
+        
+        const fetchPosts = async () => {
+            const posts = await getPosts()
+            console.log(posts.articles)
+        }
 
-    // console.log(posts)
-
+        useEffect(() => {
+            fetchPosts()
+        }, [])
   return (
     <div className="w-[80vw] mx-auto">
         <h2 className="text-white text-[30px]">Browse Categories</h2>
