@@ -15,7 +15,7 @@ const Blog = ({ singleBlog }) => {
       <div className='bg-neutral-800'>
           <Header />
           <div className="w-[70vw] flex justify-between space-x-10 mx-auto text-[#ccc] pt-[15vh]">
-            <div className="w-[40%] h-[50vh]">
+            <div className="w-[40%] h-[40vh]">
               <img src={singleBlog.coverPhoto.url} alt="coverphoto" className="w-[100%] h-[100%]" />
             </div>
             <div className="w-[60%]">

@@ -1,14 +1,15 @@
 import Link from 'next/link'
 import React, { useEffect } from 'react'
-import { FaArchive, FaNewspaper, FaPeopleCarry } from 'react-icons/fa'
+import { FaArchive, FaCoins, FaFootballBall, FaMusic, FaNewspaper, FaPeopleArrows, FaPeopleCarry } from 'react-icons/fa'
+import NFTs from '../../../components/blog/categories/NFTs'
 import Footer from '../../../components/blog/Footer'
-import { getPosts } from '../../../services'
+import { getPopularTopics } from '../../../services'
 
 const Categories = () => {
     const [posts, setPosts] = React.useState([])
         
         const fetchPosts = async () => {
-            const posts = await getPosts()
+            const posts = await getPopularTopics()
             setPosts(posts.articles)
         }
 
@@ -19,17 +20,21 @@ const Categories = () => {
     <div className="w-[80vw] mx-auto">
         <h2 className="text-white text-[30px]">Browse Categories</h2>
       <div className="flex justify-between pt-6 w-[55vw] space-x-6 mx-auto">
-        <div className="bg-white py-3 px-12 rounded-lg flex space-x-2 items-center text-[16px]">
-            <FaNewspaper />
-            <h3>News and articles</h3>
+        <div className="bg-white py-3 px-12 cursor-pointer rounded-lg flex space-x-2 items-center text-[16px]">
+            <FaCoins />
+            <h3>NFTs</h3>
         </div>
-        <div className="bg-white py-3 px-12 rounded-lg flex space-x-2 items-center text-[16px]">
-            <FaPeopleCarry />
-            <h3>Most Popular</h3>
+        <div className="bg-white py-3 px-12 rounded-lg cursor-pointer flex space-x-2 items-center text-[16px]">
+            <FaPeopleArrows />
+            <h3>Politics</h3>
         </div>
-        <div className="bg-white py-3 px-12 rounded-lg flex space-x-2 items-center text-[16px]">
-            <FaArchive />
-            <h3>Recommended for you</h3>
+        <div className="bg-white py-3 px-12 rounded-lg cursor-pointer flex space-x-2 items-center text-[16px]">
+            <FaMusic />
+            <h3>Entertainment</h3>
+        </div>
+        <div className="bg-white py-3 px-12 rounded-lg cursor-pointer flex space-x-2 items-center text-[16px]">
+            <FaFootballBall />
+            <h3>Sports</h3>
         </div>
       </div>
       <div className="pt-[10vh]">
@@ -53,57 +58,7 @@ const Categories = () => {
             </div>
         </div>
 
-
-        <div className="pt-[10vh]">
-            <h2 className="text-white text-[30px]">News and Articles</h2>
-
-            <div className="grid grid-cols-2 gap-x-14 pt-6 w-[80vw] mx-auto">
-                <div className="grid grid-cols-2 gap-6">
-                <div className="flex flex-col bg-white rounded-t-3xl">
-                    <img src="/blog/image4.png" alt="image1" className="h-[90%]" />
-                    <h2 className="pt-4 px-6 font-bold">WHEX article</h2>
-                    <span className="pb-4 pt-2 px-6 text-[13px]">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum, repellat.</span>
-                    <div className="flex justify-end pb-3 pt-1 px-6">
-                        <button className="bg-blue-400 font-light text-white rounded-lg font-mono text-[12px] px-4 py-2">Read More</button>
-                    </div>
-                </div>
-                <div className="flex flex-col bg-white rounded-t-3xl">
-                    <img src="/blog/image3.png" alt="image1" className="h-[90%]" />
-                    <h2 className="pt-4 px-6 font-bold">Our Universe</h2>
-                    <span className="pb-4 pt-2 px-6 text-[13px]">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum, repellat.</span>
-                    <div className="flex justify-end pb-3 pt-1 px-6">
-                        <button className="bg-blue-400 font-light text-white rounded-lg font-mono text-[12px] px-4 py-2">Read More</button>
-                    </div>
-                </div>
-                <div className="flex flex-col bg-white rounded-t-3xl">
-                    <img src="/blog/image2.png" alt="image1" className="h-[90%]" />
-                    <h2 className="pt-4 px-6 font-bold">Time is of the essence</h2>
-                    <span className="pb-4 pt-2 px-6 text-[13px]">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum, repellat.</span>
-                    <div className="flex justify-end pb-3 pt-1 px-6">
-                        <button className="bg-blue-400 font-light text-white rounded-lg font-mono text-[12px] px-4 py-2">Read More</button>
-                    </div>
-                </div>
-                <div className="flex flex-col bg-white rounded-t-3xl">
-                    <img src="/blog/image1.png" alt="image1" className="h-[90%]" />
-                    <h2 className="pt-4 px-6 font-bold">Getting the best out of yourself</h2>
-                    <span className="pb-4 pt-2 px-6 text-[13px]">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum, repellat.</span>
-                    <div className="flex justify-end pb-3 pt-1 px-6">
-                        <button className="bg-blue-400 font-light text-white rounded-lg font-mono text-[12px] px-4 py-2">Read More</button>
-                    </div>
-                </div>
-                </div>
-                <div className="">
-                <div className="flex flex-col bg-white h-full">
-                    <img src="/blog/cover.png" alt="image1" className="h-[80%]" />
-                    <h2 className="pt-4 px-6 font-bold">What is new with WHEX?</h2>
-                    <span className="pb-4 pt-2 px-6 text-[13px]">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nobis asperiores enim expedita architecto totam, deserunt explicabo nam accusantium in illo eos ea neque a! Assumenda tenetur, adipisci delectus atque velit dolore soluta eaque dolores dolorum consectetur iure, nulla fugiat maiores, enim veritatis repudiandae quis accusantium!</span>
-                    <div className="flex justify-end pb-3 pt-1 px-6">
-                        <button className="bg-blue-400 font-light text-white rounded-lg font-mono text-[12px] px-4 py-2">Read More</button>
-                    </div>
-                </div>
-                </div>
-            </div>
-        </div>
+        <NFTs />
 
         <div className="pt-[10vh]">
             <h2 className="text-white text-[30px]">Recommendation</h2>
