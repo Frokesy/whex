@@ -4,6 +4,7 @@ import { FaArchive, FaCoins, FaFootballBall, FaMusic, FaNewspaper, FaPeopleArrow
 import Entertainment from '../../../components/blog/categories/Entertainment'
 import NFTs from '../../../components/blog/categories/NFTs'
 import Politics from '../../../components/blog/categories/Politics'
+import Sports from '../../../components/blog/categories/Sports'
 import Footer from '../../../components/blog/Footer'
 import { getPopularTopics } from '../../../services'
 
@@ -72,8 +73,12 @@ const Categories = () => {
             <Entertainment />
         </div>
 
+        <div id='sports'>
+            <Sports />
+        </div>
+
         <div className="pt-[10vh]">
-            <h2 className="text-white text-[30px]">Recommendation</h2>
+            <h2 className="text-white text-[30px]">Featured Posts</h2>
 
             <div className="pt-6 grid grid-cols-2 gap-x-10 ">
                 <div className="flex flex-col space-y-4">
@@ -128,64 +133,6 @@ const Categories = () => {
                     <span className="pb-4 pt-2 px-6 text-[13px]">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nobis asperiores enim expedita architecto totam, deserunt explicabo nam accusantium in illo eos ea neque a! Assumenda tenetur, adipisci delectus atque velit dolore soluta eaque dolores dolorum consectetur iure, nulla fugiat maiores, enim veritatis repudiandae quis accusantium!</span>
                     <div className="flex justify-end pb-3 pt-1 px-6">
                         <button className="bg-blue-400 font-light text-white rounded-lg font-mono text-[12px] px-4 py-2">Read More</button>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-
-        <div className="pt-[10vh]">
-            <h2 className="text-white text-[30px]">Latest Posts</h2>
-
-            <div className="flex justify-between space-x-10 pt-6">
-                <div className="flex flex-col bg-white rounded-t-3xl">
-                    <img src="/blog/image5.png" alt="image5" className="h-[90%]" />
-                    <span className="px-6 pt-4 pb-3 text-[15px]">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Modi aliquam nesciunt minima sunt culpa harum necessitatibus deserunt quam cum fugit?</span>
-                    <div className="flex pb-6 pt-2 px-6">
-                            <div className="flex space-x-2">
-                            <img src="/peter_wake.jpg" alt="image1" className="w-[12%] rounded-full" />
-                            <div className="flex flex-col">
-                                <span className="font-bold text-[15px]">Peter Wake</span>
-                                <span className="text-[11px]">4th June, 2021</span>
-                            </div>
-                        </div>
-                        <div className="flex justify-end w-full">
-                            <button className="bg-blue-400 font-light text-white rounded-lg text-[12px] px-4 py-2">Read More</button>
-                        </div>
-                    </div>
-                </div>
-                <div className="flex flex-col bg-white rounded-t-3xl">
-                    <img src="/blog/image6.png" alt="image5" className="h-[90%]" />
-                    <span className="px-6 pt-4 pb-3 text-[15px]">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Modi aliquam nesciunt minima sunt culpa harum necessitatibus deserunt quam cum fugit?</span>
-
-                    <div className="flex pb-6 pt-2 px-6">
-                            <div className="flex space-x-2">
-                            <img src="/peter_wake.jpg" alt="image1" className="w-[12%] rounded-full" />
-                            <div className="flex flex-col">
-                                <span className="font-bold text-[15px]">Peter Wake</span>
-                                <span className="text-[11px]">4th June, 2021</span>
-                            </div>
-                        </div>
-                        <div className="flex justify-end w-full">
-                            <button className="bg-blue-400 font-light text-white rounded-lg text-[12px] px-4 py-2">Read More</button>
-                        </div>
-                    </div>
-                </div>
-                <div className="flex flex-col bg-white rounded-t-3xl">
-                    <img src="/blog/image7.png" alt="image5" className="h-[90%]" />
-                    <span className="px-6 pt-4 pb-3 text-[15px]">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Modi aliquam nesciunt minima sunt culpa harum necessitatibus deserunt quam cum fugit?</span>
-                    
-                    <div className="flex pb-6 pt-2 px-6">
-                            <div className="flex space-x-2">
-                            <img src="/peter_wake.jpg" alt="image1" className="w-[12%] rounded-full" />
-                            <div className="flex flex-col">
-                                <span className="font-bold text-[15px]">Peter Wake</span>
-                                <span className="text-[11px]">4th June, 2021</span>
-                            </div>
-                        </div>
-                        <div className="flex justify-end w-full">
-                            <button className="bg-blue-400 font-light text-white rounded-lg text-[12px] px-4 py-2">Read More</button>
-                        </div>
                     </div>
                 </div>
             </div>
