@@ -49,12 +49,3 @@ const NFTs = () => {
 }
 
 export default NFTs
-
-export const getStaticProps = async ({ params }) => {
-    const articlesByCategory = await getArticlesByCategory(params.category);
-    return {
-      props: {
-        articles: articles.articles,
-      }
-    };
-  };

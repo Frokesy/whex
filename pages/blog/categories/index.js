@@ -2,6 +2,7 @@ import Link from 'next/link'
 import React, { useEffect } from 'react'
 import { FaArchive, FaCoins, FaFootballBall, FaMusic, FaNewspaper, FaPeopleArrows, FaPeopleCarry } from 'react-icons/fa'
 import NFTs from '../../../components/blog/categories/NFTs'
+import Politics from '../../../components/blog/categories/Politics'
 import Footer from '../../../components/blog/Footer'
 import { getPopularTopics } from '../../../services'
 
@@ -58,7 +59,13 @@ const Categories = () => {
             </div>
         </div>
 
-        <NFTs />
+        <div id='nfts'>
+            <NFTs />
+        </div>
+
+        <div id='politics'>
+            <Politics />
+        </div>
 
         <div className="pt-[10vh]">
             <h2 className="text-white text-[30px]">Recommendation</h2>
