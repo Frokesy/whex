@@ -1,24 +1,15 @@
+import Link from 'next/link'
 import React, { useEffect } from 'react'
 import { FaArchive, FaNewspaper, FaPeopleCarry } from 'react-icons/fa'
 import Footer from '../../../components/blog/Footer'
 import { getPosts } from '../../../services'
 
-// export async function getStaticProps() {
-//     const posts = await getPosts()
-  
-//     return {
-//       props: {
-//         posts,
-//       },
-//     }
-  
-//   }
-
 const Categories = () => {
+    const [posts, setPosts] = React.useState([])
         
         const fetchPosts = async () => {
             const posts = await getPosts()
-            console.log(posts.articles)
+            setPosts(posts.articles)
         }
 
         useEffect(() => {
@@ -44,23 +35,21 @@ const Categories = () => {
       <div className="pt-[10vh]">
             <h2 className="text-white text-[30px]">Popular Topics</h2>
 
-            <div className="grid grid-cols-4 gap-x-6 pt-6 w-[80vw] mx-auto">
-                <div className="flex flex-col bg-white rounded-t-3xl">
-                    <img src="/blog/image1.png" alt="image1" className="h-[90%]" />
-                    <h2 className="py-4 px-6 font-bold">Law and crypto</h2>
-                </div>
-                <div className="flex flex-col bg-white rounded-t-3xl">
-                    <img src="/blog/image2.png" alt="image1" className="h-[90%]" />
-                    <h2 className="py-4 px-6 font-bold">The Metaverse</h2>
-                </div>
-                <div className="flex flex-col bg-white rounded-t-3xl">
-                    <img src="/blog/image3.png" alt="image1" className="h-[90%]" />
-                    <h2 className="py-4 px-6 font-bold">Bitcoin today</h2>
-                </div>
-                <div className="flex flex-col bg-white rounded-t-3xl">
-                    <img src="/blog/image4.png" alt="image1" className="h-[90%]" />
-                    <h2 className="py-4 px-6 font-bold">WHEX article</h2>
-                </div>
+            <div className="grid grid-cols-4 gap-x-6 pt-6 w-[85vw] mx-auto">
+                {posts?.map((post, index) => (
+                        <div key={index} className="flex flex-col bg-white rounded-t-3xl">
+                            <div className="h-[30vh] object-cover">
+                                <img src={post.coverPhoto.url} alt="image1" className="h-[100%] w-[100%]" />
+                            </div>
+                            <Link href={`/blog/${post.slug}`} passHref>
+                                <h2 className="py-2 px-3 font-semibold text-[16px] hover:underline cursor-pointer">{post.title.length > 90 ? `${post.title.slice(0, 90)}...` : `${post.title}`}.</h2>
+                            </Link>
+                        {/* <span>{post.content.text}</span> */}
+                        <div className="flex justify-end pb-3 pt-4 px-3">
+                            <span className="bg-purple-900 font-bold text-white rounded-tl-lg rounded-br-lg font-mono text-[12px] px-6 py-1">{post.categories[0].name}</span>
+                        </div>
+                        </div>
+                    ))}
             </div>
         </div>
 
