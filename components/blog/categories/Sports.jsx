@@ -2,7 +2,7 @@ import Link from 'next/link'
 import React from 'react'
 import { getArticlesByCategory } from '../../../services'
 
-const Sports = () => {
+const News = () => {
     const [articles, setArticles] = React.useState([])
         
     const fetchArticles = async () => {
@@ -20,7 +20,7 @@ const Sports = () => {
   return (
     <div>
        <div className="pt-[10vh] w-[85vw]">
-            <h2 className="text-white text-[30px]">Sports</h2>
+            <h2 className="text-white text-[30px]">Global News</h2>
             <div className="grid grid-cols-3 gap-10 pt-6 w-[85vw] mx-auto">
                 {articlesToDisplay?.map((article, index) => (
                         <div key={index} className="flex flex-col bg-white rounded-t-3xl rounded-br-3xl">
@@ -48,4 +48,4 @@ const Sports = () => {
   )
 }
 
-export default Sports
+export default News

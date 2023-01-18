@@ -1,10 +1,9 @@
 import Link from 'next/link'
 import React, { useEffect } from 'react'
-import { FaArchive, FaCoins, FaFootballBall, FaMusic, FaNewspaper, FaPeopleArrows, FaPeopleCarry } from 'react-icons/fa'
+import { FaCoins, FaNewspaper, FaMusic } from 'react-icons/fa'
 import Entertainment from '../../../components/blog/categories/Entertainment'
 import NFTs from '../../../components/blog/categories/NFTs'
-import Politics from '../../../components/blog/categories/Politics'
-import Sports from '../../../components/blog/categories/Sports'
+import News from '../../../components/blog/categories/Sports'
 import Footer from '../../../components/blog/Footer'
 import { getPopularTopics } from '../../../services'
 
@@ -25,19 +24,15 @@ const Categories = () => {
       <div className="flex justify-between pt-6 w-[55vw] space-x-6 mx-auto">
         <div className="bg-white py-3 px-12 cursor-pointer rounded-lg flex space-x-2 items-center text-[16px]">
             <FaCoins />
-            <h3>NFTs</h3>
-        </div>
-        <div className="bg-white py-3 px-12 rounded-lg cursor-pointer flex space-x-2 items-center text-[16px]">
-            <FaPeopleArrows />
-            <h3>Politics</h3>
+            <h3>NFTs/Cryptocurrencies</h3>
         </div>
         <div className="bg-white py-3 px-12 rounded-lg cursor-pointer flex space-x-2 items-center text-[16px]">
             <FaMusic />
             <h3>Entertainment</h3>
         </div>
         <div className="bg-white py-3 px-12 rounded-lg cursor-pointer flex space-x-2 items-center text-[16px]">
-            <FaFootballBall />
-            <h3>Sports</h3>
+            <FaNewspaper />
+            <h3>Global News</h3>
         </div>
       </div>
       <div className="pt-[10vh]">
@@ -65,16 +60,12 @@ const Categories = () => {
             <NFTs />
         </div>
 
-        <div id='politics'>
-            <Politics />
-        </div>
-
         <div id='entertainment'>
             <Entertainment />
         </div>
 
-        <div id='sports'>
-            <Sports />
+        <div id='global-news'>
+            <News />
         </div>
 
         <div className="pt-[10vh]">

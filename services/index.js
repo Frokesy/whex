@@ -56,6 +56,36 @@ export const getArticlesByCategory = async(category) => {
     return response
 }
 
+export const getFeaturedArticles = async() => {
+    const graphQLClient = new GraphQLClient(graphqlAPI)
+    const query = gql `
+        {
+          articles(where: {featured: true}, orderBy: publishedAt_DESC) {
+            title
+            slug
+            featured
+            excerpt
+            coverPhoto {
+              url
+            }
+            categories {
+              id
+              name
+            }
+            publishedAt
+            author {
+              name
+              avatar {
+                url
+              }
+          }
+      }
+    `
+
+    const response = await graphQLClient.request(query)
+    return response
+}
+
 export const getSingleBlog = async(slug) => {
     const graphQLClient = new GraphQLClient(graphqlAPI)
     const query = gql `
