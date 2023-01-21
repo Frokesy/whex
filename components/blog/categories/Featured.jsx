@@ -1,4 +1,5 @@
 import moment from 'moment'
+import Link from 'next/link'
 import React from 'react'
 import { getFeaturedArticles } from '../../../services'
 
@@ -42,7 +43,9 @@ const Featured = () => {
                                     </div>
                                 </div>
                                 <div className="flex justify-end w-full">
+                                    <Link href={`/blog/${article.slug}`} passHref>
                                     <button className="bg-blue-400 font-light text-white rounded-lg text-[12px] px-4 py-2">Read More</button>
+                                    </Link>
                                 </div>
                             </div>
                         </div>
@@ -56,7 +59,9 @@ const Featured = () => {
                     <h2 className="pt-4 px-6 font-bold">{mainFeaturedArticle?.title}</h2>
                     <span className="pb-4 pt-2 px-6 text-[13px]">{mainFeaturedArticle?.excerpt}</span>
                     <div className="flex justify-end pb-3 pt-1 px-6">
+                        <Link href={`/blog/${mainFeaturedArticle.slug}`} passHref>
                         <button className="bg-blue-400 font-light text-white rounded-lg font-mono text-[12px] px-4 py-2">Read More</button>
+                        </Link>
                     </div>
                 </div>
             </div>

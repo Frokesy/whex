@@ -1128,6 +1128,10 @@ Ensure the default browser behavior of the `hidden` attribute.
   padding-top: 0.25rem;
 }
 
+.pt-3 {
+  padding-top: 0.75rem;
+}
+
 .text-center {
   text-align: center;
 }
@@ -1207,6 +1211,10 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .text-\[40px\] {
   font-size: 40px;
+}
+
+.text-\[24px\] {
+  font-size: 24px;
 }
 
 .font-semibold {
@@ -1358,6 +1366,14 @@ Ensure the default browser behavior of the `hidden` attribute.
     height: 15rem;
   }
 
+  .lg\:h-\[40vh\] {
+    height: 40vh;
+  }
+
+  .lg\:h-\[4rem\] {
+    height: 4rem;
+  }
+
   .lg\:w-\[95vw\] {
     width: 95vw;
   }
@@ -1392,6 +1408,18 @@ Ensure the default browser behavior of the `hidden` attribute.
 
   .lg\:w-\[20vw\] {
     width: 20vw;
+  }
+
+  .lg\:w-\[40\%\] {
+    width: 40%;
+  }
+
+  .lg\:w-\[70vw\] {
+    width: 70vw;
+  }
+
+  .lg\:w-\[60\%\] {
+    width: 60%;
   }
 
   .lg\:grid-cols-3 {
@@ -1453,6 +1481,10 @@ Ensure the default browser behavior of the `hidden` attribute.
     padding-top: 40vh;
   }
 
+  .lg\:pt-0 {
+    padding-top: 0px;
+  }
+
   .lg\:text-\[60px\] {
     font-size: 60px;
   }
@@ -1467,5 +1499,13 @@ Ensure the default browser behavior of the `hidden` attribute.
 
   .lg\:text-\[25px\] {
     font-size: 25px;
+  }
+
+  .lg\:text-\[32px\] {
+    font-size: 32px;
+  }
+
+  .lg\:text-\[15px\] {
+    font-size: 15px;
   }
 }

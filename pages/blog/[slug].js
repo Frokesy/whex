@@ -10,17 +10,16 @@ const Blog = ({ singleBlog }) => {
     const router = useRouter()
     if (router.isFallback) return <>Loading...</>;
 
-    console.log(singleBlog)
   return (
       <div className='bg-neutral-800'>
           <Header />
-          <div className="w-[70vw] flex justify-between space-x-10 mx-auto text-[#ccc] pt-[15vh]">
-            <div className="w-[40%] h-[40vh]">
+          <div className="w-screen lg:w-[70vw] lg:flex-row flex-col flex justify-between space-x-10 mx-auto text-[#ccc] pt-[15vh]">
+            <div className="lg:w-[40%] w-[90vw] mx-auto h-[40vh]">
               <img src={singleBlog.coverPhoto.url} alt="coverphoto" className="w-[100%] h-[100%]" />
             </div>
-            <div className="w-[60%]">
-              <h1 className="text-[32px] pb-6 text-[#fff] font-bold">{singleBlog.title}</h1>
-              <div className="text-[15px] mt-4">
+            <div className="lg:w-[60%] w-[90vw] mx-auto">
+              <h1 className="lg:text-[32px] text-[22px] lg:pt-0 pt-4 pb-6 text-[#fff] font-bold">{singleBlog.title}</h1>
+              <div className="lg:text-[15px] text-[13px] mt-4">
                 {parse(singleBlog.content.html)}
               </div>
             </div>
