@@ -59,26 +59,27 @@ export const getArticlesByCategory = async(category) => {
 export const getFeaturedArticles = async() => {
     const graphQLClient = new GraphQLClient(graphqlAPI)
     const query = gql `
-        {
-          articles(where: {featured: true}, orderBy: publishedAt_DESC) {
-            title
-            slug
-            featured
-            excerpt
-            coverPhoto {
-              url
-            }
-            categories {
-              id
-              name
-            }
-            publishedAt
-            author {
-              name
-              avatar {
+          {
+            articles(where: {featured: true}, orderBy: publishedAt_DESC) {
+              title
+              slug
+              featured
+              excerpt
+              coverPhoto {
                 url
               }
-          }
+              categories {
+                id
+                name
+              }
+              createdAt
+              author {
+                name
+                avatar {
+                  url
+                }
+            }
+      }
       }
     `
 

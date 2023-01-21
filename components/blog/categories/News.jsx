@@ -24,7 +24,7 @@ const News = () => {
             <div className="grid grid-cols-3 gap-10 pt-6 w-[85vw] mx-auto">
                 {articlesToDisplay?.map((article, index) => (
                         <div key={index} className="flex flex-col bg-white rounded-t-3xl rounded-br-3xl">
-                            <div className="h-[30vh] object-cover">
+                            <div className="h-[35vh] object-cover">
                                 <img src={article.coverPhoto.url} alt="image1" className="h-[100%] w-[100%]" />
                             </div>
                                 <h2 className="py-2 px-3 font-semibold text-[16px] hover:underline cursor-pointer">{article.title.length > 90 ? `${article.title.slice(0, 90)}...` : `${article.title}`}.</h2>

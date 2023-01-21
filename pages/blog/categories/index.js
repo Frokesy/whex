@@ -6,6 +6,7 @@ import NFTs from '../../../components/blog/categories/NFTs'
 import News from '../../../components/blog/categories/News'
 import Footer from '../../../components/blog/Footer'
 import { getPopularTopics } from '../../../services'
+import Featured from '../../../components/blog/categories/Featured'
 
 const Categories = () => {
     const [posts, setPosts] = React.useState([])
@@ -47,7 +48,6 @@ const Categories = () => {
                             <Link href={`/blog/${post.slug}`} passHref>
                                 <h2 className="py-2 px-3 font-semibold text-[16px] hover:underline cursor-pointer">{post.title.length > 90 ? `${post.title.slice(0, 90)}...` : `${post.title}`}.</h2>
                             </Link>
-                        {/* <span>{post.content.text}</span> */}
                         <div className="flex justify-end pb-3 pt-4 px-3">
                             <span className="bg-purple-900 font-bold text-white rounded-tl-lg rounded-br-lg font-mono text-[12px] px-6 py-1">{post.categories[0].name}</span>
                         </div>
@@ -66,6 +66,10 @@ const Categories = () => {
 
         <div id='global-news'>
             <News />
+        </div>
+
+        <div id="featured">
+            <Featured />
         </div>
 
     
