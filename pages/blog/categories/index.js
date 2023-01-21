@@ -7,6 +7,7 @@ import News from '../../../components/blog/categories/News'
 import Footer from '../../../components/blog/Footer'
 import { getPopularTopics } from '../../../services'
 import Featured from '../../../components/blog/categories/Featured'
+import Meta from '../../defaults/Meta'
 
 const Categories = () => {
     const [posts, setPosts] = React.useState([])
@@ -21,6 +22,7 @@ const Categories = () => {
         }, [])
   return (
     <div className="w-[80vw] mx-auto">
+        <Meta />
         <h2 className="text-white text-[30px]">Browse Categories</h2>
       <div className="flex justify-between pt-6 w-[55vw] space-x-6 mx-auto">
         <div className="bg-white py-3 px-12 cursor-pointer rounded-lg flex space-x-2 items-center text-[16px]">

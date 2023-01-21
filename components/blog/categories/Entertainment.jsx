@@ -1,5 +1,6 @@
 import Link from 'next/link'
 import React from 'react'
+import Meta from '../../../pages/defaults/Meta'
 import { getArticlesByCategory } from '../../../services'
 
 const Entertainment = () => {
@@ -19,6 +20,7 @@ const Entertainment = () => {
     
   return (
     <div>
+      <Meta />
        <div className="pt-[10vh] w-[85vw]">
             <h2 className="text-white text-[30px]">Entertainment</h2>
             <div className="grid grid-cols-3 gap-10 pt-6 w-[85vw] mx-auto">
