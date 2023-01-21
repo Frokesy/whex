@@ -15,7 +15,6 @@ const Featured = () => {
         React.useEffect(() => {
             fetchFeaturedArticles()
         }, [])
-        console.log(mainFeaturedArticle)
   return (
     <div>
           <div className="pt-[10vh] w-[85vw]">

@@ -1,6 +1,6 @@
 import Link from 'next/link'
 import React, { useEffect } from 'react'
-import { FaCoins, FaNewspaper, FaMusic } from 'react-icons/fa'
+import { FaCoins, FaNewspaper, FaMusic, FaArchive } from 'react-icons/fa'
 import Entertainment from '../../../components/blog/categories/Entertainment'
 import NFTs from '../../../components/blog/categories/NFTs'
 import News from '../../../components/blog/categories/News'
@@ -25,15 +25,15 @@ const Categories = () => {
       <div className="flex justify-between pt-6 w-[55vw] space-x-6 mx-auto">
         <div className="bg-white py-3 px-12 cursor-pointer rounded-lg flex space-x-2 items-center text-[16px]">
             <FaCoins />
-            <h3>NFTs/Cryptocurrencies</h3>
+            <a href='#nfts'>NFTs/Cryptocurrencies</a>
         </div>
         <div className="bg-white py-3 px-12 rounded-lg cursor-pointer flex space-x-2 items-center text-[16px]">
             <FaMusic />
-            <h3>Entertainment</h3>
+            <a href='#entertainment'>Entertainment</a>
         </div>
         <div className="bg-white py-3 px-12 rounded-lg cursor-pointer flex space-x-2 items-center text-[16px]">
             <FaNewspaper />
-            <h3>Global News</h3>
+            <a href="global-news">Global News</a>
         </div>
       </div>
       <div className="pt-[10vh]">
