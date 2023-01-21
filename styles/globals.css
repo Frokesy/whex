@@ -511,6 +511,16 @@ Ensure the default browser behavior of the `hidden` attribute.
   margin-right: 1rem;
 }
 
+.mx-8 {
+  margin-left: 2rem;
+  margin-right: 2rem;
+}
+
+.mx-12 {
+  margin-left: 3rem;
+  margin-right: 3rem;
+}
+
 .mb-\[5vh\] {
   margin-bottom: 5vh;
 }
@@ -557,6 +567,14 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .mt-10 {
   margin-top: 2.5rem;
+}
+
+.mr-12 {
+  margin-right: 3rem;
+}
+
+.ml-12 {
+  margin-left: 3rem;
 }
 
 .flex {
@@ -625,6 +643,10 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .h-\[40\%\] {
   height: 40%;
+}
+
+.h-\[4rem\] {
+  height: 4rem;
 }
 
 .w-\[80vw\] {
@@ -717,6 +739,10 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .w-\[80\%\] {
   width: 80%;
+}
+
+.w-\[4rem\] {
+  width: 4rem;
 }
 
 .max-w-\[60vw\] {
@@ -841,6 +867,12 @@ Ensure the default browser behavior of the `hidden` attribute.
   --tw-space-y-reverse: 0;
   margin-top: calc(1rem * calc(1 - var(--tw-space-y-reverse)));
   margin-bottom: calc(1rem * var(--tw-space-y-reverse));
+}
+
+.space-x-12 > :not([hidden]) ~ :not([hidden]) {
+  --tw-space-x-reverse: 0;
+  margin-right: calc(3rem * var(--tw-space-x-reverse));
+  margin-left: calc(3rem * calc(1 - var(--tw-space-x-reverse)));
 }
 
 .rounded-full {
@@ -1171,6 +1203,10 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .text-\[11px\] {
   font-size: 11px;
+}
+
+.text-\[40px\] {
+  font-size: 40px;
 }
 
 .font-semibold {

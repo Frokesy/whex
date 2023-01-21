@@ -53,9 +53,9 @@ const Featured = () => {
 
 
                 <div className="flex flex-col bg-white rounded-t-3xl">
-                        <img src={mainFeaturedArticle.coverPhoto.url} alt="image1" className="object-fit h-[40vh] w-[100%]" />
-                    <h2 className="pt-4 px-6 font-bold">{mainFeaturedArticle.title}</h2>
-                    <span className="pb-4 pt-2 px-6 text-[13px]">{mainFeaturedArticle.excerpt}</span>
+                        <img src={mainFeaturedArticle?.coverPhoto?.url} alt="image1" className="object-fit h-[40vh] w-[100%]" />
+                    <h2 className="pt-4 px-6 font-bold">{mainFeaturedArticle?.title}</h2>
+                    <span className="pb-4 pt-2 px-6 text-[13px]">{mainFeaturedArticle?.excerpt}</span>
                     <div className="flex justify-end pb-3 pt-1 px-6">
                         <button className="bg-blue-400 font-light text-white rounded-lg font-mono text-[12px] px-4 py-2">Read More</button>
                     </div>
