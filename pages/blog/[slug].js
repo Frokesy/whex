@@ -14,7 +14,7 @@ const Blog = ({ singleBlog }) => {
       <div className='bg-neutral-800'>
           <Meta />
           <Header />
-          <div className="w-screen lg:w-[70vw] lg:flex-row flex-col flex justify-between space-x-10 mx-auto text-[#ccc] pt-[15vh]">
+          <div className="w-screen lg:w-[70vw] lg:flex-row flex-col flex lg:justify-between lg:space-x-10 mx-auto text-[#ccc] pt-[15vh]">
             <div className="lg:w-[40%] w-[90vw] mx-auto h-[40vh]">
               <img src={singleBlog.coverPhoto.url} alt="coverphoto" className="w-[100%] h-[100%]" />
             </div>

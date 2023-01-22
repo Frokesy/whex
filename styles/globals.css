@@ -516,11 +516,6 @@ Ensure the default browser behavior of the `hidden` attribute.
   margin-right: 2rem;
 }
 
-.mx-12 {
-  margin-left: 3rem;
-  margin-right: 3rem;
-}
-
 .mb-\[5vh\] {
   margin-bottom: 5vh;
 }
@@ -563,18 +558,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .mt-8 {
   margin-top: 2rem;
-}
-
-.mt-10 {
-  margin-top: 2.5rem;
-}
-
-.mr-12 {
-  margin-right: 3rem;
-}
-
-.ml-12 {
-  margin-left: 3rem;
 }
 
 .flex {
@@ -625,30 +608,6 @@ Ensure the default browser behavior of the `hidden` attribute.
   height: 35vh;
 }
 
-.h-\[50vh\] {
-  height: 50vh;
-}
-
-.h-\[90\%\] {
-  height: 90%;
-}
-
-.h-\[80\%\] {
-  height: 80%;
-}
-
-.h-\[60vh\] {
-  height: 60vh;
-}
-
-.h-\[40\%\] {
-  height: 40%;
-}
-
-.h-\[4rem\] {
-  height: 4rem;
-}
-
 .w-\[80vw\] {
   width: 80vw;
 }
@@ -661,24 +620,16 @@ Ensure the default browser behavior of the `hidden` attribute.
   width: 2rem;
 }
 
-.w-\[70vw\] {
-  width: 70vw;
-}
-
-.w-\[40\%\] {
-  width: 40%;
-}
-
-.w-\[100\%\] {
-  width: 100%;
-}
-
-.w-\[60\%\] {
-  width: 60%;
+.w-screen {
+  width: 100vw;
 }
 
 .w-\[90vw\] {
   width: 90vw;
+}
+
+.w-\[100\%\] {
+  width: 100%;
 }
 
 .w-\[55vw\] {
@@ -701,10 +652,6 @@ Ensure the default browser behavior of the `hidden` attribute.
   width: 20vw;
 }
 
-.w-screen {
-  width: 100vw;
-}
-
 .w-\[3\.5rem\] {
   width: 3.5rem;
 }
@@ -717,32 +664,12 @@ Ensure the default browser behavior of the `hidden` attribute.
   width: 30%;
 }
 
-.w-\[35\%\] {
-  width: 35%;
-}
-
 .w-\[14\%\] {
   width: 14%;
 }
 
-.w-\[90\%\] {
-  width: 90%;
-}
-
-.w-\[45\%\] {
-  width: 45%;
-}
-
-.w-\[50\%\] {
-  width: 50%;
-}
-
-.w-\[80\%\] {
-  width: 80%;
-}
-
-.w-\[4rem\] {
-  width: 4rem;
+.w-\[70vw\] {
+  width: 70vw;
 }
 
 .max-w-\[60vw\] {
@@ -869,12 +796,6 @@ Ensure the default browser behavior of the `hidden` attribute.
   margin-bottom: calc(1rem * var(--tw-space-y-reverse));
 }
 
-.space-x-12 > :not([hidden]) ~ :not([hidden]) {
-  --tw-space-x-reverse: 0;
-  margin-right: calc(3rem * var(--tw-space-x-reverse));
-  margin-left: calc(3rem * calc(1 - var(--tw-space-x-reverse)));
-}
-
 .rounded-full {
   border-radius: 9999px;
 }
@@ -889,10 +810,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .rounded-2xl {
   border-radius: 1rem;
-}
-
-.rounded-3xl {
-  border-radius: 1.5rem;
 }
 
 .rounded-t-3xl {
@@ -929,16 +846,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 .border-zinc-600 {
   --tw-border-opacity: 1;
   border-color: rgb(82 82 91 / var(--tw-border-opacity));
-}
-
-.border-red-100 {
-  --tw-border-opacity: 1;
-  border-color: rgb(254 226 226 / var(--tw-border-opacity));
-}
-
-.border-red-500 {
-  --tw-border-opacity: 1;
-  border-color: rgb(239 68 68 / var(--tw-border-opacity));
 }
 
 .bg-neutral-800 {
@@ -1080,6 +987,10 @@ Ensure the default browser behavior of the `hidden` attribute.
   padding-top: 15vh;
 }
 
+.pt-4 {
+  padding-top: 1rem;
+}
+
 .pb-6 {
   padding-bottom: 1.5rem;
 }
@@ -1104,10 +1015,6 @@ Ensure the default browser behavior of the `hidden` attribute.
   padding-bottom: 0.75rem;
 }
 
-.pt-4 {
-  padding-top: 1rem;
-}
-
 .pt-8 {
   padding-top: 2rem;
 }
@@ -1128,8 +1035,8 @@ Ensure the default browser behavior of the `hidden` attribute.
   padding-top: 0.25rem;
 }
 
-.pt-3 {
-  padding-top: 0.75rem;
+.pb-\[5vh\] {
+  padding-bottom: 5vh;
 }
 
 .text-center {
@@ -1164,8 +1071,12 @@ Ensure the default browser behavior of the `hidden` attribute.
   font-size: 30px;
 }
 
-.text-\[32px\] {
-  font-size: 32px;
+.text-\[22px\] {
+  font-size: 22px;
+}
+
+.text-\[13px\] {
+  font-size: 13px;
 }
 
 .text-\[100px\] {
@@ -1184,10 +1095,6 @@ Ensure the default browser behavior of the `hidden` attribute.
   font-size: 12px;
 }
 
-.text-\[13px\] {
-  font-size: 13px;
-}
-
 .text-\[18px\] {
   font-size: 18px;
 }
@@ -1195,10 +1102,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 .text-4xl {
   font-size: 2.25rem;
   line-height: 2.5rem;
-}
-
-.text-\[22px\] {
-  font-size: 22px;
 }
 
 .text-\[14px\] {
@@ -1211,6 +1114,14 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .text-\[40px\] {
   font-size: 40px;
+}
+
+.text-\[60px\] {
+  font-size: 60px;
+}
+
+.text-\[50px\] {
+  font-size: 50px;
 }
 
 .text-\[24px\] {
@@ -1326,6 +1237,12 @@ Ensure the default browser behavior of the `hidden` attribute.
           text-decoration-line: underline;
 }
 
+@media (min-width: 640px) {
+  .sm\:text-center {
+    text-align: center;
+  }
+}
+
 @media (min-width: 768px) {
   .md\:hidden {
     display: none;
@@ -1366,16 +1283,24 @@ Ensure the default browser behavior of the `hidden` attribute.
     height: 15rem;
   }
 
-  .lg\:h-\[40vh\] {
-    height: 40vh;
-  }
-
   .lg\:h-\[4rem\] {
     height: 4rem;
   }
 
   .lg\:w-\[95vw\] {
     width: 95vw;
+  }
+
+  .lg\:w-\[70vw\] {
+    width: 70vw;
+  }
+
+  .lg\:w-\[40\%\] {
+    width: 40%;
+  }
+
+  .lg\:w-\[60\%\] {
+    width: 60%;
   }
 
   .lg\:w-\[15rem\] {
@@ -1410,16 +1335,12 @@ Ensure the default browser behavior of the `hidden` attribute.
     width: 20vw;
   }
 
-  .lg\:w-\[40\%\] {
-    width: 40%;
+  .lg\:w-\[55vw\] {
+    width: 55vw;
   }
 
-  .lg\:w-\[70vw\] {
-    width: 70vw;
-  }
-
-  .lg\:w-\[60\%\] {
-    width: 60%;
+  .lg\:max-w-\[60vw\] {
+    max-width: 60vw;
   }
 
   .lg\:grid-cols-3 {
@@ -1436,6 +1357,10 @@ Ensure the default browser behavior of the `hidden` attribute.
 
   .lg\:justify-end {
     justify-content: flex-end;
+  }
+
+  .lg\:justify-between {
+    justify-content: space-between;
   }
 
   .lg\:space-y-0 > :not([hidden]) ~ :not([hidden]) {
@@ -1485,6 +1410,10 @@ Ensure the default browser behavior of the `hidden` attribute.
     padding-top: 0px;
   }
 
+  .lg\:pb-\[10vh\] {
+    padding-bottom: 10vh;
+  }
+
   .lg\:text-\[60px\] {
     font-size: 60px;
   }
@@ -1497,15 +1426,23 @@ Ensure the default browser behavior of the `hidden` attribute.
     font-size: 20px;
   }
 
-  .lg\:text-\[25px\] {
-    font-size: 25px;
-  }
-
   .lg\:text-\[32px\] {
     font-size: 32px;
   }
 
   .lg\:text-\[15px\] {
     font-size: 15px;
+  }
+
+  .lg\:text-\[25px\] {
+    font-size: 25px;
+  }
+
+  .lg\:text-\[100px\] {
+    font-size: 100px;
+  }
+
+  .lg\:text-\[30px\] {
+    font-size: 30px;
   }
 }
