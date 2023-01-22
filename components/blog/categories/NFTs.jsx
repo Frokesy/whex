@@ -6,7 +6,7 @@ const NFTs = () => {
     const [articles, setArticles] = React.useState([])
         
     const fetchArticles = async () => {
-        const articles = await getArticlesByCategory("Sports")
+        const articles = await getArticlesByCategory("NFTs")
         setArticles(articles.articles)
     }
 

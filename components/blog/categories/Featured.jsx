@@ -36,10 +36,7 @@ const Featured = () => {
                                 <div className="flex space-x-2">
                                     <img src={article.author.avatar.url} alt="image1" className="w-[3rem] h-[2.2rem] rounded-full" />
                                     <div className="flex flex-col">
-                                        <span className="font-semibold lg:text-[13px] text-[11px]">Peter Wake</span>
-                                        <span className="lg:text-[11px] text-[11px]">
-                                            {moment(article.createdAt).format('MMMM Do YYYY')}
-                                        </span>
+                                        <span className="font-semibold lg:text-[13px] text-[11px]">{article.author.name}</span>
                                     </div>
                                 </div>
                                 <div className="flex justify-end w-full">

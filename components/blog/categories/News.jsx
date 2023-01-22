@@ -6,7 +6,7 @@ const News = () => {
     const [articles, setArticles] = React.useState([])
         
     const fetchArticles = async () => {
-        const articles = await getArticlesByCategory("Sports")
+        const articles = await getArticlesByCategory("Global news")
         setArticles(articles.articles)
     }
 
