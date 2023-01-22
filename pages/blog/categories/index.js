@@ -21,34 +21,38 @@ const Categories = () => {
             fetchPosts()
         }, [])
   return (
-    <div className="w-[80vw] mx-auto">
+    <div className="lg:w-[80vw] w-[90vw] mx-auto">
         <Meta />
-        <h2 className="text-white text-[30px]">Browse Categories</h2>
-      <div className="flex justify-between pt-6 w-[55vw] space-x-6 mx-auto">
-        <div className="bg-white py-3 px-12 cursor-pointer rounded-lg flex space-x-2 items-center text-[16px]">
+        <h2 className="text-white lg:text-[30px] text-[22px] font-bold">Browse Categories</h2>
+      <div className="flex justify-between pt-6 lg:w-[55vw] w-[90vw] overflow-scroll lg:overflow-hidden space-x-6 mx-auto">
+        <div className="bg-white lg:py-3 py-1 lg:px-12 px-4 cursor-pointer rounded-lg flex space-x-2 items-center text-[13px] lg:text-[16px]">
             <FaCoins />
-            <a href='#nfts'>NFTs/Cryptocurrencies</a>
+            <a href='#nfts'>NFTs/Crypto</a>
         </div>
-        <div className="bg-white py-3 px-12 rounded-lg cursor-pointer flex space-x-2 items-center text-[16px]">
+        <div className="bg-white lg:py-3 py-1 lg:px-12 px-4 rounded-lg cursor-pointer flex space-x-2 items-center text-[13px] lg:text-[16px]">
             <FaMusic />
             <a href='#entertainment'>Entertainment</a>
         </div>
-        <div className="bg-white py-3 px-12 rounded-lg cursor-pointer flex space-x-2 items-center text-[16px]">
+        <div className="bg-white lg:py-3 py-1 lg:px-12 hidden rounded-lg cursor-pointer lg:flex space-x-2 items-center text-[13px] lg:text-[16px]">
             <FaNewspaper />
             <a href="global-news">Global News</a>
         </div>
+        <div className="bg-white lg:py-3 py-1 lg:px-12 px-4 rounded-lg cursor-pointer flex lg:hidden space-x-2 items-center text-[13px] lg:text-[16px]">
+            <FaNewspaper />
+            <a href="global-news">News</a>
+        </div>
       </div>
       <div className="pt-[10vh]">
-            <h2 className="text-white text-[30px]">Popular Topics</h2>
+            <h2 className="text-white lg:text-[30px] text-[22px] font-bold">Popular Topics</h2>
 
-            <div className="grid grid-cols-4 gap-x-6 pt-6 w-[85vw] mx-auto">
+            <div className="grid lg:grid-cols-4 lg:gap-x-6 pt-6 lg:w-[85vw] w-[90vw] gap-y-8 lg:gap-y-0 grid-cols-1 mx-auto">
                 {posts?.map((post, index) => (
                         <div key={index} className="flex flex-col bg-white rounded-t-3xl">
-                            <div className="h-[30vh] object-cover">
+                            <div className="lg:h-[30vh] h-[35vh] object-cover">
                                 <img src={post.coverPhoto.url} alt="image1" className="h-[100%] w-[100%]" />
                             </div>
                             <Link href={`/blog/${post.slug}`} passHref>
-                                <h2 className="py-2 px-3 font-semibold text-[16px] hover:underline cursor-pointer">{post.title.length > 90 ? `${post.title.slice(0, 90)}...` : `${post.title}`}.</h2>
+                                <h2 className="lg:py-2 py-4 px-3 font-semibold text-[16px] hover:underline cursor-pointer">{post.title.length > 90 ? `${post.title.slice(0, 90)}...` : `${post.title}`}.</h2>
                             </Link>
                         <div className="flex justify-end pb-3 pt-4 px-3">
                             <span className="bg-purple-900 font-bold text-white rounded-tl-lg rounded-br-lg font-mono text-[12px] px-6 py-1">{post.categories[0].name}</span>
