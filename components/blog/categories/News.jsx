@@ -19,9 +19,9 @@ const News = () => {
     
   return (
     <div>
-       <div className="pt-[10vh] w-[85vw]">
-            <h2 className="text-white text-[30px]">Global News</h2>
-            <div className="grid grid-cols-3 gap-10 pt-6 w-[85vw] mx-auto">
+       <div className="pt-[10vh] lg:w-[85vw] w-[90vw]">
+            <h2 className="text-white lg:text-[30px] text-[22px] font-bold">Global News</h2>
+            <div className="grid lg:grid-cols-3 grid-cols-1 gap-10 pt-6 lg:w-[85vw] w-[90vw] mx-auto">
                 {articlesToDisplay?.map((article, index) => (
                         <div key={index} className="flex flex-col bg-white rounded-t-3xl rounded-br-3xl">
                             <div className="h-[35vh] object-cover">
