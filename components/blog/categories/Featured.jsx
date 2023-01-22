@@ -29,7 +29,9 @@ const Featured = () => {
                             <img src={article.coverPhoto.url} alt={article.slug} className="h-[100%] w-[100%] object-cover" />
                         </div>
                         <div className="flex flex-col space-y-2 px-3 rounded-r-lg">
+                        <Link href={`/blog/${article.slug}`} passHref>
                             <h2 className="pt-6 text-[20px] font-bold cursor-pointer hover:underline">{article.title}</h2>
+                        </Link>
                             <span className="text-[14px]">{article.excerpt}</span>
                             
                             <div className="flex pb-6 pt-2">

@@ -10,9 +10,10 @@ const Blog = ({ singleBlog }) => {
     const router = useRouter()
     if (router.isFallback) return <>Loading...</>;
 
+
   return (
       <div className='bg-neutral-800'>
-          <Meta />
+          <Meta title={singleBlog.title} />
           <Header />
           <div className="w-screen lg:w-[70vw] lg:flex-row flex-col flex lg:justify-between lg:space-x-10 mx-auto text-[#ccc] pt-[15vh]">
             <div className="lg:w-[40%] w-[90vw] mx-auto h-[40vh]">

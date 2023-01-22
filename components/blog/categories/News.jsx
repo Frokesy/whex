@@ -27,7 +27,9 @@ const News = () => {
                             <div className="h-[35vh] object-cover">
                                 <img src={article.coverPhoto.url} alt="image1" className="h-[100%] w-[100%]" />
                             </div>
+                            <Link href={`/blog/${article.slug}`} passHref>
                                 <h2 className="py-2 px-3 font-semibold text-[16px] hover:underline cursor-pointer">{article.title.length > 90 ? `${article.title.slice(0, 90)}...` : `${article.title}`}.</h2>
+                            </Link>
                             
                             <span className="px-3 text-[13px]">{article.excerpt.length > 210 ? `${article.excerpt.slice(0, 210)}...` : `${article.excerpt}`}</span>
                         <div className="flex justify-end py-4 px-3">

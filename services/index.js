@@ -94,6 +94,7 @@ export const getSingleBlog = async(slug) => {
         articles(where: {slug: $slug}) {
           title
           featured
+          slug
           content {
             html
           }
