@@ -511,11 +511,6 @@ Ensure the default browser behavior of the `hidden` attribute.
   margin-right: 1rem;
 }
 
-.mx-8 {
-  margin-left: 2rem;
-  margin-right: 2rem;
-}
-
 .mb-\[5vh\] {
   margin-bottom: 5vh;
 }
@@ -596,48 +591,16 @@ Ensure the default browser behavior of the `hidden` attribute.
   height: 100vh;
 }
 
-.h-\[30vh\] {
-  height: 30vh;
+.h-\[35vh\] {
+  height: 35vh;
 }
 
 .h-\[10rem\] {
   height: 10rem;
 }
 
-.h-\[35vh\] {
-  height: 35vh;
-}
-
-.h-\[50vh\] {
-  height: 50vh;
-}
-
-.h-\[14\%\] {
-  height: 14%;
-}
-
-.h-\[50\%\] {
-  height: 50%;
-}
-
-.h-\[60\%\] {
-  height: 60%;
-}
-
-.h-\[3rem\] {
-  height: 3rem;
-}
-
-.h-\[2\.5rem\] {
-  height: 2.5rem;
-}
-
 .h-\[2\.2rem\] {
   height: 2.2rem;
-}
-
-.h-\[2\.4rem\] {
-  height: 2.4rem;
 }
 
 .w-\[80vw\] {
@@ -664,16 +627,16 @@ Ensure the default browser behavior of the `hidden` attribute.
   width: 100%;
 }
 
-.w-\[85vw\] {
-  width: 85vw;
-}
-
 .w-full {
   width: 100%;
 }
 
 .w-\[10rem\] {
   width: 10rem;
+}
+
+.w-\[85vw\] {
+  width: 85vw;
 }
 
 .w-\[20vw\] {
@@ -688,34 +651,6 @@ Ensure the default browser behavior of the `hidden` attribute.
   width: 3rem;
 }
 
-.w-\[30\%\] {
-  width: 30%;
-}
-
-.w-\[14\%\] {
-  width: 14%;
-}
-
-.w-\[2\.5rem\] {
-  width: 2.5rem;
-}
-
-.w-\[2\.8rem\] {
-  width: 2.8rem;
-}
-
-.w-\[2\.2rem\] {
-  width: 2.2rem;
-}
-
-.w-\[98vw\] {
-  width: 98vw;
-}
-
-.w-\[100vw\] {
-  width: 100vw;
-}
-
 .cursor-pointer {
   cursor: pointer;
 }
@@ -724,16 +659,8 @@ Ensure the default browser behavior of the `hidden` attribute.
   grid-template-columns: repeat(1, minmax(0, 1fr));
 }
 
-.grid-cols-4 {
-  grid-template-columns: repeat(4, minmax(0, 1fr));
-}
-
 .grid-cols-3 {
   grid-template-columns: repeat(3, minmax(0, 1fr));
-}
-
-.grid-cols-2 {
-  grid-template-columns: repeat(2, minmax(0, 1fr));
 }
 
 .flex-row {
@@ -768,9 +695,8 @@ Ensure the default browser behavior of the `hidden` attribute.
   gap: 2.5rem;
 }
 
-.gap-x-6 {
-  -moz-column-gap: 1.5rem;
-       column-gap: 1.5rem;
+.gap-y-8 {
+  row-gap: 2rem;
 }
 
 .gap-y-10 {
@@ -780,18 +706,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 .gap-x-10 {
   -moz-column-gap: 2.5rem;
        column-gap: 2.5rem;
-}
-
-.gap-y-4 {
-  row-gap: 1rem;
-}
-
-.gap-y-6 {
-  row-gap: 1.5rem;
-}
-
-.gap-y-8 {
-  row-gap: 2rem;
 }
 
 .space-y-10 > :not([hidden]) ~ :not([hidden]) {
@@ -868,14 +782,6 @@ Ensure the default browser behavior of the `hidden` attribute.
   border-radius: 1rem;
 }
 
-.rounded-xl {
-  border-radius: 0.75rem;
-}
-
-.rounded-3xl {
-  border-radius: 1.5rem;
-}
-
 .rounded-t-3xl {
   border-top-left-radius: 1.5rem;
   border-top-right-radius: 1.5rem;
@@ -910,11 +816,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 .border-zinc-600 {
   --tw-border-opacity: 1;
   border-color: rgb(82 82 91 / var(--tw-border-opacity));
-}
-
-.border-red-500 {
-  --tw-border-opacity: 1;
-  border-color: rgb(239 68 68 / var(--tw-border-opacity));
 }
 
 .bg-neutral-800 {
@@ -999,34 +900,24 @@ Ensure the default browser behavior of the `hidden` attribute.
   padding-bottom: 3vh;
 }
 
+.py-1 {
+  padding-top: 0.25rem;
+  padding-bottom: 0.25rem;
+}
+
 .px-4 {
   padding-left: 1rem;
   padding-right: 1rem;
 }
 
-.py-3 {
-  padding-top: 0.75rem;
-  padding-bottom: 0.75rem;
-}
-
-.px-12 {
-  padding-left: 3rem;
-  padding-right: 3rem;
-}
-
-.py-2 {
-  padding-top: 0.5rem;
-  padding-bottom: 0.5rem;
+.py-4 {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
 }
 
 .px-3 {
   padding-left: 0.75rem;
   padding-right: 0.75rem;
-}
-
-.py-1 {
-  padding-top: 0.25rem;
-  padding-bottom: 0.25rem;
 }
 
 .py-\[1vh\] {
@@ -1039,29 +930,9 @@ Ensure the default browser behavior of the `hidden` attribute.
   padding-bottom: 1.5rem;
 }
 
-.py-4 {
-  padding-top: 1rem;
-  padding-bottom: 1rem;
-}
-
-.py-0 {
-  padding-top: 0px;
-  padding-bottom: 0px;
-}
-
-.px-8 {
-  padding-left: 2rem;
-  padding-right: 2rem;
-}
-
-.px-10 {
-  padding-left: 2.5rem;
-  padding-right: 2.5rem;
-}
-
-.px-1 {
-  padding-left: 0.25rem;
-  padding-right: 0.25rem;
+.py-2 {
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
 }
 
 .pt-\[30vh\] {
@@ -1172,12 +1043,12 @@ Ensure the default browser behavior of the `hidden` attribute.
   font-size: 20px;
 }
 
-.text-\[12px\] {
-  font-size: 12px;
-}
-
 .text-\[16px\] {
   font-size: 16px;
+}
+
+.text-\[12px\] {
+  font-size: 12px;
 }
 
 .text-\[18px\] {
@@ -1195,18 +1066,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .text-\[11px\] {
   font-size: 11px;
-}
-
-.text-\[10px\] {
-  font-size: 10px;
-}
-
-.text-\[9px\] {
-  font-size: 9px;
-}
-
-.text-\[8px\] {
-  font-size: 8px;
 }
 
 .font-semibold {
@@ -1368,16 +1227,16 @@ Ensure the default browser behavior of the `hidden` attribute.
     height: 100vh;
   }
 
+  .lg\:h-\[30vh\] {
+    height: 30vh;
+  }
+
   .lg\:h-\[15rem\] {
     height: 15rem;
   }
 
   .lg\:h-\[4rem\] {
     height: 4rem;
-  }
-
-  .lg\:h-\[30vh\] {
-    height: 30vh;
   }
 
   .lg\:h-auto {
@@ -1406,6 +1265,10 @@ Ensure the default browser behavior of the `hidden` attribute.
 
   .lg\:w-\[80vw\] {
     width: 80vw;
+  }
+
+  .lg\:w-\[85vw\] {
+    width: 85vw;
   }
 
   .lg\:w-\[15rem\] {
@@ -1438,10 +1301,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 
   .lg\:w-\[20vw\] {
     width: 20vw;
-  }
-
-  .lg\:w-\[85vw\] {
-    width: 85vw;
   }
 
   .lg\:w-\[30\%\] {
@@ -1541,6 +1400,11 @@ Ensure the default browser behavior of the `hidden` attribute.
     padding-right: 3rem;
   }
 
+  .lg\:py-2 {
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+  }
+
   .lg\:px-4 {
     padding-left: 1rem;
     padding-right: 1rem;
@@ -1549,11 +1413,6 @@ Ensure the default browser behavior of the `hidden` attribute.
   .lg\:px-16 {
     padding-left: 4rem;
     padding-right: 4rem;
-  }
-
-  .lg\:py-2 {
-    padding-top: 0.5rem;
-    padding-bottom: 0.5rem;
   }
 
   .lg\:pt-\[40vh\] {
@@ -1602,14 +1461,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 
   .lg\:text-\[25px\] {
     font-size: 25px;
-  }
-
-  .lg\:text-\[14px\] {
-    font-size: 14px;
-  }
-
-  .lg\:text-\[11px\] {
-    font-size: 11px;
   }
 
   .lg\:text-\[13px\] {
