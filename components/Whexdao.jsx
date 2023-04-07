@@ -12,32 +12,33 @@ const Whexdao = () => {
     >
     <div className="flex flex-row space-x-2 justify-center items-center">
         <img src="/logo.jpg" alt="whexdao-logo" className="rounded-full lg:w-[4rem] md:w-[3rem] w-[3rem]" />
-        <span className="lg:text-[25px] text-[18px] font-mono font-bold text-white">WHEXcosystem DAO (WHEXDAO)</span>
+        <span className="lg:text-[25px] text-[18px] font-mono font-bold text-white">WHEXcosystem Exploder Ecosystem Daov2</span>
     </div>
     <div className="flex flex-col mx-4 space-y-3 mt-6 text-neutral-400">
+                <span className="text-[14px] font-mono font-semibold">
+                    {">>"} Pancake Swap: {" "}
+                        <a href="https://pancakeswap.finance/swap?inputCurrency=0x55d398326f99059fF775485246999027B3197955&outputCurrency=0x64235611f7D0BfCbBd079e0Ff1824466e697dCf5" 
+                        target="_blank" rel="noreferrer" className="text-blue-400 underline font-light">
+                           https://pancakeswap.finance/swap?inputCurrency=0x55d398326f99059fF775485246999027B3197955&outputCurrency=0x64235611f7D0BfCbBd079e0Ff1824466e697dCf5
+                        </a>    
+                </span>
                 <span className="text-[14px] font-semibold">
                     {">>"} Network: Binance Smart Chain
                 </span>
                 <span className="text-[14px] font-semibold">
-                    {">>"} Address: 0x1fFD93F8c3d99bDAA4A012A0Fc26868F00Cfa5c2
+                    {">>"} Address: 0x64235611f7D0BfCbBd079e0Ff1824466e697dCf5
                 </span>
                 <span className="text-[14px] font-semibold">
-                    {">>"} Symbol: $WHEXDAO
+                    {">>"} Symbol: $WEED
                 </span>
                 <span className="text-[14px] font-semibold">
-                    {">>"} Decimals: 9
+                    {">>"} Decimals: 18
                 </span>
                 <span className="text-[14px] font-semibold">
-                    {">>"} Initial Supply: 1,000,000,000 WHEXDAO
+                    {">>"} Staking: coming soon.
                 </span>
                 <span className="text-[14px] font-semibold">
-                    {">>"} Stockpile Address: 0x0D7079098C8feb4F4AEF40703CE83eCc704f371d
-                </span>
-                <span className="text-[14px] font-semibold">
-                    {">>"} Private Sales: 35,000,000
-                </span>
-                <span className="text-[14px] font-semibold">
-                    {">>"} Split Presale: 300,000,000
+                    {">>"} Initial Supply: 1,000,000 WHEXDAO
                 </span>
             </div>
             {isDaoVisible && (
@@ -45,7 +46,7 @@ const Whexdao = () => {
                 initial={{ 
                     y: 0,
                     opacity: 0,
-                 }}
+                }}
                 animate={{ 
                     y: 15,
                     opacity: 1, 
@@ -55,50 +56,49 @@ const Whexdao = () => {
                  }}
                 >
             <div className="flex flex-col mx-4 space-y-3 text-neutral-400">
-            <span className="text-[14px] font-semibold">
-                    {">>"} Airdrop to WHEX holders (on completion of split presale): 100,000,000
+                <span className="text-[14px] font-semibold">
+                    {">>"} Private Sales: 35,000
                 </span>
                 <span className="text-[14px] font-semibold">
-                    {">>"} whexdao/xphx pool: 20,000,000
+                    {">>"} Airdrop to WHEXy Whales 1-2000: 83,330
                 </span>
                 <span className="text-[14px] font-semibold">
-                    {">>"} Airdrop to WHEXy Whales 1-1964: 81, 830, 060
+                    {">>"} Split Presale - Burn WHEX option: 15,922
                 </span>
                 <span className="text-[14px] font-semibold">
-                    {">>"} Airdrop for minting WHEXy whales 1965-4800 (41,665 each): 118, 169, 940
+                    {">>"} Flash Sales: 4,282
                 </span>
                 <span className="text-[14px] font-semibold">
-                    {">>"} Babydoge rewards for WHEX/XPHX farm: 65, 000, 000
+                    {">>"} Airdrop for minting WHEXy whales 2001-4800 (41.665 each): 116,662
                 </span>
                 <span className="text-[14px] font-semibold">
-                    {">>"} Pancake Swap (WHEXDAO/BNB): 100, 000, 060
+                    {">>"} Token Sale (buy with whex): 279, 796
                 </span>
                 <span className="text-[14px] font-semibold">
-                    {">>"} WHEXDAO Reserve: 170, 000, 000 0x188f92ACD1A82b54ce713cAFa8e8217c1089230c
+                    {">>"} Pancake Swap (WEED/USDT) : (12,982 so far) 100,000
                 </span>
                 <span className="text-[14px] font-semibold">
-                    {">>"} PhoenixCo allocation: 10, 000, 000
+                    {">>"} Airdrop to WHEX holders (on completion of split presale): 100,000
+                </span>
+                <span className="text-[14px] font-semibold">
+                    {">>"} WEED Reserve: 170,000 0x188f92ACD1A82b54ce713cAFa8e8217c1089230c
+                </span>
+                <span className="text-[14px] font-semibold">
+                    {">>"} Staking Rewards: 95,008
                 </span>
             <h2 className="flex text-white pt-8 text-[18px] font-mono font-bold">Voting Mechanism</h2>
                 <span className="text-[12px] font-semibold text-neutral-400">
-                    {">>"}A voting cycle is initiated by Peter Wake, or by someone sending 4800 WHEXDAO tokens to the stockpile address and proposing a question to Peter Wake, who will then set up the voting addresses.
+                    {">>"} Holders will be able to vote soon, without having to send tokens to addresses using a dapp. This will allow holders to participate in the future of the WHEXcosystem without the need to give up voting power. 
                 </span>
                 <span className="text-[12px] font-semibold text-neutral-400">
-                    {">>"}  WHEXDAO tokens are sent out from the Stockpile to holders of WHEXy Whales at a rate of 1 WHEXDAO per 1 WHEXy Whale.
+                    {">>"} The decision will be carried out by the WHEXcosystem team. (Must have at least 51% of the total $WEED used to vote).
                 </span>
                 <span className="text-[12px] font-semibold text-neutral-400">
-                    {">>"} Peter Wake will then publish a question in discord, Twitter and telegram and provide directions on what address to send WHEXDAO tokens to for each option.
-                </span>
-                <span className="text-[12px] font-semibold text-neutral-400">
-                    {">>"} The voting period will end 42 hours after the vote goes live. All WHEXDAO tokens held by the vote option. addresses will be sent back to the stockpile.
-                </span>
-                <span className="text-[12px] font-semibold text-neutral-400">
-                    {">>"} The decision will be carried out by the WHEXcosystem team. (Must have at least 51% of the total WHEXDAO used to vote).
+                    {">>"}  Voting on the $WEED tokenomics, what to do with the $WEED built up in DAO Treasury and $WHEX in the charity/burn wallet are allowed.
                 </span>
                 <span className="text-[12px] font-semibold text-neutral-400">
                     {"Note"} As CEO, Peter Wake retains the right to veto any decision, or decide not to run a vote on a question presented by the community. I.E. you cannot use the DAO to perform a hostile takeover of the WHEX contract, decide to perform illegal acts, etc.
-                </span>
-                
+                </span>               
             </div>
                 </motion.div>
             )}
