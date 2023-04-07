@@ -105,7 +105,7 @@ const Footer = () => {
             <motion.span
             variants={linkVariants}
             whileHover="hover"
-            >Whexcosystem DAO (whexdao)</motion.span>
+            >WHEXcosystem Exploder Ecosystem Daov2 ($WEED)</motion.span>
           </Link>
           </div>
         </div>
