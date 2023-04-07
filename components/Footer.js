@@ -25,7 +25,7 @@ const Footer = () => {
             <h2 className="text-[30px] text-neutral-300 font-mono font-bold">Peter Wake</h2>
             <span className="text-[15px] font-mono text-blue-400 mb-4">Founder & CEO</span>
             <span className="text-[13px] mb-4 text-neutral-400 font-mono font-semibold">
-                Peter Wake is a Mining Engineering graduate (2020) working full time in IT/Business Development at a construction company in Ottawa, Canada.
+                Peter Wake is a Mining Engineering graduate (2020) 
             </span>
             <span className="mb-4 text-[13px] font-mono text-neutral-400 font-semibold">
                 In early 2021, Peter got into putting real money into cryptocurrency, starting with Dogecoin and some DeFi projects. He had been casually watching the market after having getting some free Doge in 2016 from a faucet
