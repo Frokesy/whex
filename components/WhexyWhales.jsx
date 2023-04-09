@@ -3,6 +3,8 @@ import { motion } from 'framer-motion'
 
 const WhexyWhales = () => {
     const [isWhexyVisible, setIsWhexyVisible] = useState(false)
+
+    const WEED = <span className="text-blue-400">$WEED</span>
   return (
     <div>
        <motion.div 
@@ -31,7 +33,7 @@ const WhexyWhales = () => {
                             {">>"} 25% to whale conservation charities 
                         </span>
                         <span className="text-[14px] font-semibold">
-                            {">>"} 25% buys WHEX for WHEXDAO staking pools.
+                            {">>"} 25% buys WHEX for {WEED} staking pools.
                         </span>
                         <span className="text-[14px] font-semibold">
                             {">>"} 25% to marketing and administrative costs 
@@ -64,12 +66,30 @@ const WhexyWhales = () => {
                             {"1."} Help real life whales
                         </span>
                         <span className="text-[14px] font-semibold  ">
-                            {"2."} get airdropped WHEXcosystem DAO tokens and participate in determining the future of the project
+                            {"2."} get airdropped WHEXcosystem DAO - {WEED} tokens and participate in determining the future of the project
                         </span>
                         <span className="text-[14px] font-semibold  ">
-                            {"3."} Participate in mint out rewards:
+                            {"3."} Access to getting a custom ENS subdomain of WHEXy.eth
                         </span>
-                        <div className="flex flex-col py-2 text-[13px] font-mono font-normal">
+                        <span className="text-[14px] font-semibold  ">
+                            {"4."} Access to an exclusive 
+                            <a href="https://discord.gg/ZDEZ2Kw5ZR" 
+                            target="_blank" rel="noreferrer" className="text-blue-400 font-semibold">
+                            {" "} Discord {" "}
+                            </a>  
+                            and
+                            <a href="https://telegram.me/collablandbot?start=VFBDI1RFTCNDT01NIy0xMDAxODE0NDA1MzMz" 
+                            target="_blank" rel="noreferrer" className="text-blue-400 font-semibold">
+                            {" "} Telegram {" "}
+                            </a> 
+                             chats
+                        </span>
+                        <span className="text-[14px] font-semibold  ">
+                            {"5."}  Use WHEXy whale in your company or merch store or partner with WHEXcosystem Inc. and split the profits.
+                        </span>
+
+
+                        {/* <div className="flex flex-col py-2 text-[13px] font-mono font-normal">
                             <span>
                               {">>"} 1916-2099: 0.275 ETH 
                             </span>
@@ -88,13 +108,7 @@ const WhexyWhales = () => {
                             <span>
                               {">>"} 4200-4799: Lazy Lion NFT
                             </span>
-                        </div>
-                        <span className="text-[14px] font-semibold  ">
-                            {"4."} Access to getting a custom ENS subdomain of WHEXy.eth
-                        </span>
-                        <span className="text-[14px] font-semibold  ">
-                            {"5."} Access to an exclusive discord chat
-                        </span>
+                        </div> */}
                        </div>
                       </motion.div>
                     )}
