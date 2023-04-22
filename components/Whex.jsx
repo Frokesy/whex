@@ -12,7 +12,7 @@ const Whex = () => {
                 <img src="/whale-exploder.png" alt="whex-logo" className="rounded-full lg:w-[4rem] md:w-[3rem] w-[3rem]" />
                 <span className="lg:text-[25px] text-[22px] font-mono font-bold text-white">Whale Exploder (WHEX)</span>
             </div>
-            <span className="flex justify-center text-neutral-400 mt-3 text-[14px] font-normal">67.1% in circulation, 32.9% burned, 20.08 BNB locked</span>
+            <span className="flex justify-center text-neutral-400 mt-3 text-[14px] font-normal">64.3% in circulation, 35.7% burned, 19.58 BNB locked</span>
                 <motion.div 
                  layout
                  transition={{ layout: { duration: 0.5 } }}>

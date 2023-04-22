@@ -11,15 +11,15 @@ const Whexdao = () => {
     id="whexdao"
     >
     <div className="flex flex-row space-x-2 justify-center items-center">
-        <img src="/logo.jpg" alt="whexdao-logo" className="rounded-full lg:w-[4rem] md:w-[3rem] w-[3rem]" />
+        <img src="/weed.png" alt="whexdao-logo" className="rounded-full lg:w-[4rem] md:w-[3rem] w-[3rem]" />
         <span className="lg:text-[25px] text-[18px] font-mono font-bold text-white">WHEXcosystem Exploder Ecosystem Daov2</span>
     </div>
     <div className="flex flex-col mx-4 space-y-3 mt-6 text-neutral-400">
                 <span className="text-[14px] font-mono font-semibold">
                     {">>"} Pancake Swap: {" "}
-                        <a href="https://pancakeswap.finance/swap?inputCurrency=0x55d398326f99059fF775485246999027B3197955&outputCurrency=0x64235611f7D0BfCbBd079e0Ff1824466e697dCf5" 
+                        <a href="https://pancakeswap.finance/swap?outputCurrency=0x31e79A378fb85D8c4d51489E5c90ecAF9c17935A" 
                         target="_blank" rel="noreferrer" className="text-blue-400 underline font-light">
-                           https://pancakeswap.finance/swap?inputCurrency=0x55d398326f99059fF775485246999027B3197955&outputCurrency=0x64235611f7D0BfCbBd079e0Ff1824466e697dCf5
+                           https://pancakeswap.finance/swap?outputCurrency=0x31e79A378fb85D8c4d51489E5c90ecAF9c17935A
                         </a>    
                 </span>
                 <span className="text-[14px] font-semibold">

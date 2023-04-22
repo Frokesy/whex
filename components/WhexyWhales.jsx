@@ -87,28 +87,6 @@ const WhexyWhales = () => {
                         <span className="text-[14px] font-semibold  ">
                             {"5."}  Use WHEXy whale in your company or merch store or partner with WHEXcosystem Inc. and split the profits.
                         </span>
-
-
-                        {/* <div className="flex flex-col py-2 text-[13px] font-mono font-normal">
-                            <span>
-                              {">>"} 1916-2099: 0.275 ETH 
-                            </span>
-                            <span>
-                              {">>"} 2100-2399: Typical Tiger NFT
-                            </span>
-                            <span>
-                              {">>"} 2400-2999: 0.55 ETH
-                            </span>
-                            <span>
-                              {">>"} 3000-3599: Apocalyptic Ape NFT
-                            </span>
-                            <span>
-                              {">>"} 3600-4199: 0.825 ETH
-                            </span>
-                            <span>
-                              {">>"} 4200-4799: Lazy Lion NFT
-                            </span>
-                        </div> */}
                        </div>
                       </motion.div>
                     )}
