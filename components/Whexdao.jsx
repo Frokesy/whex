@@ -14,10 +14,13 @@ const Whexdao = () => {
         <img src="/weed.png" alt="whexdao-logo" className="rounded-full lg:w-[4rem] md:w-[3rem] w-[3rem]" />
         <span className="lg:text-[25px] text-[18px] font-mono font-bold text-white">WHEXcosystem Exploder Ecosystem Daov2</span>
     </div>
-    <span className="flex justify-center text-neutral-400 mt-4 px-3 text-[13px] font-normal">The WHEXcosystem DAO ($WEED) token is used to make decisions on the future of the WHEXcosystem via blockchain vote. </span>
-    <span className="flex justify-center text-neutral-400 mt-2 px-3 text-[13px] font-normal">Proceeds and royalties of the WHEXy Whales:
-        <a href="https://app.niftykit.com/collections/drops/whexy" target="_blank" rel="noreferrer" className="text-blue-400 underline font-light">https://app.niftykit.com/collections/drops/whexy</a>   
-    </span>
+    <span className="flex justify-center text-neutral-200 lg:mt-6 mt-4 px-3 text-[14px]">The WHEXcosystem DAO ($WEED) token is used to make decisions on the future of the WHEXcosystem via blockchain vote. </span>
+    <span className="text-[14px] px-3 flex justify-start mt-2">Proceeds and royalties of the WHEXy Whales:</span>
+    <a href="https://pancakeswap.finance/swap?inputCurrency=0x55d398326f99059fF775485246999027B3197955&outputCurrency=0x64235611f7D0BfCbBd079e0Ff1824466e697dCf5" 
+    target="_blank" rel="noreferrer" 
+    className="text-blue-400 px-3 underline text-[14px] flex justify-start">
+        Click here
+    </a>   
     <div className="flex flex-col mx-4 space-y-3 mt-6 text-neutral-400">
                 <span className="text-[14px] font-mono font-semibold">
                     {">>"} Pancake Swap: {" "}
