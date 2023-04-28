@@ -16,17 +16,17 @@ const Whexdao = () => {
     </div>
     <span className="flex justify-center text-neutral-200 lg:mt-6 mt-4 px-3 text-[14px]">The WHEXcosystem DAO ($WEED) token is used to make decisions on the future of the WHEXcosystem via blockchain vote. </span>
     <span className="text-[14px] px-3 flex justify-start mt-2">Proceeds and royalties of the WHEXy Whales:</span>
-    <a href="https://pancakeswap.finance/swap?inputCurrency=0x55d398326f99059fF775485246999027B3197955&outputCurrency=0x64235611f7D0BfCbBd079e0Ff1824466e697dCf5" 
+    <a href="https://app.niftykit.com/collections/drops/whexy" 
     target="_blank" rel="noreferrer" 
     className="text-blue-400 px-3 underline text-[14px] flex justify-start">
-        Click here
+        https://app.niftykit.com/collections/drops/whexy
     </a>   
     <div className="flex flex-col mx-4 space-y-3 mt-6 text-neutral-400">
                 <span className="text-[14px] font-mono font-semibold">
                     {">>"} Pancake Swap: {" "}
-                        <a href="https://pancakeswap.finance/swap?outputCurrency=0x31e79A378fb85D8c4d51489E5c90ecAF9c17935A" 
+                        <a href="https://pancakeswap.finance/swap?inputCurrency=0x55d398326f99059fF775485246999027B3197955&outputCurrency=0x64235611f7D0BfCbBd079e0Ff1824466e697dCf5" 
                         target="_blank" rel="noreferrer" className="text-blue-400 underline font-light">
-                           https://pancakeswap.finance/swap?outputCurrency=0x31e79A378fb85D8c4d51489E5c90ecAF9c17935A
+                           https://pancakeswap.finance/swap?inputCurrency=0x55d398326f99059fF775485246999027B3197955&outputCurrency=0x64235611f7D0BfCbBd079e0Ff1824466e697dCf5
                         </a>    
                 </span>
                 <span className="text-[14px] font-semibold">
