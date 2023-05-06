@@ -86,20 +86,26 @@ const Home = () => {
          >
         <span className="text-white text-[30px] lg:text-[40px] font-mono text-center flex justify-center items-center font-semibold">Community</span>
         <span className="text-gray-400 text-[15px] px-6 lg:px-0 lg:text-[20px] font-[serif] flex items-center text-center justify-center mb-[5vh]">Connect with the fast growing whexcosystem, Join the community in saving the whales</span>
-          <div className="flex items-center justify-center space-x-10">
+        <div className="flex items-center justify-center space-x-10">
           <div className="flex flex-row justify-center">
-        <a href="https://twitter.com/whaleexploder">
-        <img src="/twitter.svg" alt="" className="w-[2rem] h-[2rem] my-4 mx-5" />
-        </a>
-        <a href="https://t.me/WHEXcosystem">
-        <img src="/telegram.svg" alt="" className="w-[2rem] h-[2rem] my-4 mx-5" />
-        </a>
-        <a 
-        href="https://www.reddit.com/r/WHEX/">
-          <img src="/reddit.svg" alt="" className="w-[2rem] h-[2rem] my-4 mx-5" />
-        </a>
-        <a href="https://bscscan.com/token/0x31e79A378fb85D8c4d51489E5c90ecAF9c17935A"><img src="/bscscan.png" alt="" className="bg-white w-[2rem] h-[2rem] rounded-full my-4 mx-5" /></a>
-        <a href="https://pancakeswap.finance/swap?outputCurrency=0x31e79A378fb85D8c4d51489E5c90ecAF9c17935A"><img src="/pcs.png" alt="" className="w-[2rem] h-[2rem] my-4 mx-5" /></a>
+            <a href="https://twitter.com/whaleexploder" target="_blank" rel="noreferrer">
+              <img src="/twitter.svg" alt="twitter" className="w-[2rem] h-[2rem] my-4 mx-5" />
+            </a>
+            <a href="https://t.me/WHEXcosystem" target="_blank" rel="noreferrer">
+              <img src="/telegram.svg" alt="telegram" className="w-[2rem] h-[2rem] my-4 mx-5" />
+            </a>
+            <a href="https://www.reddit.com/r/WHEX/" target="_blank" rel="noreferrer">
+              <img src="/reddit.svg" alt="reddit" className="w-[2rem] h-[2rem] my-4 mx-5" />
+            </a>
+            <a href="https://bscscan.com/token/0x31e79A378fb85D8c4d51489E5c90ecAF9c17935A" target="_blank" rel="noreferrer">
+              <img src="/bscscan.png" alt="bscscan" className="bg-white w-[2rem] h-[2rem] rounded-full my-4 mx-5" />
+            </a>
+            <a href="https://pancakeswap.finance/swap?outputCurrency=0x31e79A378fb85D8c4d51489E5c90ecAF9c17935A" target="_blank" rel="noreferrer">
+              <img src="/pcs.png" alt="pcs" className="w-[2rem] h-[2rem] my-4 mx-5" />
+            </a>
+            <a href="https://coinmarketcap.com/currencies/whale-exploder/" target="_blank" rel="noreferrer">
+              <img src="/cmc.svg" alt="cmc" className="w-[8rem] h-[2rem] my-4 mx-5" />
+            </a>
         </div>
           </div>
         </motion.div>
