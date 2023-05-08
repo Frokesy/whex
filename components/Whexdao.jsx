@@ -15,7 +15,7 @@ const Whexdao = () => {
         <span className="lg:text-[25px] text-[18px] font-mono font-bold text-white">WHEXcosystem Exploder Ecosystem Daov2</span>
     </div>
     <span className="flex justify-center text-neutral-200 lg:mt-6 mt-4 px-3 text-[14px]">The WHEXcosystem DAO ($WEED) token is used to make decisions on the future of the WHEXcosystem via blockchain vote. </span>
-    <span className="text-[14px] px-3 flex justify-start mt-2">Proceeds and royalties of the WHEXy Whales:</span>
+    <span className="text-[14px] px-3 flex justify-start mt-2">Staking rewards for $WEED are generated from 25% of the mint proceeds and royalties of the WHEXy Whales:</span>
     <a href="https://app.niftykit.com/collections/drops/whexy" 
     target="_blank" rel="noreferrer" 
     className="text-blue-400 px-3 underline text-[14px] flex justify-start">
@@ -61,7 +61,7 @@ const Whexdao = () => {
                     {">>"} Staking: coming soon.
                 </span>
                 <span className="text-[14px] font-semibold">
-                    {">>"} Initial Supply: 1,000,000 WHEXDAO
+                    {">>"} Initial Supply: 1,000,000 <span className="text-blue-400">WEED</span>
                 </span>
                 <span className="text-[14px] font-semibold">
                     {">>"} Private Sales: 35,000
@@ -85,13 +85,25 @@ const Whexdao = () => {
                     {">>"} Pancake Swap (WEED/USDT) : (12,982 so far) 100,000
                 </span>
                 <span className="text-[14px] font-semibold">
-                    {">>"} Airdrop to WHEX holders (on completion of split presale): 100,000
+                    {">>"} Airdrop to WHEX holders (snapshot May 8, 12:00 AM EST): 232,725 <span className="text-blue-400">WEED</span>
                 </span>
                 <span className="text-[14px] font-semibold">
-                    {">>"} WEED Reserve: 170,000 0x188f92ACD1A82b54ce713cAFa8e8217c1089230c
+                    {">>"} WEED Reserve: 12,079 0x188f92ACD1A82b54ce713cAFa8e8217c1089230c
                 </span>
                 <span className="text-[14px] font-semibold">
-                    {">>"} Staking Rewards: 95,008
+                    {">>"} Staking Rewards on Safeswap: 50,008
+                </span>
+                <span className="text-[14px] font-semibold">
+                    {">>"} DEXs (WEED/USDT): 100,000 {" "}
+                    <a href="https://pancakeswap.finance/swap?inputCurrency=0x55d398326f99059fF775485246999027B3197955&outputCurrency=0x64235611f7D0BfCbBd079e0Ff1824466e697dCf5" target="_blank" rel="noreferrer" className="text-blue-400 underline font-light">
+                    Click here to access
+                    </a>
+                </span>
+                <span className="text-[14px] font-semibold">
+                    {">>"} 1 BNB for 20,000 WEED 350,000 available:
+                    <a href="https://dappbuilder.org/bsc/tokensaletimerefadm/tokensale.html?id=0x7CfDE1ea2ef17BDB652e3cA889C5e2AA4E18424d&net=56" target="_blank" rel="noreferrer" className="text-blue-400 underline font-light">
+                    Click here to access
+                    </a>
                 </span>
             <h2 className="flex text-white pt-8 text-[18px] font-mono font-bold">Voting Mechanism</h2>
                 <span className="text-[12px] font-semibold text-neutral-400">
