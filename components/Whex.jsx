@@ -12,7 +12,10 @@ const Whex = () => {
 
   return (
     <div className="">
-            <div className="flex flex-row space-x-4 justify-start items-center">
+            <div
+            data-aos="fade-in" 
+            data-aos-duration="2000"
+            className="flex flex-row space-x-4 justify-start items-center">
                 <img src="/whale-exploder.png" alt="whex-logo" className="rounded-full lg:w-[6rem] md:w-[3rem] w-[4rem]" />
                 <div>
                     <span className="lg:text-[30px] text-[20px] font-bold text-white">Whale Exploder (WHEX)</span>
@@ -20,7 +23,7 @@ const Whex = () => {
                 </div>
             </div>
             <div className="grid lg:grid-cols-3 grid-cols-1 mt-10 gap-6">
-            <div className="flex flex-col space-y-3 lg:mx-6 text-neutral-400">
+            <div data-aos="fade-up" data-aos-duration="1000" className="flex flex-col space-y-3 lg:mx-6 text-neutral-400">
                 <h2 className="text-gray-100 text-[16px] font-bold">How to add {" "}<span className="text-blue-400 italic font-bold">$whex </span> to your wallet?</h2>
                 <span className="text-neutral-400 text-[14px] font-normal">You need to add the token manually on MetaMask or Trust Wallet in order to view token.</span>
                 <span className="text-[14px] font-semibold  ">
@@ -39,8 +42,8 @@ const Whex = () => {
                     {">>"} Decimals: 9
                 </span>
             </div>
-            <div data-aos="flip-left" data-aos-duration="2000"  className="border-b border-neutral-600 w-full my-6 lg:hidden"></div>
-                <div className="flex flex-col space-y-3">
+            <div className="border-b border-neutral-600 w-full my-6 lg:hidden"></div>
+                <div data-aos="fade-up" data-aos-duration="2000" className="flex flex-col space-y-3">
                     <h2 className="flex text-white text-[18px] font-mono font-bold">Tokenomics</h2>
                     <span className="text-[14px] text-neutral-400 font-semibold  ">
                         {">>"} 2% sent to a whale charity wallet
@@ -56,7 +59,7 @@ const Whex = () => {
                     </span>
                 </div>
                 <div className="border-b border-neutral-600 w-full my-6 lg:hidden"></div>
-                <div className="flex flex-col space-y-3">
+                <div className="flex flex-col space-y-3" data-aos="fade-up" data-aos-duration="3000">
                     <h2 className="flex text-gray-100 text-[18px] font-mono font-bold">Locked Liquidity</h2>
                     <span className="text-[14px] font-semibold text-neutral-400">
                         {">>"} 15.1 BNB of LP Locked for 5 years. Pancake LPs for Whale Exploder: 0xac3843ed09a264f26f2668a7c57b3191ad10a6f7

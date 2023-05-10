@@ -1,13 +1,22 @@
 import React, { useEffect, useState, useRef } from 'react'
-import { motion } from 'framer-motion'
+import AOS from "aos";
+import "aos/dist/aos.css";
+
 
 const WhexyWhales = () => {
-    const [isWhexyVisible, setIsWhexyVisible] = useState(false)
+    useEffect(() => {
+        AOS.init();
+        AOS.refresh();
+      }, []);
+
 
     const WEED = <span className="text-blue-400">$WEED</span>
   return (
-    <div className="pt-[10vh]" id="whexy">
-            <div className="flex flex-row space-x-4 justify-start items-center">
+    <div className="pt-[10vh] overflow-x-hidden" id="whexy">
+            <div 
+            data-aos="fade-in" 
+            data-aos-duration="2000"
+            className="flex flex-row space-x-4 justify-start items-center">
                 <img src="/whexy.png" alt="whexy-logo" className="rounded-full lg:w-[6rem] md:w-[4rem] w-[4rem]" />
                 <div>
                     <span className="lg:text-[32px] text-[20px] font-extrabold text-white">WHEXy whales (NFT)</span>
@@ -15,7 +24,10 @@ const WhexyWhales = () => {
                 </div>
             </div>
         <div className="grid lg:grid-cols-2 grid-cols-1 mt-10 lg:mx-6">
-            <div className="flex flex-col lg:mx-4 space-y-3 text-neutral-400">
+            <div 
+            data-aos="fade-up-right" 
+            data-aos-duration="2000"
+            className="flex flex-col lg:mx-4 space-y-3 text-neutral-400">
                 <span className="text-[18px] text-white font-mono font-bold">
                     Minting &amp; Royalties (How they will be used):
                 </span>
@@ -45,7 +57,10 @@ const WhexyWhales = () => {
             </div>
             <div className="border-b border-neutral-600 w-full lg:hidden my-10"></div>
 
-                <div className="flex flex-col mx-2 space-y-3 text-neutral-400">
+                <div
+                data-aos="fade-up-left" 
+                data-aos-duration="2000" 
+                className="flex flex-col mx-2 space-y-3 text-neutral-400">
                     <span className="text-[18px] text-white font-mono font-bold  ">
                         Why mint a WHEXy whale today?
                     </span>

@@ -501,19 +501,9 @@ Ensure the default browser behavior of the `hidden` attribute.
   margin-right: 10vw;
 }
 
-.mx-6 {
-  margin-left: 1.5rem;
-  margin-right: 1.5rem;
-}
-
-.mx-4 {
-  margin-left: 1rem;
-  margin-right: 1rem;
-}
-
-.mx-2 {
-  margin-left: 0.5rem;
-  margin-right: 0.5rem;
+.my-6 {
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
 }
 
 .my-10 {
@@ -521,9 +511,9 @@ Ensure the default browser behavior of the `hidden` attribute.
   margin-bottom: 2.5rem;
 }
 
-.my-6 {
-  margin-top: 1.5rem;
-  margin-bottom: 1.5rem;
+.mx-2 {
+  margin-left: 0.5rem;
+  margin-right: 0.5rem;
 }
 
 .mb-\[5vh\] {
@@ -566,8 +556,8 @@ Ensure the default browser behavior of the `hidden` attribute.
   margin-top: 10vh;
 }
 
-.mt-20 {
-  margin-top: 5rem;
+.mt-2 {
+  margin-top: 0.5rem;
 }
 
 .mt-6 {
@@ -576,10 +566,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .mt-8 {
   margin-top: 2rem;
-}
-
-.mt-2 {
-  margin-top: 0.5rem;
 }
 
 .flex {
@@ -634,8 +620,8 @@ Ensure the default browser behavior of the `hidden` attribute.
   width: 80vw;
 }
 
-.w-\[95vw\] {
-  width: 95vw;
+.w-\[90vw\] {
+  width: 90vw;
 }
 
 .w-\[2rem\] {
@@ -648,10 +634,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .w-screen {
   width: 100vw;
-}
-
-.w-\[90vw\] {
-  width: 90vw;
 }
 
 .w-\[100\%\] {
@@ -692,10 +674,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .grid-cols-3 {
   grid-template-columns: repeat(3, minmax(0, 1fr));
-}
-
-.grid-cols-2 {
-  grid-template-columns: repeat(2, minmax(0, 1fr));
 }
 
 .flex-row {
@@ -809,6 +787,10 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .overflow-scroll {
   overflow: scroll;
+}
+
+.overflow-x-hidden {
+  overflow-x: hidden;
 }
 
 .rounded-full {
@@ -1186,6 +1168,10 @@ Ensure the default browser behavior of the `hidden` attribute.
           text-decoration-line: underline;
 }
 
+.opacity-100 {
+  opacity: 1;
+}
+
 .opacity-75 {
   opacity: 0.75;
 }
@@ -1235,16 +1221,6 @@ Ensure the default browser behavior of the `hidden` attribute.
     margin-right: 2.5rem;
   }
 
-  .lg\:mx-8 {
-    margin-left: 2rem;
-    margin-right: 2rem;
-  }
-
-  .lg\:mx-5 {
-    margin-left: 1.25rem;
-    margin-right: 1.25rem;
-  }
-
   .lg\:mx-6 {
     margin-left: 1.5rem;
     margin-right: 1.5rem;
@@ -1255,16 +1231,26 @@ Ensure the default browser behavior of the `hidden` attribute.
     margin-right: 1rem;
   }
 
+  .lg\:mx-8 {
+    margin-left: 2rem;
+    margin-right: 2rem;
+  }
+
+  .lg\:mx-5 {
+    margin-left: 1.25rem;
+    margin-right: 1.25rem;
+  }
+
   .lg\:mb-0 {
     margin-bottom: 0px;
   }
 
-  .lg\:mt-0 {
-    margin-top: 0px;
-  }
-
   .lg\:mt-20 {
     margin-top: 5rem;
+  }
+
+  .lg\:mt-0 {
+    margin-top: 0px;
   }
 
   .lg\:block {
@@ -1519,11 +1505,11 @@ Ensure the default browser behavior of the `hidden` attribute.
     font-size: 16px;
   }
 
-  .lg\:text-\[13px\] {
-    font-size: 13px;
-  }
-
   .lg\:text-\[14px\] {
     font-size: 14px;
+  }
+
+  .lg\:text-\[13px\] {
+    font-size: 13px;
   }
 }

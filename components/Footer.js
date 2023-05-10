@@ -1,6 +1,8 @@
 import Link from 'next/link'
-import React from 'react'
+import React, { useEffect } from 'react'
 import { motion } from 'framer-motion'
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 const linkVariants = {
   hover: {
@@ -16,8 +18,14 @@ const linkVariants = {
 }
 
 const Footer = () => {
+  useEffect(() => {
+    AOS.init();
+    AOS.refresh();
+  }, []);
+
+
   return (
-    <div>
+    <div data-aos="fade-in" data-aos-duration="3000">
       <div className="footer w-full flex flex-col lg:flex-row justify-between">
         <div className="flex flex-col lg:flex-row w-[90vw] mx-auto lg:px-4 space-x-4 lg:space-x-8">
             <img src="/peter_wake.jpg" alt="founder-pic" className="rounded-[50%] h-[10rem] w-[10rem] lg:h-[15rem] lg:w-[15rem]" />

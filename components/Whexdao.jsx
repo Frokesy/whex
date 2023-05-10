@@ -1,9 +1,19 @@
 import React, { useEffect, useState, useRef } from 'react'
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 const Whexdao = () => {
+    useEffect(() => {
+        AOS.init();
+        AOS.refresh();
+      }, []);
+
   return (
-    <div className="mt-[10vh]" id="whexdao">
-    <div className="flex flex-row space-x-4 justify-start items-center">
+    <div className="mt-[10vh] overflow-x-hidden" id="whexdao">
+    <div 
+    data-aos="fade-in" 
+    data-aos-duration="2000"
+    className="flex flex-row space-x-4 justify-start items-center">
         <img src="/weed.png" alt="whexdao-logo" className="rounded-full lg:w-[6rem] md:w-[4rem] w-[4rem]" />
         <div>
             <span className="lg:text-[32px] text-[18px] font-mono font-bold text-white">WHEXcosystem Exploder Ecosystem Daov2</span>
@@ -19,7 +29,10 @@ const Whexdao = () => {
         </div>
     </div>
     <div className="grid lg:grid-cols-3 grid-cols-1 lg:mt-20 mt-10 gap-10">
-            <div className="flex flex-col lg:mx-6 space-y-3 text-neutral-400">
+            <div 
+            data-aos="fade-right" 
+            data-aos-duration="2000"
+            className="flex flex-col lg:mx-6 space-y-3 text-neutral-400">
                 <span className="text-[14px] font-semibold text-neutral-400 lg:hidden">
                     {">>"} Staking rewards for $WEED are generated from 25% of the mint proceeds and royalties of the WHEXy Whales:
                     <a href="https://app.niftykit.com/collections/drops/whexy" 
@@ -91,7 +104,10 @@ const Whexdao = () => {
                 </span>
             </div>
             <div className="border-b border-neutral-600 w-full my-6 lg:hidden"></div>
-            <div className="flex flex-col space-y-3">
+            <div
+            data-aos="fade-up" 
+            data-aos-duration="3000"
+            className="flex flex-col space-y-3">
                     <h2 className="flex text-white text-[18px] font-mono font-bold">Tokenomics</h2>
                     <span className="text-[14px] text-neutral-400 font-semibold  ">
                         {">>"} 1% of each transaction is burned
@@ -107,7 +123,10 @@ const Whexdao = () => {
                     </span>
             </div>
             <div className="border-b border-neutral-600 w-full my-6 lg:hidden"></div>
-            <div className="flex flex-col space-y-6 text-neutral-400">
+            <div 
+            data-aos="fade-left" 
+            data-aos-duration="2000"
+            className="flex flex-col space-y-6 text-neutral-400">
                     <h2 className="flex text-white text-[18px] font-mono font-bold">Voting Mechanism</h2>
                     <span className="text-[14px] font-semibold text-neutral-400">
                         {">>"} Holders can vote without having to send tokens to addresses using a dapp. This will allow holders to participate in the future of the WHEXcosystem without the need to give up voting power. This is hosted at: 
