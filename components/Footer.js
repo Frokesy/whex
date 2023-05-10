@@ -132,7 +132,7 @@ const Footer = () => {
                 <img src="/pcs.png" alt="pcs" className="w-[2rem] h-[2rem] my-4 mx-5" />
               </a>
               <a href="https://coinmarketcap.com/currencies/whale-exploder/" target="_blank" rel="noreferrer">
-                <img src="/cmc.svg" alt="cmc" className="w-[8rem] h-[2rem] my-4 mx-5" />
+                <img src="/cmc.svg" alt="cmc" className="w-[4rem] h-[2rem] my-4 mx-5" />
               </a>
           </div>
         </div>

@@ -6,102 +6,77 @@ const WhexyWhales = () => {
 
     const WEED = <span className="text-blue-400">$WEED</span>
   return (
-    <div>
-       <motion.div 
-        layout
-        transition={{ layout: { duration: 0.5 } }}
-        className="border border-zinc-600 shadow-2xl px-4 py-6 text-white"
-        id="whexy"
-        >
-            <div className="flex flex-row space-x-2 justify-center items-center">
-                <img src="/whexy.png" alt="whexy-logo" className="rounded-full lg:w-[4rem] md:w-[3rem] w-[3rem]" />
-                <span className="text-[25px] font-extrabold text-white">WHEXy whales (NFT)</span>
+    <div className="pt-[10vh]" id="whexy">
+            <div className="flex flex-row space-x-4 justify-start items-center">
+                <img src="/whexy.png" alt="whexy-logo" className="rounded-full lg:w-[6rem] md:w-[4rem] w-[4rem]" />
+                <div>
+                    <span className="lg:text-[32px] text-[20px] font-extrabold text-white">WHEXy whales (NFT)</span>
+                    <span className="flex justify-start lg:text-center text-neutral-400 lg:text-[13px] text-[12px] font-normal">WHEXy Whales is an NFT project consisting of 4800 unique Whales with different traits like hats, glasses, shirts, backgrounds, etc</span>
+                </div>
             </div>
-            <span className="flex justify-center text-center text-neutral-400 mt-4 text-[13px] font-normal">WHEXy Whales is an NFT project consisting of 4800 unique Whales with different traits like hats, glasses, shirts, backgrounds, etc</span>
-            <div className="flex flex-col mx-4 space-y-3 mt-4 text-neutral-400">
-                        <span className="text-[18px] text-white font-mono font-bold">
-                            Minting &amp; Royalties (How they will be used):
-                        </span>
-                        <span className="text-[14px] font-mono font-semibold">
-                            {">>"} Mint Link: {" "}
-                            <a href="https://app.niftykit.com/drops/whexy" 
-                            target="_blank" rel="noreferrer" className="text-blue-400 underline font-light">
-                            https://app.niftykit.com/drops/whexy
-                            </a>    
-                        </span>
-                        <span className="text-[14px] font-semibold">
-                            {">>"} 25% to whale conservation charities 
-                        </span>
-                        <span className="text-[14px] font-semibold">
-                            {">>"} 25% buys WHEX for {WEED} staking pools.
-                        </span>
-                        <span className="text-[14px] font-semibold">
-                            {">>"} 25% to marketing and administrative costs 
-                        </span>
-                        <span className="text-[14px] font-semibold">
-                            {">>"} 25% founder pay 
-                        </span>
-                        <span className="text-[14px] font-semibold">
-                            {">>"} Transacted after each 100 mints, or for royalties, each $1000 accumulated 
-                        </span>
-                        {isWhexyVisible && (
-                        <motion.div
-                        initial={{ 
-                            y: 0,
-                            opacity: 0,
-                         }}
-                        animate={{ 
-                            y: 15,
-                            opacity: 1, 
-                        }}
-                        transition={{ 
-                            duration: 0.5
-                         }}
-                        >
-                         <div className="flex flex-col mx-2 space-y-3 mt-4">
-                         <span className="text-[18px] text-white font-mono font-bold  ">
-                            Why mint a WHEXy whale today?
-                        </span>
-                     <span className="text-[14px] font-semibold  ">
-                            {"1."} Help real life whales
-                        </span>
-                        <span className="text-[14px] font-semibold  ">
-                            {"2."} get airdropped WHEXcosystem DAO - {WEED} tokens and participate in determining the future of the project
-                        </span>
-                        <span className="text-[14px] font-semibold  ">
-                            {"3."} Access to getting a custom ENS subdomain of WHEXy.eth
-                        </span>
-                        <span className="text-[14px] font-semibold  ">
-                            {"4."} Access to an exclusive 
-                            <a href="https://discord.gg/ZDEZ2Kw5ZR" 
-                            target="_blank" rel="noreferrer" className="text-blue-400 font-semibold">
+        <div className="grid lg:grid-cols-2 grid-cols-1 mt-10 lg:mx-6">
+            <div className="flex flex-col lg:mx-4 space-y-3 text-neutral-400">
+                <span className="text-[18px] text-white font-mono font-bold">
+                    Minting &amp; Royalties (How they will be used):
+                </span>
+                <span className="text-[14px] font-mono font-semibold">
+                    {">>"} Mint Link: {" "}
+                    <a href="https://app.niftykit.com/drops/whexy" 
+                    target="_blank" rel="noreferrer" className="text-blue-400 underline font-light">
+                        https://app.niftykit.com/drops/whexy
+                    </a>    
+                </span>
+                <span className="text-[14px] font-semibold">
+                    {">>"} 25% to whale conservation charities 
+                </span>
+                <span className="text-[14px] font-semibold">
+                    {">>"} 25% buys WHEX for {WEED} staking pools.
+                </span>
+                <span className="text-[14px] font-semibold">
+                    {">>"} 25% to marketing and administrative costs 
+                </span>
+                <span className="text-[14px] font-semibold">
+                    {">>"} 25% founder pay 
+                </span>
+                <span className="text-[14px] font-semibold">
+                     {">>"} Transacted after each 100 mints, or for royalties, each $1000 accumulated 
+                </span>
+
+            </div>
+            <div className="border-b border-neutral-600 w-full lg:hidden my-10"></div>
+
+                <div className="flex flex-col mx-2 space-y-3 text-neutral-400">
+                    <span className="text-[18px] text-white font-mono font-bold  ">
+                        Why mint a WHEXy whale today?
+                    </span>
+                    <span className="text-[14px] font-semibold  ">
+                        {"1."} Help real life whales
+                    </span>
+                    <span className="text-[14px] font-semibold  ">
+                        {"2."} get airdropped WHEXcosystem DAO - {WEED} tokens and participate in determining the future of the project
+                    </span>
+                    <span className="text-[14px] font-semibold  ">
+                        {"3."} Access to getting a custom ENS subdomain of WHEXy.eth
+                    </span>
+                    <span className="text-[14px] font-semibold  ">
+                        {"4."} Access to an exclusive 
+                        <a href="https://discord.gg/ZDEZ2Kw5ZR" 
+                        target="_blank" rel="noreferrer" className="text-blue-400 font-semibold">
                             {" "} Discord {" "}
-                            </a>  
+                        </a>  
                             and
-                            <a href="https://telegram.me/collablandbot?start=VFBDI1RFTCNDT01NIy0xMDAxODE0NDA1MzMz" 
-                            target="_blank" rel="noreferrer" className="text-blue-400 font-semibold">
+                        <a href="https://telegram.me/collablandbot?start=VFBDI1RFTCNDT01NIy0xMDAxODE0NDA1MzMz" 
+                        target="_blank" rel="noreferrer" className="text-blue-400 font-semibold">
                             {" "} Telegram {" "}
-                            </a> 
-                             chats
-                        </span>
-                        <span className="text-[14px] font-semibold  ">
-                            {"5."}  Use WHEXy whale in your company or merch store or partner with WHEXcosystem Inc. and split the profits.
-                        </span>
-                       </div>
-                      </motion.div>
-                    )}
-                        <div 
-                        className="flex justify-end"
-                        onClick={() => setIsWhexyVisible(!isWhexyVisible)}
-                        >
-                            {isWhexyVisible ? (
-                              <button className="bg-blue-400 mt-8 font-light text-white rounded-lg font-mono text-[11px] px-6 py-4">Click to hide</button>
-                            ) : (
-                                <button className="bg-blue-400 mt-8 font-light text-white rounded-lg font-mono text-[11px] px-6 py-4">Click to expand</button>
-                            )}
-                        </div>
-                    </div>
-        </motion.div>
+                        </a> 
+                            chats
+                    </span>
+                    <span className="text-[14px] font-semibold  ">
+                        {"5."}  Use WHEXy whale in your company or merch store or partner with WHEXcosystem Inc. and split the profits.
+                    </span>
+                </div>
+        </div>
+        <hr className="mt-[15vh]" />
     </div>
   )
 }
