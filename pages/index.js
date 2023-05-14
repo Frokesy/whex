@@ -8,6 +8,7 @@ import WhexyWhales from '../components/WhexyWhales'
 import Whexdao from '../components/Whexdao'
 import AOS from "aos";
 import "aos/dist/aos.css";
+import Head from 'next/head'
 
 
 
@@ -23,6 +24,9 @@ const Home = () => {
       <Meta title="WHEXcosystem || Home Page" />
     <div className="bg-neutral-800 h-full">
         <Header />
+        <Head>
+          <script async type="text/javascript" src="https://files.coinmarketcap.com/static/widget/coinMarquee.js"></script><div id="coinmarketcap-widget-marquee" coins="24951,1839,1027,1,3890" currency="USD" theme="light" transparent="false" show-symbol-logo="true"></div>
+        </Head>
         <div id="home" className="bg-[url('/whale.gif')] bg-center bg-cover bg-no-repeat h-[80vh] lg:h-screen items-center justify-center">
         <div
         className="lg:pt-[40vh] pt-[30vh] lg:w-[95vw] text-white text-[25px] w-[80vw] mx-auto lg:text-[60px] justify-center font-mono items-center flex flex-col text-center">
@@ -74,7 +78,6 @@ const Home = () => {
         </div>
           </div>
         </div>
-
         <Footer />
     </div>
     </>
