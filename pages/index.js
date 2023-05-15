@@ -25,7 +25,7 @@ const Home = () => {
     <div className="bg-neutral-800 h-full">
         <Header />
         <Head>
-          <script async type="text/javascript" src="https://files.coinmarketcap.com/static/widget/coinMarquee.js"></script><div id="coinmarketcap-widget-marquee" coins="24951,1839,1027,1,3890" currency="USD" theme="light" transparent="false" show-symbol-logo="true"></div>
+          <script async type="text/javascript" src="https://files.coinmarketcap.com/static/widget/coinMarquee.js"></script><div id="coinmarketcap-widget-marquee" coins="24951,1,1027,3890,1839,74,5994,24478,4909,5426,2010,52,4030" currency="USD" theme="light" transparent="false" show-symbol-logo="true"></div>        
         </Head>
         <div id="home" className="bg-[url('/whale.gif')] bg-center bg-cover bg-no-repeat h-[80vh] lg:h-screen items-center justify-center">
         <div
