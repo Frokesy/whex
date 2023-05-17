@@ -46,16 +46,25 @@ const Whex = () => {
                 <div data-aos="fade-up" data-aos-duration="2000" className="flex flex-col space-y-3">
                     <h2 className="flex text-white text-[18px] font-mono font-bold">Tokenomics</h2>
                     <span className="text-[14px] text-neutral-400 font-semibold  ">
-                        {">>"} 2% sent to a whale charity wallet
+                        {">>"} 2% sent to the treasury wallet (formerly charity/burn wallet). Then when it reaches 10 quintillion WHEX:
                     </span>
                     <span className="text-[14px] text-neutral-400 font-semibold  ">
-                        {">>"} (42% burned, 58% sold biweekly if over 20 BNB (capped at 4.2% LP))
+                        {">>"} 25% is burned
                     </span>
                     <span className="text-[14px] text-neutral-400 font-semibold  ">
-                        {">>"} 2% reflections
+                        {">>"} 25% is sold and donated to Whale Conservation
                     </span>
                     <span className="text-[14px] text-neutral-400 font-semibold  ">
-                        {">>"} 2% Automatic liquidity pool on Pancakeswap
+                        {">>"} 25% is sold and added to the liquidity pool of WEED
+                    </span>
+                    <span className="text-[14px] text-neutral-400 font-semibold  ">
+                        {">>"} 25% is sent to the founder&apos;s wallet as salary.
+                    </span>
+                    <span className="text-[14px] text-neutral-400 font-semibold  ">
+                        {">>"} 2% distribution to holders
+                    </span>
+                    <span className="text-[14px] text-neutral-400 font-semibold  ">
+                        {">>"} 2% Automatic liquidity pool on Pancake Swap
                     </span>
                 </div>
                 <div className="border-b border-neutral-600 w-full my-6 lg:hidden"></div>
