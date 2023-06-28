@@ -42,7 +42,7 @@ const WhexyWhales = () => {
                     {">>"} 25% to whale conservation charities 
                 </span>
                 <span className="text-[14px] font-semibold">
-                    {">>"} 25% buys WHEX for {WEED} staking pools.
+                    {">>"} 25% liquidity pool for {WEED}
                 </span>
                 <span className="text-[14px] font-semibold">
                     {">>"} 25% to marketing and administrative costs 
