@@ -9,6 +9,7 @@ import Whexdao from '../components/Whexdao'
 import AOS from "aos";
 import "aos/dist/aos.css";
 import Head from 'next/head'
+import WhexETH from '../components/WhexETH'
 
 
 
@@ -46,6 +47,7 @@ const Home = () => {
 
         <div className="flex flex-col lg:w-[95vw] w-[90vw] mx-auto">
             <Whex />
+            <WhexETH />
             <WhexyWhales />
             <EmberScript />
             <Whexdao />
