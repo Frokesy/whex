@@ -75,20 +75,10 @@ const WhexETH = () => {
                 <div className="border-b border-neutral-600 w-full my-6 lg:hidden"></div>
                 <div className="flex flex-col space-y-3" data-aos="fade-up" data-aos-duration="3000">
                     <span className="text-[14px] font-semibold text-neutral-400">
-                        {">>"} Dapp Builder presale (Ends July 19, 2023): {" "}
-                        <a href="https://dappbuilder.org/eth/tokensaletimerefadm/tokensale.html?id=0x3c6f96859862891564B17b5611F29af7E28534bD&net=1" 
-                        target="_blank" rel="noreferrer" className="text-blue-400 underline font-light">
-                            Click here for details
-                        </a>
-                    </span>
-                    <span className="text-[14px] font-semibold text-neutral-400">
-                        {">>"} 42% - 420 quad - tokens for sale
-                    </span>
-                    <span className="text-[14px] font-semibold text-neutral-400">
                         {">>"} 21% - uniswap liquidity pool
                     </span>
                     <span className="text-[14px] font-semibold text-neutral-400">
-                        {">>"} 7.552% - 75.52 quad - WHEX-BNB to WHEX-ETH trade in
+                        {">>"} 49.552% - 495.52 quad - WHEX-BNB to WHEX-ETH trade in
                     </span>
                     <span className="text-[14px] font-semibold text-neutral-400">
                         {">>"} This token is a cross chain version of the Whale Exploder on the Binance Smart chain: {" "}
