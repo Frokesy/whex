@@ -35,11 +35,11 @@ const Categories = () => {
         </div>
         <div className="bg-white lg:py-3 py-1 lg:px-12 hidden rounded-lg cursor-pointer lg:flex space-x-2 items-center text-[13px] lg:text-[16px]">
             <FaNewspaper />
-            <a href="global-news">Global News</a>
+            <a href="#global-news">Global News</a>
         </div>
         <div className="bg-white lg:py-3 py-1 lg:px-12 px-4 rounded-lg cursor-pointer flex lg:hidden space-x-2 items-center text-[13px] lg:text-[16px]">
             <FaNewspaper />
-            <a href="global-news">News</a>
+            <a href="#global-news">News</a>
         </div>
       </div>
       <div className="pt-[10vh]">
