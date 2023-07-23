@@ -8,7 +8,7 @@ const Blog = () => {
     <div >
       <Meta title="WHEXcosystem || Blog" />
       <EmbrScript />
-      <div className="bg-[#0d0d0d] h-screen">
+      <div className="bg-[#151A25] h-[120vh]">
         <div className="w-[75vw] mx-auto">
           <Header />
           <div className="w-[55vw]">
@@ -21,7 +21,7 @@ const Blog = () => {
             </span>
           </div>
         </div>
-        {/* <Featured /> */}
+        <Featured />
       </div>
     </div>
   );
