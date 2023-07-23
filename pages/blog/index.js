@@ -3,6 +3,7 @@ import Header from "../../components/blog/Header";
 import Meta from "../defaults/Meta";
 import EmbrScript from "../EmberScript";
 import Featured from "../../components/blog/categories/Featured";
+import LatestPosts from "../../components/blog/categories/LatestPosts";
 const Blog = () => {
   return (
     <div >
@@ -22,6 +23,7 @@ const Blog = () => {
           </div>
         </div>
         <Featured />
+        <LatestPosts />
       </div>
     </div>
   );
