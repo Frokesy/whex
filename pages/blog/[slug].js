@@ -101,7 +101,7 @@ const Blog = ({ singleBlog }) => {
       <Meta title={singleBlog.title} />
       <Header />
       <div className="w-[90vw] lg:w-[75vw] flex-col flex lg:justify-between mx-auto ">
-        <div className="w-[60vw] mx-auto mt-[10vh] mb-[5vh]">
+        <div className="lg:w-[60vw] mx-auto mt-[10vh] mb-[5vh]">
           <div className="">
             <div className="flex items-center space-x-2">
               {singleBlog.categories.map((category, index) => (
@@ -138,7 +138,7 @@ const Blog = ({ singleBlog }) => {
             className="w-[100%] h-[100%]"
           />
         </div>
-        <div className="w-[60vw] mx-auto mt-4">
+        <div className="lg:w-[60vw] mx-auto mt-4">
           {parsedContent.map((element, index) => (
             <React.Fragment key={index}>{element}</React.Fragment>
           ))}
