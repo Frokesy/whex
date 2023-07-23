@@ -780,6 +780,18 @@ Ensure the default browser behavior of the `hidden` attribute.
   width: 35%;
 }
 
+.w-\[75vw\] {
+  width: 75vw;
+}
+
+.w-\[25vw\] {
+  width: 25vw;
+}
+
+.w-\[55vw\] {
+  width: 55vw;
+}
+
 .cursor-pointer {
   cursor: pointer;
 }
@@ -1024,6 +1036,40 @@ Ensure the default browser behavior of the `hidden` attribute.
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
 }
 
+.bg-\[\#2d2a2a\] {
+  --tw-bg-opacity: 1;
+  background-color: rgb(45 42 42 / var(--tw-bg-opacity));
+}
+
+.bg-\[\#333333\] {
+  --tw-bg-opacity: 1;
+  background-color: rgb(51 51 51 / var(--tw-bg-opacity));
+}
+
+.bg-\[\#262626\] {
+  --tw-bg-opacity: 1;
+  background-color: rgb(38 38 38 / var(--tw-bg-opacity));
+}
+
+.bg-\[\#000\] {
+  --tw-bg-opacity: 1;
+  background-color: rgb(0 0 0 / var(--tw-bg-opacity));
+}
+
+.bg-\[\#1a1a1a\] {
+  --tw-bg-opacity: 1;
+  background-color: rgb(26 26 26 / var(--tw-bg-opacity));
+}
+
+.bg-\[\#0d0d0d\] {
+  --tw-bg-opacity: 1;
+  background-color: rgb(13 13 13 / var(--tw-bg-opacity));
+}
+
+.bg-opacity-75 {
+  --tw-bg-opacity: 0.75;
+}
+
 .bg-\[url\(\'\/whale\.gif\'\)\] {
   background-image: url('/whale.gif');
 }
@@ -1111,6 +1157,16 @@ Ensure the default browser behavior of the `hidden` attribute.
   padding-bottom: 0.5rem;
 }
 
+.py-\[10vh\] {
+  padding-top: 10vh;
+  padding-bottom: 10vh;
+}
+
+.px-\[25vw\] {
+  padding-left: 25vw;
+  padding-right: 25vw;
+}
+
 .pt-\[30vh\] {
   padding-top: 30vh;
 }
@@ -1181,6 +1237,10 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .pt-14 {
   padding-top: 3.5rem;
+}
+
+.pt-\[5vh\] {
+  padding-top: 5vh;
 }
 
 .text-center {
@@ -1336,6 +1396,11 @@ Ensure the default browser behavior of the `hidden` attribute.
 .text-\[\#000\] {
   --tw-text-opacity: 1;
   color: rgb(0 0 0 / var(--tw-text-opacity));
+}
+
+.text-red-500 {
+  --tw-text-opacity: 1;
+  color: rgb(239 68 68 / var(--tw-text-opacity));
 }
 
 .underline {
@@ -1525,6 +1590,10 @@ Ensure the default browser behavior of the `hidden` attribute.
     width: 30%;
   }
 
+  .lg\:w-\[75vw\] {
+    width: 75vw;
+  }
+
   .lg\:max-w-\[60vw\] {
     max-width: 60vw;
   }
@@ -1687,5 +1756,17 @@ Ensure the default browser behavior of the `hidden` attribute.
 
   .lg\:text-\[13px\] {
     font-size: 13px;
+  }
+
+  .lg\:text-\[34px\] {
+    font-size: 34px;
+  }
+
+  .lg\:text-\[50px\] {
+    font-size: 50px;
+  }
+
+  .lg\:text-\[36px\] {
+    font-size: 36px;
   }
 }

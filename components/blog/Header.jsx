@@ -59,14 +59,14 @@ const Header = () => {
       variants={containerVariants}
       initial="hidden"
       animate="visible"    
-      className="flex flex-row mx-auto py-[1vh] bg-black justify-between opacity-75 px-6 lg:px-16 w-full">
-        <div className="logo lg:text-[20px] md:text-[16px] text-[16px] flex justify-start lg:space-x-3 text-center text-white items-center font-mono font-bold">
-            <img src="/logo.jpg" alt="logo" className='rounded-full lg:w-[4.5rem] md:w-[3rem] w-[3.5rem]'/>
+      className="flex flex-row py-[10vh] justify-between px-6 lg:w-[75vw] mx-auto w-full">
+        <div className="logo lg:text-[34px] md:text-[16px] text-[16px] flex justify-start lg:space-x-3 text-center text-white items-center font-mono font-bold">
+            {/* <img src="/logo.jpg" alt="logo" className='rounded-full lg:w-[4.5rem] md:w-[3rem] w-[3.5rem]'/> */}
             <h2>WHEXcosystem</h2>
         </div>
 
         {/**Desktop Navbar */}
-        <div className="items-center font-mono hidden lg:flex space-x-[5vw] nav-links font-bold text-gray-400 text-[16px]">
+        <div className="items-center font-mono hidden lg:flex space-x-[5vw] font-bold text-[#fff] text-[20px]">
             <Link href="/">
               <motion.span
               variants={linkVariants}
