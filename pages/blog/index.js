@@ -1,5 +1,6 @@
 import React from "react";
 import Header from "../../components/blog/Header";
+import Footer from "../../components/blog/Footer";
 import Meta from "../defaults/Meta";
 import EmbrScript from "../EmberScript";
 import Featured from "../../components/blog/categories/Featured";
@@ -24,6 +25,7 @@ const Blog = () => {
         </div>
         <Featured />
         <LatestPosts />
+        <Footer />
       </div>
     </div>
   );
