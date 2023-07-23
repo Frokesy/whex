@@ -9,14 +9,14 @@ const Blog = () => {
     <div >
       <Meta title="WHEXcosystem || Blog" />
       <EmbrScript />
-      <div className="bg-[#151A25] h-[120vh]">
-        <div className="w-[75vw] mx-auto">
+      <div className="bg-[#151A25] lg:h-[120vh] h-[110vh]">
+        <div className="lg:w-[75vw] w-[90vw] mx-auto">
           <Header />
-          <div className="w-[55vw]">
-            <h2 className="text-[50px] pt-[5vh] font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-green-300 via-pink-200 to-purple-900">
+          <div className="lg:w-[55vw] w-[100%]">
+            <h2 className="lg:text-[50px] text-[36px] pt-[5vh] font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-green-300 via-pink-200 to-purple-900">
               WHEXcosystem Blog
             </h2>
-            <span className="pt-[2vh] text-[20px] text-white">
+            <span className="pt-[2vh] lg:text-[20px] text-[16px] text-white">
               Great news and Articles about our market and get unbelievable
               knowledge in the easiest of ways through our blog. Have fun!!!
             </span>

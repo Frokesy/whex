@@ -15,20 +15,20 @@ const Featured = () => {
     fetchFeaturedArticles();
   }, []);
   return (
-    <div className="pt-[25vh] w-[75vw] mx-auto">
+    <div className="lg:pt-[25vh] pt-[10vh] lg:w-[75vw] w-[90vw] mx-auto">
       <div className="border-b border-[#404040]"></div>
       <h2 className="text-[#fff] text-[20px] pt-6 font-semibold">
         Featured Posts
       </h2>
 
-      <div className="grid grid-cols-3 gap-6 mt-10">
+      <div className="grid lg:grid-cols-3 grid-cols-1 gap-6 mt-10">
         {featuredArticles?.map((article, index) => (
           <div
             key={index}
             style={{ backgroundImage: `url(${article.coverPhoto.url})` }}
-            className={`h-[480px] bg-center bg-cover bg-no-repeat hover:scale-105 transition-all duration-500 ease-in-out`}
+            className={`lg:h-[480px] h-[350px] bg-center bg-cover bg-no-repeat hover:scale-105 transition-all duration-500 ease-in-out rounded-lg`}
           >
-            <div className="bg-[#000000a6] h-[480px] flex flex-col justify-end px-4">
+            <div className="bg-[#000000a6] h-[100%] flex flex-col rounded-lg justify-end px-4">
               <div className="flex items-center space-x-2">
                 {article.categories.map((category, index) => (
                   <div
@@ -40,7 +40,7 @@ const Featured = () => {
                 ))}
               </div>
               <Link href={`/blog/${article.slug}`} passHref>
-                <h2 className=" text-[24px] text-[#fff] py-4 font-bold cursor-pointer hover:underline">
+                <h2 className="lg:text-[24px] text-[20px] text-[#fff] py-4 font-bold cursor-pointer hover:underline">
                   {article.title}
                 </h2>
               </Link>

@@ -30,7 +30,7 @@ const LatestPosts = () => {
             <div key={index} className="flex flex-col">
               <div
                 style={{ backgroundImage: `url(${article.coverPhoto.url})` }}
-                className="h-[35vh] bg-cover rounded-lg cursor-pointer bg-center bg-no-repeat"
+                className="lg:h-[35vh] h-[30vh] bg-cover rounded-lg cursor-pointer bg-center bg-no-repeat"
               >
                 <div className="h-[100%] py-4 flex flex-col justify-end px-4">
                   <div className="flex items-center space-x-2">

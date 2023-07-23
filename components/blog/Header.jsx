@@ -43,25 +43,14 @@ const Header = () => {
       },
     }
   }
-  const buttonVariants = {
-    hover: {
-      scale: 1.1,
-      shadow: '0px 0px 10px rgb(255,255,255)',
-      transition: { 
-        duration: 0.3,
-        yoyo: Infinity,
-       }
-      }
-    }
   return (
     <>
       <motion.div
       variants={containerVariants}
       initial="hidden"
       animate="visible"    
-      className="flex flex-row py-[10vh] justify-between px-6 lg:w-[75vw] mx-auto w-full">
+      className="flex flex-row lg:py-[10vh] py-[3vh] justify-between lg:px-6 lg:w-[75vw] mx-auto">
         <div className="logo lg:text-[34px] md:text-[16px] text-[16px] flex justify-start lg:space-x-3 text-center text-white items-center font-mono font-bold">
-            {/* <img src="/logo.jpg" alt="logo" className='rounded-full lg:w-[4.5rem] md:w-[3rem] w-[3.5rem]'/> */}
             <h2>WHEXcosystem</h2>
         </div>
 
