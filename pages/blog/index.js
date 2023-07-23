@@ -12,7 +12,7 @@ const Blog = () => {
       <EmbrScript />
       <div className="bg-[#151A25] lg:h-[120vh] h-[110vh]">
         <div className="lg:w-[75vw] w-[90vw] mx-auto">
-          <Header />
+          <div className="py-[7vh]"><Header /></div>
           <div className="lg:w-[55vw] w-[100%]">
             <h2 className="lg:text-[50px] text-[36px] pt-[5vh] font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-green-300 via-pink-200 to-purple-900">
               WHEXcosystem Blog

@@ -69,6 +69,7 @@ export const getSingleBlog = async(slug) => {
     query getSingleBlog($slug: String!) {
       articles(where: { slug: $slug }) {
         title
+        excerpt
         featured
         content {
           html
@@ -77,6 +78,16 @@ export const getSingleBlog = async(slug) => {
           height
           width
           url
+        }
+        categories {
+          id
+          name
+        }
+        author {
+          name
+          avatar {
+            url
+          }
         }
       }
     }
