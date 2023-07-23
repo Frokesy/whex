@@ -2,63 +2,6 @@ import { GraphQLClient, gql } from "graphql-request";
 
 const graphqlAPI = process.env.NEXT_PUBLIC_GRAPHCMS_ENDPOINT;
 
-export const getPopularTopics = async() => {
-    const graphQLClient = new GraphQLClient(graphqlAPI);
-    const query = gql `
-    {
-      articles(first: 4, orderBy: publishedAt_DESC) {
-        title
-        slug
-        featured
-        coverPhoto {
-          height
-          width
-          url
-        }
-        categories {
-          id
-          name
-        }
-      }
-    }
-  `;
-
-    const response = await graphQLClient.request(query);
-
-    return response;
-};
-
-export const getArticlesByCategory = async(category) => {
-    const graphQLClient = new GraphQLClient(graphqlAPI);
-    const query = gql `
-    query getArticlesByCategory($category: String!) {
-      articles(
-        where: { categories_some: { name: $category } }
-        orderBy: publishedAt_DESC
-      ) {
-        title
-        slug
-        featured
-        excerpt
-        coverPhoto {
-          height
-          width
-          url
-        }
-        categories {
-          id
-          name
-        }
-      }
-    }
-  `;
-    const categoryName = { category };
-
-    const response = await graphQLClient.request(query, categoryName);
-
-    return response;
-};
-
 export const getAllArticles = async() => {
     const graphQLClient = new GraphQLClient(graphqlAPI);
     const query = gql `
