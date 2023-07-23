@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { getSingleBlog, getBlogSlugs } from "../../services";
 import { useRouter } from "next/router";
-import parse from "html-react-parser";
 import Header from "../../components/blog/Header";
 import Footer from "../../components/blog/Footer";
 import Meta from "../defaults/Meta";
@@ -57,11 +56,9 @@ const Blog = ({ singleBlog }) => {
         }
       });
 
-      // Handle self-closing tags like <br>
       if (tagName === "br") {
         return React.createElement(tagName, { key: index });
       } else if (tagName === "img") {
-        // Make sure `customStyle` has the appropriate styles for `img`
         if (customStyle[tagName]) {
           return React.createElement(tagName, {
             key: index,
@@ -99,7 +96,6 @@ const Blog = ({ singleBlog }) => {
   }, [singleBlog]);
 
   if (router.isFallback) return <>Loading...</>;
-  console.log(singleBlog);
   return (
     <div className="mx-auto">
       <Meta title={singleBlog.title} />
