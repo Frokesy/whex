@@ -26,7 +26,7 @@ const Featured = () => {
           <div
             key={index}
             style={{ backgroundImage: `url(${article.coverPhoto.url})` }}
-            className={`h-[480px] bg-center bg-no-repeat hover:scale-105 transition-all duration-500 ease-in-out`}
+            className={`h-[480px] bg-center bg-cover bg-no-repeat hover:scale-105 transition-all duration-500 ease-in-out`}
           >
             <div className="bg-[#000000a6] h-[480px] flex flex-col justify-end px-4">
               <div className="flex items-center space-x-2">

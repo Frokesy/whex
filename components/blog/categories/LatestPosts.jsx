@@ -28,12 +28,22 @@ const LatestPosts = () => {
         <div className="grid lg:grid-cols-3 grid-cols-1 gap-y-14 mt-4 lg:gap-10 pt-6 mx-auto">
           {articlesToDisplay?.map((article, index) => (
             <div key={index} className="flex flex-col">
-              <div className="h-[35vh] object-cover cursor-pointer">
-                <img
-                  src={article.coverPhoto.url}
-                  alt="image1"
-                  className="h-[100%] w-[100%] rounded-lg"
-                />
+              <div
+                style={{ backgroundImage: `url(${article.coverPhoto.url})` }}
+                className="h-[35vh] bg-cover rounded-lg cursor-pointer bg-center bg-no-repeat"
+              >
+                <div className="h-[100%] py-4 flex flex-col justify-end px-4">
+                  <div className="flex items-center space-x-2">
+                    {article.categories.map((category, index) => (
+                      <div
+                        key={index}
+                        className="bg-[#fff] text-[13px] py-1 px-4 rounded-full"
+                      >
+                        <h2>{category.name}</h2>
+                      </div>
+                    ))}
+                  </div>
+                </div>
               </div>
               <Link href={`/blog/${article.slug}`} passHref>
                 <h2 className="py-2 font-semibold text-[20px] hover:underline cursor-pointer">
@@ -46,6 +56,16 @@ const LatestPosts = () => {
                   ? `${article.excerpt.slice(0, 210)}...`
                   : `${article.excerpt}`}
               </span>
+              <div className="flex items-center py-4 space-x-2">
+                <img
+                  src={article.author.avatar.url}
+                  alt={article.author.name}
+                  className="rounded-full h-[40px] w-[40px]"
+                />
+                <h2 className="text-[#000] font-bold text-[14px]">
+                  by {article.author.name}
+                </h2>
+              </div>
             </div>
           ))}
         </div>
