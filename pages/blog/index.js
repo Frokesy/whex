@@ -10,7 +10,7 @@ const Blog = () => {
     <div >
       <Meta title="WHEXcosystem || Blog" />
       <EmbrScript />
-      <div className="bg-[#151A25] lg:h-[120vh] h-[110vh]">
+      <div className="bg-[#151A25] lg:h-[120vh] h-[100vh]">
         <div className="lg:w-[75vw] w-[90vw] mx-auto">
           <div className="py-[7vh]"><Header /></div>
           <div className="lg:w-[55vw] w-[100%]">
