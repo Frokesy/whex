@@ -37,7 +37,7 @@ const Meta = ({ title, keywords, desc }) => {
 
 Meta.defaultProps = {
   title: "WHEXcosystem",
-  keywords: "WHEX, whexcosystem, token",
+  keywords: "WHEX, whexcosystem, token, blog, whex blog, whexcosystem blog",
   desc: "The official WHEXcosystem website || 2% sent to a whale charity wallet, 42% burned, 58% sold biweekly if over 20 BNB(capped at 4.2% LP)",
 };
 

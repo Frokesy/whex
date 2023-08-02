@@ -135,7 +135,7 @@ const Blog = ({ singleBlog }) => {
           <img
             src={singleBlog.coverPhoto.url}
             alt="coverphoto"
-            className="w-[100%] h-[100%]"
+            className="w-[100%] h-[100%] hover:scale-105 transition-all duration-500 ease-in-out cursor-pointer"
           />
         </div>
         <div className="lg:w-[60vw] mx-auto mt-4">
