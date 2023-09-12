@@ -23,7 +23,7 @@ const Home = () => {
   return (
     <>
       <Meta title="WHEXcosystem || Home Page" />
-    <div className="bg-neutral-800 h-full">
+    <div className="bg-neutral-800 h-full overflow-hidden">
         <Header />
         <Head>
           <script async type="text/javascript" src="https://files.coinmarketcap.com/static/widget/coinMarquee.js"></script><div id="coinmarketcap-widget-marquee" coins="24951,1,1027,3890,1839,74,5994,24478,4909,5426,2010,52,4030" currency="USD" theme="light" transparent="false" show-symbol-logo="true"></div>        
