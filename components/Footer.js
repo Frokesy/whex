@@ -130,6 +130,9 @@ const Footer = () => {
               <a href="https://t.me/WHEXcosystem" target="_blank" rel="noreferrer">
                 <img src="/telegram.svg" alt="telegram" className="w-[2rem] h-[2rem] my-4 mx-5" />
               </a>
+              <a href="https://www.mintme.com/token/Whale-Exploder-Ecosystem-Daov2/MINTME/trade" target="_blank" rel="noreferrer">
+                <img src="/mintme.png" alt="mintme" className="w-[2rem] h-[2rem] my-4 mx-5" />
+              </a>
               <a 
               href="https://www.reddit.com/r/WHEX/" target="_blank" rel="noreferrer">
                 <img src="/reddit.svg" alt="reddit" className="w-[2rem] h-[2rem] my-4 mx-5" />
