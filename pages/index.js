@@ -3,7 +3,6 @@ import Footer from "../components/Footer";
 import Header from "../components/Header";
 import Meta from "./defaults/Meta";
 import EmberScript from "./EmberScript";
-import WhexyWhales from "../components/WhexyWhales";
 import Whexdao from "../components/Whexdao";
 import AOS from "aos";
 import "aos/dist/aos.css";
@@ -11,6 +10,7 @@ import Head from "next/head";
 import Community from "../components/Community";
 import Whex from "../components/whex";
 import WhexEth from "../components/whexeth";
+import WhexyWhales from "../components/whexywhales";
 
 const Home = () => {
   useEffect(() => {
