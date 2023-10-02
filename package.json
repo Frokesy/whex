@@ -13,6 +13,7 @@
         "@chakra-ui/react": "^2.0.0",
         "@emotion/react": "^11.9.0",
         "@emotion/styled": "^11.8.1",
+        "@trendyol-js/react-carousel": "^3.0.2",
         "aos": "^2.3.4",
         "font-awesome": "^4.7.0",
         "framer-motion": "^6.3.3",
@@ -24,12 +25,15 @@
         "moment": "^2.29.4",
         "next": "12.1.6",
         "next-mdx-remote": "^4.2.1",
-        "react": "18.1.0",
-        "react-dom": "18.1.0",
+        "react": "^18.1.0",
+        "react-dom": "^18.1.0",
         "react-icons": "^4.3.1",
         "react-intersection-observer": "^9.4.0",
         "react-multi-carousel": "^2.8.2",
-        "react-type-animation": "^3.1.0"
+        "react-slick": "^0.29.0",
+        "react-type-animation": "^3.1.0",
+        "slick-carousel": "^1.8.1",
+        "swiper": "^10.3.1"
     },
     "devDependencies": {
         "autoprefixer": "^10.4.14",

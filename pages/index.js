@@ -3,7 +3,6 @@ import Footer from "../components/Footer";
 import Header from "../components/Header";
 import Meta from "./defaults/Meta";
 import EmberScript from "./EmberScript";
-import Whex from "../components/Whex";
 import WhexyWhales from "../components/WhexyWhales";
 import Whexdao from "../components/Whexdao";
 import AOS from "aos";
@@ -11,6 +10,7 @@ import "aos/dist/aos.css";
 import Head from "next/head";
 import WhexETH from "../components/WhexETH";
 import Community from "../components/Community";
+import Whex from "../components/whex";
 
 const Home = () => {
   useEffect(() => {
@@ -55,7 +55,7 @@ const Home = () => {
         </div>
 
         <div className="tokens pt-[5vh]" id="tokens">
-          <div className="flex flex-col lg:w-[75vw] w-[90vw] mx-auto">
+          <div className="flex flex-col lg:w-[75vw] w-[95vw] mx-auto">
             <Whex />
             <WhexETH />
             <WhexyWhales />
