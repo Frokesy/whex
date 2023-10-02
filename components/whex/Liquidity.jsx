@@ -2,8 +2,14 @@ import React from "react";
 
 const Liquidity = () => {
   return (
-    <div className="flex flex-col space-y-3">
-      <h2 className="text-[18px] font-mono font-bold text-center">Locked Liquidity</h2>
+    <div
+      data-aos="fade-in"
+      data-aos-duration="2000"
+      className="flex flex-col space-y-3"
+    >
+      <h2 className="text-[18px] font-mono font-bold text-center">
+        Locked Liquidity
+      </h2>
       <span className="text-[13px]">
         {">>"} 15.1 BNB of LP Locked for 5 years. Pancake LPs for Whale
         Exploder: 0xac3843ed09a264f26f2668a7c57b3191ad10a6f7

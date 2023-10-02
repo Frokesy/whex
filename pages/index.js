@@ -8,9 +8,9 @@ import Whexdao from "../components/Whexdao";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import Head from "next/head";
-import WhexETH from "../components/WhexETH";
 import Community from "../components/Community";
 import Whex from "../components/whex";
+import WhexEth from "../components/whexeth";
 
 const Home = () => {
   useEffect(() => {
@@ -57,7 +57,7 @@ const Home = () => {
         <div className="tokens pt-[5vh]" id="tokens">
           <div className="flex flex-col lg:w-[75vw] w-[95vw] mx-auto">
             <Whex />
-            <WhexETH />
+            <WhexEth />
             <WhexyWhales />
             <EmberScript />
             <Whexdao />
