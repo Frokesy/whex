@@ -1,19 +1,19 @@
 import React, { useEffect, useState, useRef } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
-import { gsap } from "gsap";
 import { FaAngleLeft, FaAngleRight } from "react-icons/fa";
 import Section from "./Section";
+import SectionTwo from "./SectionTwo";
 import Royalties from "./Royalties";
 
 const WhexyWhales = () => {
   const [active, setActive] = useState("royalties");
 
   const switchTab = () => {
-    if (active === "royalties") {
+    if (active === "section") {
+      setActive("sectionTwo");
+    } else if (active === "sectionTwo") {
       setActive("section");
-    } else if (active === "section") {
-      setActive("royalties");
     }
   };
 
@@ -46,8 +46,8 @@ const WhexyWhales = () => {
               <FaAngleLeft size={30} color="#808080" />
             </div>
 
-            <div>{active === "royalties" && <Royalties />}</div>
             <div>{active === "section" && <Section />}</div>
+            <div>{active === "sectionTwo" && <SectionTwo />}</div>
             <div className="cursor-pointer" onClick={() => switchTab()}>
               <FaAngleRight size={30} color="#808080" />
             </div>
@@ -55,12 +55,12 @@ const WhexyWhales = () => {
           <div className="flex justify-center">
             <div
               className={`rounded-full p-1 ml-3 ${
-                active === "royalties" ? "bg-[#002871]" : "bg-[#ccc]"
+                active === "section" ? "bg-[#002871]" : "bg-[#ccc]"
               }`}
             ></div>
             <div
               className={`rounded-full p-1 ml-3 ${
-                active === "section" ? "bg-[#002871]" : "bg-[#ccc]"
+                active === "sectionTwo" ? "bg-[#002871]" : "bg-[#ccc]"
               }`}
             ></div>
           </div>

@@ -1,4 +1,6 @@
 import React from 'react'
+import Royalties from "./Royalties";
+
 
 const Section = () => {
   return (
@@ -8,7 +10,7 @@ const Section = () => {
     className="flex flex-col mx-2 space-y-3"
   >
     <span className="text-[18px] font-mono font-bold text-center">
-      Why buy a WHEXy whale today?
+      Why buy a Generation one (G1) WHEXy whale today?
     </span>
     <span className="text-[14px]">
       {"1."} Help real life whales
@@ -43,6 +45,8 @@ const Section = () => {
       {"4."} Use WHEXy whale in your company or merch store or partner
       with WHEXcosystem Inc. and split the profits.
     </span>
+
+    <Royalties />
   </div>
   )
 }
