@@ -54,12 +54,12 @@ const WhexEth = () => {
         Whale Exploder - ETH(WHEX-ETH)
       </h2>
       <span className="flex justify-center text-[#404040] lg:text-[14px] lg:pb-[5vh] pb-4 text-[12px] font-normal">
-        Token Distribution: 49.552% - 495.52 quad - token sale{" "}
+        Token Distribution: 49.552% - 495.52 quad - token sale
         <a
           href="https://dappbuilder.org/eth/tokensaletimerefadm/tokensale.html?id=0x3c6f96859862891564B17b5611F29af7E28534bD&net=1&utm_source=Trust_iOS_Browser&ref=0xEc3Cfd42454c41159bE801D09016482929296316"
           target="_blank"
           rel="noreferrer"
-          className="text-blue-400 underline font-light"
+          className="text-blue-400 underline font-light px-1"
         >
           buy now
         </a>
@@ -72,7 +72,6 @@ const WhexEth = () => {
             className="w-[25vw] rounded-full"
           />
         </div>
-
 
         <div className="flex flex-col space-y-6 lg:w-[50%]">
           <div className="flex justify-between items-center">

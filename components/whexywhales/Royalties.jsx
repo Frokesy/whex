@@ -7,7 +7,7 @@ const Royalties = () => {
     <div
       data-aos="fade-in"
       data-aos-duration="2000"
-      className="flex flex-col lg:mx-4 space-y-3"
+      className="flex flex-col lg:mx-4 space-y-3 pt-3"
     >
       <span className="text-[18px] text-center font-mono font-bold">
         Royalties (How they will be used):
