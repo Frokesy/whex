@@ -4,10 +4,9 @@ import "aos/dist/aos.css";
 import { FaAngleLeft, FaAngleRight } from "react-icons/fa";
 import Section from "./Section";
 import SectionTwo from "./SectionTwo";
-import Royalties from "./Royalties";
 
 const WhexyWhales = () => {
-  const [active, setActive] = useState("royalties");
+  const [active, setActive] = useState("section");
 
   const switchTab = () => {
     if (active === "section") {
