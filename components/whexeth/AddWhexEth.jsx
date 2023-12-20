@@ -27,7 +27,6 @@ const AddWhexEth = () => {
         <span className="text-[14px]">
           {">>"} Supply: 1,000,000,000,000,000,000
         </span>
-        <span className="text-[13px]">{">>"} 21% - uniswap liquidity pool</span>
         <span className="text-[13px]">
           {">>"} This token is a cross chain version of the Whale Exploder on
           the Binance Smart chain:{" "}
