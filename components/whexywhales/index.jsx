@@ -30,7 +30,7 @@ const WhexyWhales = () => {
         WHEXy Whales is an NFT project consisting of 4800 unique Whales with
         different traits like hats, glasses, shirts, backgrounds, etc
       </span>
-      <div className="flex lg:justify-between lg:flex-row-reverse flex-col items-center">
+      <div className="flex lg:justify-between lg:flex-row flex-col items-center">
         <div
           data-aos="zoom-in"
           data-aos-duration="2000"

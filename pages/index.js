@@ -10,6 +10,7 @@ import Whex from "../components/whex";
 import WhexEth from "../components/whexeth";
 import WhexyWhales from "../components/whexywhales";
 import Whexdao from "../components/whexdao";
+import WhexSol from "../components/whexsol";
 
 const Home = () => {
   useEffect(() => {
@@ -57,6 +58,7 @@ const Home = () => {
           <div className="flex flex-col lg:w-[75vw] w-[95vw] mx-auto">
             <Whex />
             <WhexEth />
+            <WhexSol />
             <WhexyWhales />
             <EmberScript />
             <Whexdao />
