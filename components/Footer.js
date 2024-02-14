@@ -58,7 +58,7 @@ const Footer = () => {
       </div>
       <div className="footer bg-neutral-800 w-full flex justify-between mt-[5vh]">
         <span className="text-gray-400 font-mono font-bold mt-4 flex justify-center lg:justify-end mb-6 lg:mb-0 text-[18px] mx-[13vw]">
-          &copy; Whexcosystem 2022
+          &copy; Whexcosystem 2024
         </span>
 
         <div className="lg:flex hidden flex-row justify-end mx-[10vw]">
