@@ -62,6 +62,37 @@ const Home = () => {
             <WhexyWhales />
             <EmberScript />
             <Whexdao />
+            <div className="flex flex-col items-center justify-center">
+              <h2 className="pt-[10vh] text-[32px] font-bold">Bridge</h2>
+              <p className="text-center pb-10 text-[#333] text-[15px]">
+                <span className="text-blue-400 font-bold">WHEXcosystem </span>
+                has partnered with{" "}
+                <span className="text-blue-400 font-bold underline">
+                  {" "}
+                  Umbria Network{" "}
+                </span>
+                to bring you an easier, faster and cheaper way to bridge your
+                cryptocurrency were you can move your assets cross-chain, its
+                10x cheaper and 10x faster than other bridges. Learn more about
+                Umbria Network <a href="https://umbria.network/">HERE</a>.
+              </p>
+              <div className="block lg:hidden">
+                <iframe
+                  src="https://umbria.network/widgetv2/?ref=aiEAD4VbvCtbAZZw'>&route=ethbsc"
+                  width="400"
+                  height="730"
+                  scrolling="no"
+                ></iframe>
+              </div>
+              <div className="lg:block hidden">
+                <iframe
+                  src="https://umbria.network/widgetv2/?ref=aiEAD4VbvCtbAZZw'>&route=ethbsc"
+                  width="960"
+                  height="600"
+                  scrolling="no"
+                ></iframe>
+              </div>
+            </div>
           </div>
         </div>
 
