@@ -2,7 +2,6 @@ import React, { useEffect, useState, useRef } from "react";
 import Footer from "../components/Footer";
 import Header from "../components/Header";
 import Meta from "./defaults/Meta";
-import EmberScript from "./EmberScript";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import Head from "next/head";
@@ -11,6 +10,7 @@ import WhexEth from "../components/whexeth";
 import WhexyWhales from "../components/whexywhales";
 import Whexdao from "../components/whexdao";
 import WhexSol from "../components/whexsol";
+import BuyWidget from "./BuyWidget";
 
 const Home = () => {
   useEffect(() => {
@@ -60,7 +60,7 @@ const Home = () => {
             <WhexEth />
             <WhexSol />
             <WhexyWhales />
-            <EmberScript />
+            <BuyWidget />
             <Whexdao />
             <div id="bridge" className="flex flex-col items-center justify-center">
               <h2 className="pt-[10vh] text-[32px] font-bold">Bridge</h2>

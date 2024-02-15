@@ -159,6 +159,9 @@ const Header = () => {
               <Link href="#tokens">
                   Tokens
               </Link>
+              <Link href="#bridge">
+                  Bridge
+              </Link>
               <Link href="/blog">
                   Blog
               </Link>
