@@ -2,10 +2,10 @@ import React from "react";
 import Header from "../../components/blog/Header";
 import Footer from "../../components/blog/Footer";
 import Meta from "../defaults/Meta";
-import EmbrScript from "../EmberScript";
 import Featured from "../../components/blog/categories/Featured";
 import LatestPosts from "../../components/blog/categories/LatestPosts";
 import { TypeAnimation } from "react-type-animation";
+import BuyWidget from "../BuyWidget";
 const Blog = () => {
   return (
     <div>
@@ -14,7 +14,7 @@ const Blog = () => {
         desc="Great news and Articles about our market and get unbelievable
               knowledge in the easiest of ways through our blog"
       />
-      <EmbrScript />
+      <BuyWidget />
       <div className="bg-[#151A25] lg:h-[120vh] h-[100vh]">
         <div className="lg:w-[75vw] w-[90vw] mx-auto">
           <div className="py-[7vh]">

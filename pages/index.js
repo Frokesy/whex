@@ -2,7 +2,6 @@ import React, { useEffect, useState, useRef } from "react";
 import Footer from "../components/Footer";
 import Header from "../components/Header";
 import Meta from "./defaults/Meta";
-import EmberScript from "./EmberScript";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import Head from "next/head";
@@ -11,6 +10,7 @@ import WhexEth from "../components/whexeth";
 import WhexyWhales from "../components/whexywhales";
 import Whexdao from "../components/whexdao";
 import WhexSol from "../components/whexsol";
+import BuyWidget from "./BuyWidget";
 
 const Home = () => {
   useEffect(() => {
@@ -60,9 +60,9 @@ const Home = () => {
             <WhexEth />
             <WhexSol />
             <WhexyWhales />
-            <EmberScript />
+            <BuyWidget />
             <Whexdao />
-            <div className="flex flex-col items-center justify-center">
+            <div id="bridge" className="flex flex-col items-center justify-center">
               <h2 className="pt-[10vh] text-[32px] font-bold">Bridge</h2>
               <p className="text-center pb-10 text-[#333] text-[15px]">
                 <span className="text-blue-400 font-bold">WHEXcosystem </span>
@@ -81,7 +81,6 @@ const Home = () => {
                   src="https://umbria.network/widgetv2/?ref=aiEAD4VbvCtbAZZw'>&route=ethbsc"
                   width="400"
                   height="730"
-                  scrolling="no"
                 ></iframe>
               </div>
               <div className="lg:block hidden">
