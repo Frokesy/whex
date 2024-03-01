@@ -36,19 +36,6 @@ const AddWhexSol = () => {
             here
           </a>
         </span>
-        <span className="text-[13px]">
-          {">>"} This token is a cross chain version of the Whale Exploder on
-          the Binance Smart chain which has been working to save whales since
-          June 2021:{" "}
-          <a
-            href="https://coinmarketcap.com/currencies/whale-exploder/"
-            target="_blank"
-            rel="noreferrer"
-            className="text-blue-400 underline font-light"
-          >
-            https://coinmarketcap.com/currencies/whale-exploder/
-          </a>
-        </span>
       </div>
     </div>
   );
