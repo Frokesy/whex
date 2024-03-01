@@ -63,7 +63,7 @@ const Whexdao = () => {
         The WHEXcosystem DAO ($WEED) token is used to make decisions on the
         future of the WHEXcosystem via blockchain vote.
       </span>
-      <span className="text-[14px] text-neutral-400 hidden lg:flex justify-center lg:pb-[5vh] pb-4">
+      <span className="text-[14px] text-neutral-400 hidden lg:flex justify-center pb-1">
         Staking rewards for $WEED are generated from 25% of the mint proceeds
         and royalties of the WHEXy Whales:
         <a

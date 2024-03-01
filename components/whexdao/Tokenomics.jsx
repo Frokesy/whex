@@ -11,6 +11,17 @@ const Tokenomics = () => {
         Tokenomics
       </h2>
       <span className="text-[13px]">
+        {">>"} Liquidity pool for $WEED/USDT locked for 5 years!{" "}
+        <a
+          href="https://www.dx.app/certificates/locker/v2-liquidity?address=0xe9d2d0a3c4899436688084fa020c9ad9f9a03eb6&chain=56"
+          target="_blank"
+          rel="noreferrer"
+          className="text-blue-400 underline text-[14px]"
+        >
+          Click here to view certificate
+        </a>
+      </span>
+      <span className="text-[13px]">
         {">>"} 1% of each transaction is burned
       </span>
       <span className="text-[13px]">
