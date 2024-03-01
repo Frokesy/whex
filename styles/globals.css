@@ -542,18 +542,6 @@ video {
   position: fixed;
 }
 
-.bottom-10 {
-  bottom: 2.5rem;
-}
-
-.right-0 {
-  right: 0px;
-}
-
-.right-10 {
-  right: 2.5rem;
-}
-
 .bottom-6 {
   bottom: 1.5rem;
 }
@@ -967,6 +955,11 @@ video {
   background-color: rgb(21 26 37 / var(--tw-bg-opacity));
 }
 
+.bg-\[\#334155\] {
+  --tw-bg-opacity: 1;
+  background-color: rgb(51 65 85 / var(--tw-bg-opacity));
+}
+
 .bg-\[\#ccc\] {
   --tw-bg-opacity: 1;
   background-color: rgb(204 204 204 / var(--tw-bg-opacity));
@@ -1000,11 +993,6 @@ video {
 .bg-white {
   --tw-bg-opacity: 1;
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
-}
-
-.bg-\[\#334155\] {
-  --tw-bg-opacity: 1;
-  background-color: rgb(51 65 85 / var(--tw-bg-opacity));
 }
 
 .bg-\[url\(\'\/whale\.gif\'\)\] {
@@ -1114,6 +1102,10 @@ video {
   padding-bottom: 7vh;
 }
 
+.pb-1 {
+  padding-bottom: 0.25rem;
+}
+
 .pb-10 {
   padding-bottom: 2.5rem;
 }
@@ -1168,6 +1160,18 @@ video {
 
 .pt-\[5vh\] {
   padding-top: 5vh;
+}
+
+.pl-3 {
+  padding-left: 0.75rem;
+}
+
+.pr-3 {
+  padding-right: 0.75rem;
+}
+
+.pl-1 {
+  padding-left: 0.25rem;
 }
 
 .text-center {

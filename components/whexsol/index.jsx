@@ -46,8 +46,14 @@ const WhexSol = () => {
       <h2 className="text-center lg:text-[32px] text-[20px] font-bold font-mono">
         Whale Exploder - SOL(WHEX-SOL)
       </h2>
+      <span className="flex justify-center text-center text-[#404040] lg:text-[14px] pb-2 text-[12px] font-normal">
+        Token Distribution: 50% token sale, 25% liquidity pool, 15% reserve, 10%
+        airdrops and giveaways.
+      </span>
       <span className="flex justify-center text-center text-[#404040] lg:text-[14px] lg:pb-[5vh] pb-4 text-[12px] font-normal">
-        Token Distribution: 50% token sale, 25% liquidity pool, 15% reserve, 10% airdrops and giveaways.
+        <a target="_blank" rel="noreferrer" className="underline text-blue-400 font-semibold" href="https://birdeye.so/token/6CXEhytD4zRL74THZUxvmCiUKoNMFtA9BLYd97g1rCQk?chain=solana">
+          Click here to view the $WHEX-SOL price chart
+        </a>
       </span>
       <div className="flex lg:justify-between lg:flex-row-reverse flex-col items-center">
         <div className="rotate lg:w-[30%] lg:pb-0 pb-4">
