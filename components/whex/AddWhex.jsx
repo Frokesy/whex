@@ -30,7 +30,7 @@ const AddWhex = () => {
             href="https://coinmarketcap.com/currencies/whale-exploder/"
             target="_blank"
             rel="noreferrer"
-            className="text-blue-400 underline font-bold"
+            className="text-blue-400 underline font-bold" 
           >
             Click to view price chart on Coinmarketcap
           </a>
