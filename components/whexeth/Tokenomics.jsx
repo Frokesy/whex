@@ -11,6 +11,9 @@ const Tokenomics = () => {
         Tokenomics
       </h2>
       <span className="text-[13px]">
+        {">>"} Trade on <a className="text-blue-400 underline font-semibold" href="https://app.uniswap.org/swap?outputCurrency=0x21a60677442c7ccad2586235042af6d67c1184b1">Uniswap</a>
+      </span>
+      <span className="text-[13px]">
         {">>"} 2% reflections to holders
       </span>
       <span className="text-[13px]">
