@@ -31,12 +31,12 @@ const AddWhexEth = () => {
           {">>"} This token is a cross chain version of the Whale Exploder on
           the Binance Smart chain:{" "}
           <a
-            href="https://coinmarketcap.com/currencies/whale-exploder/"
+            href="https://coinmarketcap.com/dexscan/ethereum/0x70024553e791aa658d7a9e4b581b881f698ab58f"
             target="_blank"
             rel="noreferrer"
-            className="text-blue-400 underline font-light"
+            className="text-blue-400 underline font-bold"
           >
-            https://coinmarketcap.com/currencies/whale-exploder/
+            Click to view price chart on Coinmarketcap
           </a>
         </span>
       </div>

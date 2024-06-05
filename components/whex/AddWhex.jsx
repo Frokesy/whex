@@ -23,6 +23,18 @@ const AddWhex = () => {
       <span className="text-[13px]">{">>"} Name: Whale Exploder</span>
       <span className="text-[13px]">{">>"} Symbol: $whex</span>
       <span className="text-[13px]">{">>"} Decimals: 9</span>
+      <span className="text-[13px]">
+          {">>"} This token is a cross chain version of the Whale Exploder on
+          the Binance Smart chain:{" "}
+          <a
+            href="https://coinmarketcap.com/currencies/whale-exploder/"
+            target="_blank"
+            rel="noreferrer"
+            className="text-blue-400 underline font-bold" 
+          >
+            Click to view price chart on Coinmarketcap
+          </a>
+        </span>
     </div>
   );
 };
