@@ -5,7 +5,7 @@ import { gsap } from "gsap";
 import { FaAngleLeft, FaAngleRight } from "react-icons/fa";
 import Tokenomics from "./Tokenomics";
 import AddWhexEth from "./AddWhexEth";
-import Section from "./Section";
+
 
 const WhexEth = () => {
   const [active, setActive] = useState("tokenomics");
@@ -81,7 +81,6 @@ const WhexEth = () => {
 
             <div>{active === "tokenomics" && <Tokenomics />}</div>
             <div>{active === "addWhexEth" && <AddWhexEth />}</div>
-            <div>{active === "section" && <Section />}</div>
             <div className="cursor-pointer" onClick={() => forwardSwitch()}>
               <FaAngleRight size={30} color="#808080" />
             </div>
@@ -95,11 +94,6 @@ const WhexEth = () => {
             <div
               className={`rounded-full p-1 ml-3 ${
                 active === "addWhexEth" ? "bg-[#002871]" : "bg-[#ccc]"
-              }`}
-            ></div>
-            <div
-              className={`rounded-full p-1 ml-3 ${
-                active === "section" ? "bg-[#002871]" : "bg-[#ccc]"
               }`}
             ></div>
           </div>
