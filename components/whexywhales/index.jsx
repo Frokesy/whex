@@ -1,20 +1,9 @@
-import React, { useEffect, useState, useRef } from "react";
+import React, { useEffect } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
-import { FaAngleLeft, FaAngleRight } from "react-icons/fa";
 import Section from "./Section";
-import SectionTwo from "./SectionTwo";
 
 const WhexyWhales = () => {
-  const [active, setActive] = useState("section");
-
-  const switchTab = () => {
-    if (active === "section") {
-      setActive("sectionTwo");
-    } else if (active === "sectionTwo") {
-      setActive("section");
-    }
-  };
 
   useEffect(() => {
     AOS.init();
@@ -40,28 +29,8 @@ const WhexyWhales = () => {
         </div>
 
         <div className="flex flex-col space-y-6 lg:w-[50%]">
-          <div className="flex justify-between items-center">
-            <div className="cursor-pointer" onClick={() => switchTab()}>
-              <FaAngleLeft size={30} color="#808080" />
-            </div>
-
-            <div>{active === "section" && <Section />}</div>
-            <div>{active === "sectionTwo" && <SectionTwo />}</div>
-            <div className="cursor-pointer" onClick={() => switchTab()}>
-              <FaAngleRight size={30} color="#808080" />
-            </div>
-          </div>
-          <div className="flex justify-center">
-            <div
-              className={`rounded-full p-1 ml-3 ${
-                active === "section" ? "bg-[#002871]" : "bg-[#ccc]"
-              }`}
-            ></div>
-            <div
-              className={`rounded-full p-1 ml-3 ${
-                active === "sectionTwo" ? "bg-[#002871]" : "bg-[#ccc]"
-              }`}
-            ></div>
+          <div>
+            <Section />
           </div>
         </div>
       </div>
