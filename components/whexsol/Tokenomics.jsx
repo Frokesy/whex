@@ -17,7 +17,7 @@ const Tokenomics = () => {
         {">>"} 4% sent to the treasury wallet:
       </span>
       <span className="text-[13px]">
-        {"-"} Then when it reaches 10 quadrillion WHEX
+        {"-"} Then when it reaches 1 million WHEX
       </span>
       <span className="text-[13px]">
         {">>"} 25% is burned.

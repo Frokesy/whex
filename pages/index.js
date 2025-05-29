@@ -10,6 +10,7 @@ import WhexEth from "../components/whexeth";
 import WhexyWhales from "../components/whexywhales";
 import Whexdao from "../components/whexdao";
 import WhexSol from "../components/whexsol";
+import Whexbase from "../components/whexbase";
 import BuyWidget from "./BuyWidget";
 
 const Home = () => {
@@ -62,6 +63,7 @@ const Home = () => {
             <WhexyWhales />
             <BuyWidget />
             <Whexdao />
+            <Whexbase />
             <div id="bridge" className="flex flex-col items-center justify-center">
               <h2 className="pt-[10vh] text-[32px] font-bold">Bridge</h2>
               <p className="text-center pb-10 text-[#333] text-[15px]">
